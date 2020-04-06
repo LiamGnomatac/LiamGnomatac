@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject torchLight;
+    public GameObject cellphone;
+    public bool torchLightIsBroke;
 
     public static GameManager s_Singleton;
 
@@ -29,5 +31,31 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AppearTorchLight()
+    {
+        if(!torchLightIsBroke)
+        {
+            torchLight.GetComponent<LampeTorche>().ToggleTorchLightAppear();
+            torchLight.GetComponent<LampeTorche>().spotLight.SetActive(false);
+        }
+        else
+        {
+            cellphone.GetComponent<Téléphone>().ToggleTorchLightAppear();
+            cellphone.GetComponent<Téléphone>().spotLight.SetActive(false);
+        }
+    }
+
+    public void AppearLight()
+    {
+        if (!torchLightIsBroke)
+        {
+            torchLight.GetComponent<LampeTorche>().ToggleLightAppear();
+        }
+        else
+        {
+            cellphone.GetComponent<Téléphone>().ToggleLightAppear();
+        }
     }
 }
