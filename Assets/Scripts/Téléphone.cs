@@ -29,4 +29,10 @@ public class Téléphone : MonoBehaviour
     {
         gameObject.SetActive(!gameObject.activeSelf);
     }
+
+    public void VibrationLocation(Transform pos)
+    {
+        Debug.Log("Vibre");
+        pos.position = transform.position;
+    }
 }
