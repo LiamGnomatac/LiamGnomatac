@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 639682136663460003}
   - component: {fileID: 7127601928874748849}
   - component: {fileID: 1495700584}
-  - component: {fileID: -8628388141496823505}
   m_Layer: 0
   m_Name: "T\xE9l\xE9phone"
   m_TagString: Untagged
@@ -154,21 +153,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.5, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-8628388141496823505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4456441754901799502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9799564b983d9664b824f7b9b2ff8d88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 0
-  negative: 0
 --- !u!1 &4811899869059612036
 GameObject:
   m_ObjectHideFlags: 0
