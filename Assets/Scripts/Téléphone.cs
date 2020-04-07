@@ -5,8 +5,8 @@ using UnityEngine;
 public class Téléphone : MonoBehaviour
 {
     public GameObject spotLight;
-    [Range(120, 540)]
-    public int vibrationTime;
+    [Range(10, 30)]
+    public float vibrationTime;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +30,27 @@ public class Téléphone : MonoBehaviour
         gameObject.SetActive(!gameObject.activeSelf);
     }
 
-    public void VibrationLocation(Transform pos)
+    private void ChooseVibrationTime()
+    {
+        vibrationTime = Random.Range(vibrationTime, 30f);
+    }
+
+    public void VibrationLocation()
     {
         Debug.Log("Vibre");
-        pos.position = transform.position;
+        GameManager.s_Singleton.targetForTaurus.position = transform.position;
+    }
+
+    private void OnEnable()
+    {
+        Debug.Log("Load");
+        ChooseVibrationTime();
+        Invoke("VibrationLocation", vibrationTime);
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("Cancel");
+        CancelInvoke();
     }
 }

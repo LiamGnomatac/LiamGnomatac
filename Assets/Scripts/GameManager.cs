@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public GameObject cellphone;
     public bool torchLightIsBroke;
 
+    [HideInInspector]
+    public Transform targetForTaurus;
+
     public static GameManager s_Singleton;
 
     private void Awake()
@@ -24,13 +27,16 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetForTaurus.position = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0))
+        {
+            AppearTorchLight();
+        }
     }
 
     public void AppearTorchLight()
