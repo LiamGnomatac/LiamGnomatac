@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject torchLight;
     public GameObject cellphone;
     public bool torchLightIsBroke;
+    public bool showController = false;
 
     [HideInInspector]
     public Transform targetForTaurus;
@@ -33,6 +35,25 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Montrer ou cacher les controllers VR
+
+        foreach( var hand in Player.instance.hands)
+        {
+            if (showController)
+            {
+                hand.ShowController();
+                hand.SetSkeletonRangeOfMotion(Valve.VR.EVRSkeletalMotionRange.WithController);
+            }
+            else
+            {
+                hand.HideController();
+                hand.SetSkeletonRangeOfMotion(Valve.VR.EVRSkeletalMotionRange.WithoutController);
+            }
+        }
+
+
+
         if(Input.GetMouseButtonDown(0))
         {
             AppearTorchLight();
