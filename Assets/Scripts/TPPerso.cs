@@ -32,17 +32,5 @@ public class TPPerso : MonoBehaviour
     }
 
 
-    //-------------------------------------------------
-    /*public override bool ShouldActivate(Vector3 playerPosition)
-    {
-        return (Vector3.Distance(transform.position, playerPosition) > 1.0f);
-    }
-
-
-    //-------------------------------------------------
-    public override bool ShouldMovePlayer()
-    {
-        return true;
-    }
-    */
+   
 }
