@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public Transform targetForTaurus;
 
+    [HideInInspector]
+    public Transform tpRelativePoint;
+
     public static GameManager s_Singleton;
 
     private void Awake()
@@ -84,5 +87,10 @@ public class GameManager : MonoBehaviour
         {
             cellphone.GetComponent<Téléphone>().ToggleLightAppear();
         }
+    }
+
+    public void TpRelativePoint(Transform pos)
+    {
+        tpRelativePoint.position = pos.position;
     }
 }
