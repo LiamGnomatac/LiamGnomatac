@@ -762,8 +762,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4709935733912307691}
-  - component: {fileID: 4709935733912395889}
   - component: {fileID: 4709935733912395888}
+  - component: {fileID: 4709935733912395889}
   m_Layer: 0
   m_Name: TeleportPoint
   m_TagString: Untagged

@@ -217,7 +217,18 @@ namespace Valve.VR.InteractionSystem
 					break;
 				}
 			}
-		}
+
+            /*foreach (TeleportMarkerBase teleportMarker in teleportMarkers)
+            {
+                Warp warp = teleportMarker as Warp;
+                if (warp && warp.playerSpawnPoint)
+                {
+                    teleportingToMarker = teleportMarker;
+                    TeleportPlayer();
+                    break;
+                }
+            }*/
+        }
 
 
 		//-------------------------------------------------
@@ -859,7 +870,7 @@ namespace Valve.VR.InteractionSystem
 			SteamVR_Fade.Start( Color.clear, currentFadeTime );
 
 			TeleportPoint teleportPoint = teleportingToMarker as TeleportPoint;
-			Vector3 teleportPosition = pointedAtPosition;
+            Vector3 teleportPosition = pointedAtPosition;
 
 			if ( teleportPoint != null )
 			{

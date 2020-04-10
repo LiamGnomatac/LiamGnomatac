@@ -320,17 +320,17 @@ namespace Valve.VR.InteractionSystem
 
 #if UNITY_EDITOR
     //-------------------------------------------------------------------------
-    [CustomEditor(typeof(TeleportPoint))]
-    public class TeleportPointEditor : Editor
+    [CustomEditor(typeof(Warp))]
+    public class WarpEditor : Editor
     {
         //-------------------------------------------------
         void OnEnable()
         {
             if (Selection.activeTransform)
             {
-                TeleportPoint teleportPoint = Selection.activeTransform.GetComponent<TeleportPoint>();
-                if (teleportPoint != null)
-                    teleportPoint.UpdateVisualsInEditor();
+                Warp warp = Selection.activeTransform.GetComponent<Warp>();
+                if (warp != null)
+                    warp.UpdateVisualsInEditor();
             }
         }
 
@@ -342,10 +342,10 @@ namespace Valve.VR.InteractionSystem
 
             if (Selection.activeTransform)
             {
-                TeleportPoint teleportPoint = Selection.activeTransform.GetComponent<TeleportPoint>();
+                Warp warp = Selection.activeTransform.GetComponent<Warp>();
                 if (GUI.changed)
                 {
-                    teleportPoint.UpdateVisualsInEditor();
+                    warp.UpdateVisualsInEditor();
                 }
             }
         }
