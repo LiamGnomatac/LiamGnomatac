@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Warp : MonoBehaviour
 {
+    public GameObject center;
     public GameObject limiteZone;
 
     private void Start()
@@ -13,18 +14,19 @@ public class Warp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        Debug.Log("pied");
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("je suis detecté");
+            Debug.Log("c'est rouge");
             limiteZone.SetActive(true);
-        } 
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("je suis pus detecté");
+            Debug.Log("C'est pu rouge");
             limiteZone.SetActive(false);
         }
     }
