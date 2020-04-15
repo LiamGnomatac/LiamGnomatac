@@ -6,7 +6,7 @@ using Valve.VR;
 
 public class TPPerso : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Variable
 
   
     private Player player;
@@ -18,7 +18,8 @@ public class TPPerso : MonoBehaviour
     public Transform tpPoint;
     private Vector3 fwd;
     public SteamVR_Action_Boolean teleport;
-    public GameObject zoneVisible;
+    private bool zoneVisible = false;
+    
 
 
 
@@ -26,7 +27,7 @@ public class TPPerso : MonoBehaviour
     {
         player = Player.instance;
         fwd = cameraVR.TransformDirection(Vector3.forward);
-        zoneVisible.SetActive(false);
+       
     }
 
 
@@ -57,14 +58,12 @@ public class TPPerso : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("ZoneTP"))
             {
                 Debug.Log("Zone visible OK");
-                zoneVisible.SetActive(true);
+               // hit.collider.gameObject.GetComponent<Warp>;
 
-                // Input sur le E
+               // Input tp
                 if (teleport.stateDown )
                 {
-                    // getFlash est un static qui va trigger le script de la flashlight
-
-                    
+                    // TP Center                
                     center.transform.position = hit.transform.position;
                     Debug.Log("GetFlashTrue");
                 }
@@ -83,7 +82,7 @@ public class TPPerso : MonoBehaviour
         }
         else
         {
-            zoneVisible.SetActive(false);
+            zoneVisible = false;
         }
 
       
