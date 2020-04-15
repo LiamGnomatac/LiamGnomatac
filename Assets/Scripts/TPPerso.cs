@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
+using Valve.VR;
 
 public class TPPerso : MonoBehaviour
 {
@@ -16,12 +17,16 @@ public class TPPerso : MonoBehaviour
     public GameObject center;
     public Transform tpPoint;
     private Vector3 fwd;
+    public SteamVR_Action_Boolean teleport;
+    public GameObject zoneVisible;
+
 
 
     void Start()
     {
         player = Player.instance;
         fwd = cameraVR.TransformDirection(Vector3.forward);
+        zoneVisible.SetActive(false);
     }
 
 
@@ -43,20 +48,22 @@ public class TPPerso : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         Debug.DrawRay(cameraVR.position, cameraVR.forward * 5, Color.red);
 
-        //Range de 3
-        if (Physics.Raycast(cameraVR.position, cameraVR.forward, out hit, 3, layerMask))
+        //Range de 10
+        if (Physics.Raycast(cameraVR.position, cameraVR.forward, out hit, 10, layerMask))
         {
             Debug.Log(hit.transform.name);
 
             // Un comparetag sur le raycast
             if (hit.collider.gameObject.CompareTag("ZoneTP"))
             {
-                Debug.Log("Flashlight OK");
+                Debug.Log("Zone visible OK");
+                zoneVisible.SetActive(true);
 
                 // Input sur le E
-                if (Input.GetKeyDown(KeyCode.E))
+                if (teleport.stateDown )
                 {
                     // getFlash est un static qui va trigger le script de la flashlight
+
                     
                     center.transform.position = hit.transform.position;
                     Debug.Log("GetFlashTrue");
@@ -74,16 +81,12 @@ public class TPPerso : MonoBehaviour
 
             }
         }
+        else
+        {
+            zoneVisible.SetActive(false);
+        }
 
-
-        /* if (Application.isPlaying)
-         {
-             lookAtPosition.x = player.hmdTransform.position.x;
-             lookAtPosition.y = lookAtJointTransform.position.y;
-             lookAtPosition.z = player.hmdTransform.position.z;
-
-             lookAtJointTransform.LookAt(lookAtPosition);
-         }*/
+      
     }
 
 
