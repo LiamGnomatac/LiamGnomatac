@@ -783,15 +783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ecabc44c2824041bf6254c30a71392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locked: 0
-  markerActive: 1
-  teleportType: 0
-  title: 
-  switchToScene: 
-  titleVisibleColor: {r: 0, g: 0.990005, b: 1, a: 0}
-  titleHighlightedColor: {r: 0.023584902, g: 1, b: 0.19558004, a: 0}
-  titleLockedColor: {r: 1, g: 0.67976373, b: 0, a: 0}
-  playerSpawnPoint: 0
+  center: {fileID: 0}
+  limiteZone: {fileID: 0}
 --- !u!65 &4709935733912395889
 BoxCollider:
   m_ObjectHideFlags: 0
