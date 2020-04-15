@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
 {
     public GameObject torchLight;
     public GameObject cellphone;
+
     public bool torchLightIsBroke;
     public bool showController = false;
+    public bool firstEIsComplete = false;
 
     [HideInInspector]
     public Transform targetForTaurus;
