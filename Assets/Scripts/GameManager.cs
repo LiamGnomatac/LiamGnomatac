@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
         buttonFourE2 = false;
     }
 
-    public void activateButton()
+    public void ActivateButton()
     {
         //2,4,3,1
         if (buttonTwoE2 && pullRock1)
