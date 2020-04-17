@@ -7,17 +7,20 @@ public class GameManager : MonoBehaviour
 {
     public GameObject torchLight;
     public GameObject cellphone;
-
+    [HideInInspector]
     public bool torchLightIsBroke;
+
     public bool showController = false;
 
-    public bool firstEIsComplete = false;
-    public bool secondEIsComplete = false;
-    public bool thirdEIsComplete = false;
-
-
     [HideInInspector]
-    public Transform targetForTaurus;
+    public bool firstEIsComplete = false , secondEIsComplete = false, thirdEIsComplete = false;
+    
+    //[HideInInspector]
+    public bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
+    public bool pullRock1;
+    public bool rockSort;
+    
+    public Transform targetForTaurus = null;
 
     [HideInInspector]
     public Transform tpRelativePoint;
@@ -38,7 +41,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetForTaurus.position = new Vector3(0, 0, 0);
+
     }
 
     // Update is called once per frame
@@ -60,13 +63,11 @@ public class GameManager : MonoBehaviour
                 hand.SetSkeletonRangeOfMotion(Valve.VR.EVRSkeletalMotionRange.WithoutController);
             }
         }
-
-
-
-        if(Input.GetMouseButtonDown(0))
+        
+        /*if(Input.GetMouseButtonDown(0))
         {
             AppearTorchLight();
-        }
+        }*/
     }
 
     public void AppearTorchLight()
@@ -98,5 +99,62 @@ public class GameManager : MonoBehaviour
     public void TpRelativePoint(Transform pos)
     {
         tpRelativePoint.position = pos.position;
+    }
+
+ 
+    public void DownButtonOne()
+    {
+        buttonOneE2 = true;
+    }
+    public void DownButtonTwo()
+    {
+        buttonTwoE2 = true;
+    }
+    public void DownButtonThree()
+    {
+        buttonThreeE2 = true;
+    }
+    public void DownButtonFour()
+    {
+        buttonFourE2 = true;
+    }
+
+    public void ResetButton()
+    {
+        buttonOneE2 = false;
+        buttonTwoE2 = false;
+        buttonThreeE2 = false;
+        buttonFourE2 = false;
+    }
+
+    public void activateButton()
+    {
+        //2,4,3,1
+        if (buttonTwoE2 && pullRock1)
+        {
+            Debug.Log("2");
+            if (buttonFourE2)
+            {
+                Debug.Log("4");
+                if (buttonThreeE2)
+                {
+                    Debug.Log("3");
+                    if (buttonOneE2)
+                    {
+                        Debug.Log("1");
+                        rockSort = true;
+                        Debug.Log("première parti ok");
+                    }
+                    else
+                        ResetButton();
+                }
+                else
+                    ResetButton();
+            }
+            else
+                ResetButton();
+        }
+        else
+            ResetButton();
     }
 }

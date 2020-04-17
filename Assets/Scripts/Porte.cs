@@ -14,9 +14,8 @@ public class Porte : MonoBehaviour
     {
         pos = transform;
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    void FixedUpdate()
     {
         if (isDoor1)
         {
