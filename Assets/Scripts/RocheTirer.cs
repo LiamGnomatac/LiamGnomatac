@@ -17,19 +17,16 @@ public class RocheTirer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x == pos.position.x)
+        if(transform.position.x <= pos.position.x)
         {
+            Debug.Log("Neutre");
+            transform.position = pos.position;
             gameObject.GetComponent<Interactable>().enabled = true;
             GameManager.s_Singleton.pullRock1 = false;
-            Debug.Log("Neutre");
             return;
+            
         }
-        if(transform.position.x < pos.position.x)
-        {
-            transform.position = pos.position;
-            Debug.Log("Arrière");
-        }
-        if (transform.position.x > pos.position.x + distancePull)
+        if (transform.position.x >= pos.position.x + distancePull)
         {
             gameObject.GetComponent<Interactable>().enabled = false;
             GameManager.s_Singleton.pullRock1 = true;
