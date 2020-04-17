@@ -32,7 +32,17 @@ public class PorteTorche : MonoBehaviour
             torchE.transform.position = transform.position;
             torchE.transform.Rotate(transform.rotation.eulerAngles);
             torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            Debug.Log("Enigme complété");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other != torchE)
+            return;
+
+        if (other == torchE)
+        {
+            GameManager.s_Singleton.firstEIsComplete = false;
         }
     }
 }

@@ -10,7 +10,11 @@ public class GameManager : MonoBehaviour
 
     public bool torchLightIsBroke;
     public bool showController = false;
+
     public bool firstEIsComplete = false;
+    public bool secondEIsComplete = false;
+    public bool thirdEIsComplete = false;
+
 
     [HideInInspector]
     public Transform targetForTaurus;
