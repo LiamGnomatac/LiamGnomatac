@@ -12,7 +12,8 @@ public class Warp : MonoBehaviour
     {
         limiteZone.SetActive(false);
         zoneVue.SetActive(false);
-}
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {

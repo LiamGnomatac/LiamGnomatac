@@ -58,8 +58,8 @@ public class TPPerso : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("ZoneTP"))
             {
                 Debug.Log("Zone visible OK");
-               // hit.collider.gameObject.GetComponent<Warp>;
-
+                // hit.collider.gameObject.GetComponent<Warp>;
+                
                // Input tp
                 if (teleport.stateDown )
                 {
@@ -82,12 +82,12 @@ public class TPPerso : MonoBehaviour
         }
         else
         {
-            zoneVisible = false;
+           
         }
 
       
     }
 
-
+    
    
 }
