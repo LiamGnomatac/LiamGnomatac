@@ -19,9 +19,12 @@ public class TPPerso : MonoBehaviour
     private Vector3 fwd;
     public SteamVR_Action_Boolean teleport;
     private bool zoneVisible = false;
-    
-
-
+    public GameObject zoneVue;
+    public GameObject zoneSelect;
+    private bool zoneVueActive = false;
+    private bool zoneSelectActive = false;
+    private GameObject vue;
+    private GameObject select;
 
     void Start()
     {
@@ -34,6 +37,10 @@ public class TPPerso : MonoBehaviour
     //-------------------------------------------------
     void Update()
     {
+        vue = GameObject.FindGameObjectWithTag("ZoneVue");
+
+        select = GameObject.FindGameObjectWithTag("ZoneSelect");
+
         fwd = cameraVR.TransformDirection(Vector3.forward);
 
         int layerMask = 1 << 8;
@@ -58,20 +65,48 @@ public class TPPerso : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("ZoneTP"))
             {
                 Debug.Log("Zone visible OK");
-                // hit.collider.gameObject.GetComponent<Warp>;
-                
+                if (zoneVueActive == false)
+                {
+                    Instantiate(zoneVue, hit.transform.position, hit.transform.rotation);
+                    vue = GameObject.FindGameObjectWithTag("ZoneVue");
+                    zoneVueActive = true;
+                }   
                // Input tp
                 if (teleport.stateDown )
                 {
+                    if (zoneSelectActive == false)
+                    {
+                        Instantiate(zoneSelect, hit.transform.position, hit.transform.rotation);
+                        select = GameObject.FindGameObjectWithTag("ZoneSelect");
+                        zoneSelectActive = true;
+
+                    }
+
+                    Destroy(vue);
+                    zoneVueActive = false;
+
+                   
+                }
+
+                if (teleport.stateUp)
+                {
+
+
                     // TP Center                
                     center.transform.position = hit.transform.position;
                     Debug.Log("GetFlashTrue");
+                    Destroy(select);
+                    zoneSelectActive = false;
                 }
             }
-
+            
 
             else
             {
+                Destroy(vue);
+                zoneVueActive = false;
+                Destroy(select);
+                zoneSelectActive = false;
                 Debug.DrawRay(cameraVR.position, cameraVR.TransformDirection(Vector3.forward) * 1000, Color.white);
                 Debug.Log("Did not Hit");
             }
@@ -85,7 +120,7 @@ public class TPPerso : MonoBehaviour
            
         }
 
-      
+        
     }
 
     

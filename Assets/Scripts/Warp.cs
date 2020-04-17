@@ -6,14 +6,12 @@ public class Warp : MonoBehaviour
 {
     public GameObject center;
     public GameObject limiteZone;
-    public GameObject zoneVue;
-    public GameObject zoneSelect;
+    
 
     private void Start()
     {
         limiteZone.SetActive(false);
-        zoneVue.SetActive(false);
-        zoneSelect.SetActive(false);
+       
     }
 
     private void OnTriggerEnter(Collider other)
