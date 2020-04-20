@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Valve.VR.InteractionSystem;
 using Valve.VR;
 
@@ -8,7 +9,7 @@ public class TPPerso : MonoBehaviour
 {
     // Variable
 
-  
+    public GameObject uIManager;
     private Player player;
     private Vector3 lookAtPosition = Vector3.zero;
     private Transform lookAtJointTransform;
@@ -91,12 +92,14 @@ public class TPPerso : MonoBehaviour
                 if (teleport.stateUp)
                 {
 
-
+                    uIManager.GetComponent<UiManager>().FadeIn();
+                   
                     // TP Center                
                     center.transform.position = hit.transform.position;
                     Debug.Log("GetFlashTrue");
                     Destroy(select);
                     zoneSelectActive = false;
+                    uIManager.GetComponent<UiManager>().FadeOut();
                 }
             }
             
