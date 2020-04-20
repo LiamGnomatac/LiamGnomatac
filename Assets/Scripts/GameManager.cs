@@ -145,14 +145,19 @@ public class GameManager : MonoBehaviour
                         rockSort = true;
                         Debug.Log("première parti ok");
                     }
-                    else
-                        ResetButton();
+                    return;
                 }
-                else
+                if (buttonOneE2)
+                {
                     ResetButton();
+                }
+                return;
             }
-            else
+            if(buttonThreeE2 || buttonOneE2)
+            {
                 ResetButton();
+            }
+            return;
         }
         else
             ResetButton();

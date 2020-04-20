@@ -504,7 +504,7 @@ MonoBehaviour:
   buttonTwoE2: 0
   buttonThreeE2: 0
   buttonFourE2: 0
-  pullRock1: 1
+  pullRock1: 0
   rockSort: 0
   targetForTaurus: {fileID: 186347428}
   tpRelativePoint: {fileID: 0}
@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5dde2f60f56f87498339a77a008481d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distancePull: 1
+  distancePull: 0.5
 --- !u!114 &603642443
 MonoBehaviour:
   m_ObjectHideFlags: 0
