@@ -749,6 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancePull: 0.5
+  speed: 2
 --- !u!114 &603642443
 MonoBehaviour:
   m_ObjectHideFlags: 0

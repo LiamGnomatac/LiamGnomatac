@@ -7,6 +7,7 @@ public class RocheTirer : MonoBehaviour
 {
     private Vector3 pos;
     public float distancePull;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +43,7 @@ public class RocheTirer : MonoBehaviour
 
     private void ReturnToPosition()
     {
-        transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime*2);
+        transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime*speed);
     }
 
 
