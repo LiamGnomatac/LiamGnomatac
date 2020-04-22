@@ -21,7 +21,7 @@ public class RocheTirer : MonoBehaviour
     {
         if(transform.position.x <= pos.x)
         {
-            Debug.Log("Neutre");
+            //Debug.Log("Neutre");
             transform.position = pos;
             gameObject.GetComponent<Interactable>().enabled = true;
             GameManager.s_Singleton.pullRock1 = false;
@@ -30,7 +30,7 @@ public class RocheTirer : MonoBehaviour
         }
         if (transform.position.x >= pos.x + distancePull)
         {
-            Debug.Log("Avant");
+            //Debug.Log("Avant");
             gameObject.GetComponent<Interactable>().enabled = false;
             GameManager.s_Singleton.pullRock1 = true;
             ReturnToPosition();
