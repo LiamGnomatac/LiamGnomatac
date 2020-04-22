@@ -104,19 +104,19 @@ public class GameManager : MonoBehaviour
  
     public void DownButtonOne()
     {
-        buttonOneE2 = true;
+        buttonOneE2 = !buttonOneE2;
     }
     public void DownButtonTwo()
     {
-        buttonTwoE2 = true;
+        buttonTwoE2 = !buttonTwoE2;
     }
     public void DownButtonThree()
     {
-        buttonThreeE2 = true;
+        buttonThreeE2 = !buttonThreeE2;
     }
     public void DownButtonFour()
     {
-        buttonFourE2 = true;
+        buttonFourE2 = !buttonFourE2;
     }
 
     public void ResetButton()
