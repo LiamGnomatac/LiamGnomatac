@@ -92,14 +92,12 @@ public class TPPerso : MonoBehaviour
                 if (teleport.stateUp)
                 {
 
-                    uIManager.GetComponent<UiManager>().FadeIn();
-                   
                     // TP Center                
                     center.transform.position = hit.transform.position;
                     Debug.Log("GetFlashTrue");
                     Destroy(select);
                     zoneSelectActive = false;
-                    uIManager.GetComponent<UiManager>().FadeOut();
+                    
                 }
             }
             
