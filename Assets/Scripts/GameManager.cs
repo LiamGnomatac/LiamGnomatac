@@ -129,37 +129,46 @@ public class GameManager : MonoBehaviour
 
     public void ActivateButton()
     {
-        //2,4,3,1
-        if (buttonTwoE2 && pullRock1)
+        if(!pullRock1)
         {
-            Debug.Log("2");
-            if (buttonFourE2)
+            ResetButton();
+            return;
+        }
+        else
+        {
+            if (buttonTwoE2)
             {
-                Debug.Log("4");
-                if (buttonThreeE2)
+                Debug.Log("2");
+                if (buttonFourE2)
                 {
-                    Debug.Log("3");
+                    Debug.Log("4");
+                    if (buttonThreeE2)
+                    {
+                        Debug.Log("3");
+                        if (buttonOneE2)
+                        {
+                            Debug.Log("1");
+                            rockSort = true;
+                            Debug.Log("première parti ok");
+                        }
+                        return;
+                    }
                     if (buttonOneE2)
                     {
-                        Debug.Log("1");
-                        rockSort = true;
-                        Debug.Log("première parti ok");
+                        ResetButton();
                     }
                     return;
                 }
-                if (buttonOneE2)
+                if (buttonThreeE2 || buttonOneE2)
                 {
                     ResetButton();
                 }
                 return;
             }
-            if(buttonThreeE2 || buttonOneE2)
+            if (buttonFourE2 || buttonThreeE2 || buttonOneE2)
             {
                 ResetButton();
             }
-            return;
         }
-        else
-            ResetButton();
     }
 }

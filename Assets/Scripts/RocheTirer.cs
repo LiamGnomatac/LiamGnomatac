@@ -7,8 +7,10 @@ using Valve.VR;
 public class RocheTirer : MonoBehaviour
 {
     private Vector3 pos;
-    public float distancePull;
+
+    public bool isEndE2;
     public float speed;
+    public GameObject LinearMapping;
 
     // Start is called before the first frame update
     void Start()
@@ -23,23 +25,42 @@ public class RocheTirer : MonoBehaviour
         {
             //Debug.Log("Neutre");
             transform.position = pos;
-            gameObject.GetComponent<Interactable>().enabled = true;
-            GameManager.s_Singleton.pullRock1 = false;
+            LinearMapping.GetComponent<LinearMapping>().value = 0f;
+            Actions();
             return;
             
-        }
-        if (transform.position.x >= pos.x + distancePull)
-        {
-            //Debug.Log("Avant");
-            gameObject.GetComponent<Interactable>().enabled = false;
-            GameManager.s_Singleton.pullRock1 = true;
-            ReturnToPosition();
         }
         else
         {
             ReturnToPosition();
+            ReActions();
         }
 
+    }
+
+    private void Actions()
+    {
+        if(isEndE2)
+        {
+            return;
+        }
+        else
+        {
+            GameManager.s_Singleton.pullRock1 = false;
+            GameManager.s_Singleton.ResetButton();
+        }
+    }
+
+    private void ReActions()
+    {
+        if (isEndE2)
+        {
+            GameManager.s_Singleton.secondEIsComplete = true;
+        }
+        else
+        {
+            GameManager.s_Singleton.pullRock1 = true;
+        }
     }
 
     private void ReturnToPosition()
