@@ -9,14 +9,11 @@ public class TPPerso : MonoBehaviour
 {
     // Variable
 
-    public GameObject uIManager;
     private Player player;
     private Vector3 lookAtPosition = Vector3.zero;
     private Transform lookAtJointTransform;
     public Transform cameraVR;
-    public GameObject zoneDeJeu;
     public GameObject center;
-    public Transform tpPoint;
     private Vector3 fwd;
     public SteamVR_Action_Boolean teleport;
     private bool zoneVisible = false;
