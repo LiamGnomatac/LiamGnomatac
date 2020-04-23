@@ -43,6 +43,7 @@ public class PorteTorche : MonoBehaviour
         if (other == torchE)
         {
             GameManager.s_Singleton.firstEIsComplete = false;
+            torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
     }
 }
