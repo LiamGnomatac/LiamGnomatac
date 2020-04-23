@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5330022124604658363}
   m_Layer: 0
   m_Name: All Zone
-  m_TagString: Untagged
+  m_TagString: ZoneTP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4aab2de9d513a43818a06a03cbc470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb, type: 3}
+  center: {fileID: 0}
   zoneStart: {fileID: 5330022123395805774}
   zone1: {fileID: 4973494863245479890}
   zone2: {fileID: 4973494863157204920}
@@ -137,8 +137,7 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 936025087304891111, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: zoneVue
@@ -281,8 +280,7 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 936025087304891111, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: zoneVue
@@ -430,8 +428,7 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 936025087304891111, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: zoneVue
@@ -574,8 +571,7 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 936025087304891111, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: zoneVue
@@ -723,8 +719,7 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 936025087304891111, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: zoneVue
@@ -872,8 +867,7 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 936025087304891111, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: zoneVue
