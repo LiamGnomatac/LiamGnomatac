@@ -6,8 +6,6 @@ using Valve.VR;
 
 public class RocheTirer : MonoBehaviour
 {
-    private Vector3 pos;
-
     public bool isEndE2;
     public float speed;
     public GameObject LinearMapping;
@@ -15,16 +13,16 @@ public class RocheTirer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pos = transform.position;
+        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(transform.position.x <= pos.x)
+        if(transform.position.x <= GetComponent<LinearDrive>().startPosition.position.x)
         {
             //Debug.Log("Neutre");
-            transform.position = pos;
+            transform.position = GetComponent<LinearDrive>().startPosition.position;
             LinearMapping.GetComponent<LinearMapping>().value = 0f;
             Actions();
             return;
@@ -42,6 +40,7 @@ public class RocheTirer : MonoBehaviour
     {
         if(isEndE2)
         {
+
             return;
         }
         else
@@ -65,6 +64,7 @@ public class RocheTirer : MonoBehaviour
 
     private void ReturnToPosition()
     {
-        transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime*speed);
+        transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
+        //LinearMapping.GetComponent<LinearMapping>().value = transform.position.x /GetComponent<LinearDrive>().endPosition.position.x;
     }
 }

@@ -25,7 +25,7 @@ public class Porte : MonoBehaviour
                 return;
             }
             else
-                OpenDoor();
+                Invoke("OpenDoor", 5);
         }
         if (isDoor2)
         {
@@ -35,7 +35,7 @@ public class Porte : MonoBehaviour
                 return;
             }
             else
-                OpenDoor();
+                Invoke("OpenDoor", 5);
         }
         if (isDoor3)
         {
@@ -45,7 +45,7 @@ public class Porte : MonoBehaviour
                 return;
             }
             else
-                OpenDoor();
+               Invoke("OpenDoor",5);
         }
         else
             return;

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject torchLight;
     public GameObject cellphone;
+
     [HideInInspector]
     public bool torchLightIsBroke;
 
@@ -15,10 +16,13 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public bool firstEIsComplete = false , secondEIsComplete = false, thirdEIsComplete = false;
     
-    //[HideInInspector]
+    [HideInInspector]
     public bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
-    public bool pullRock1;
-    public bool rockSort;
+    [HideInInspector]
+    public bool pullRock1, rockSort;
+
+    [HideInInspector]
+    public bool isPressMain, isPress;
     
     public Transform targetForTaurus = null;
 
@@ -101,7 +105,7 @@ public class GameManager : MonoBehaviour
         tpRelativePoint.position = pos.position;
     }
 
- 
+    #region Enigme
     public void DownButtonOne()
     {
         buttonOneE2 = !buttonOneE2;
@@ -171,4 +175,5 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    #endregion
 }
