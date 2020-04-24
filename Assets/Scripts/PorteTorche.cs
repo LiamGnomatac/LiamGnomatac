@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class PorteTorche : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class PorteTorche : MonoBehaviour
             GameManager.s_Singleton.firstEIsComplete = true;
             torchE.transform.position = transform.position;
             torchE.transform.Rotate(transform.rotation.eulerAngles);
+            torchE.GetComponent<Throwable>().enabled = false;
             torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
     }

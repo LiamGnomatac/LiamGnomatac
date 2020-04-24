@@ -8,6 +8,7 @@ public class PlaquePression : MonoBehaviour
     private Vector3 onPress;
     public bool isMain;
     public float pressureDist;
+    public GameObject trapDoor;
 
     // Start is called before the first frame update
     void Start()
@@ -29,44 +30,29 @@ public class PlaquePression : MonoBehaviour
             Press();
         }
     }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            trapDoor.GetComponent<TrapDoor>().OnPress();
+        }
+    }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
             Release();
+            trapDoor.GetComponent<TrapDoor>().OnRelease();
         }
     }
 
     private void Press()
     {
-        Debug.Log("press");
         transform.position -= onPress;
-        if(isMain)
-        {
-            GameManager.s_Singleton.isPressMain = true;
-            return;
-        }
-        else
-        {
-            GameManager.s_Singleton.isPress = true;
-            return;
-        }
     }
 
     private void Release()
     {
-        Debug.Log("pos");
         transform.position = pos;
-        if (isMain)
-        {
-            GameManager.s_Singleton.isPressMain = false;
-            return;
-        }
-        else
-        {
-            GameManager.s_Singleton.isPress = false;
-            return;
-        }
-
     }
 }

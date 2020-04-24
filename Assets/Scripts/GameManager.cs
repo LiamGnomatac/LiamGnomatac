@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject torchLight;
     public GameObject cellphone;
+    public GameObject statuette, statuette2;
+
 
     [HideInInspector]
     public bool torchLightIsBroke;
@@ -20,6 +22,8 @@ public class GameManager : MonoBehaviour
     public bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
     [HideInInspector]
     public bool pullRock1, rockSort;
+    //[HideInInspector]
+    public int statueIsStatic;
 
     [HideInInspector]
     public bool isPressMain, isPress;
@@ -45,7 +49,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        statuette.GetComponent<Interactable>().enabled = false;
+        statuette.GetComponent<Throwable>().enabled = false;
+        statuette2.GetComponent<Interactable>().enabled = false;
+        statuette2.GetComponent<Throwable>().enabled = false;
     }
 
     // Update is called once per frame
@@ -175,5 +182,17 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    public void StatueAreCatchable()
+    {
+        if(isPressMain && isPress)
+        {
+            statuette.GetComponent<Interactable>().enabled = true;
+            statuette.GetComponent<Throwable>().enabled = true;
+            statuette2.GetComponent<Interactable>().enabled = true;
+            statuette2.GetComponent<Throwable>().enabled = true;
+
+        }
+    }
+
     #endregion
 }
