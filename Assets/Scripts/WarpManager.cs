@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR.InteractionSystem;
+using Valve.VR;
 
 public class WarpManager : MonoBehaviour
 {
@@ -24,6 +26,10 @@ public class WarpManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(zoneEnd.transform.position == center.transform.position)
+        {
+            center.GetComponent<TPPerso>().FadeToBlack();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

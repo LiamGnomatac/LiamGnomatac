@@ -125,7 +125,7 @@ public class TPPerso : MonoBehaviour
         
     }
 
-    private void FadeToBlack()
+    public void FadeToBlack()
     {
         //set start color
         SteamVR_Fade.Start(Color.clear, 0f);
@@ -135,7 +135,7 @@ public class TPPerso : MonoBehaviour
 
 
 
-    private void FadeFromBlack()
+    public void FadeFromBlack()
     {
         //set start color
         SteamVR_Fade.Start(Color.black, 0f);
