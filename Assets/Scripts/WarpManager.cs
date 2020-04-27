@@ -28,7 +28,7 @@ public class WarpManager : MonoBehaviour
     {
         if(zoneEnd.transform.position == center.transform.position)
         {
-            center.GetComponent<TPPerso>().FadeToBlack();
+            center.GetComponent<TPPerso>().Invoke("FadeToBlack", 3);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
