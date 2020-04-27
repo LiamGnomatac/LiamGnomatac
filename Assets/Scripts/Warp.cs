@@ -6,7 +6,7 @@ public class Warp : MonoBehaviour
 {
     public GameObject center;
     public GameObject limiteZone;
-    public bool joueurSurZone = false;
+    public GameObject chien;
     
 
     private void Start()
@@ -20,7 +20,7 @@ public class Warp : MonoBehaviour
         Debug.Log("pied");
         if (other.CompareTag("Player"))
         {
-            joueurSurZone = true;
+            chien.GetComponent<ChienScript>().joueurSurZone = true;
             Debug.Log("c'est rouge");
             limiteZone.SetActive(true);
         }
@@ -30,7 +30,7 @@ public class Warp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            joueurSurZone = false;
+            chien.GetComponent<ChienScript>().joueurSurZone = false;
             Debug.Log("C'est pu rouge");
             limiteZone.SetActive(false);
         }
