@@ -5,16 +5,16 @@ using Valve.VR.InteractionSystem;
 
 public class GameManager : MonoBehaviour
 {
+    #region Variables
     public GameObject torchLight;
     public GameObject cellphone;
     public GameObject statuette, statuette2;
 
+    public bool showController = false;
 
     [HideInInspector]
     public bool torchLightIsBroke;
-
-    public bool showController = false;
-
+    #region Variable Enigme
     [HideInInspector]
     public bool firstEIsComplete = false , secondEIsComplete = false, thirdEIsComplete = false;
     
@@ -27,12 +27,17 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public bool isPressMain, isPress;
-    
+
+    public Vector3 objEnigmaTorche, objEnigmaStatuette1, objEnigmaStatuette2;
+    #endregion
+
     public Transform targetForTaurus = null;
 
     [HideInInspector]
     public Transform tpRelativePoint;
+    #endregion
 
+    #region Singleton
     public static GameManager s_Singleton;
 
     private void Awake()
@@ -46,10 +51,13 @@ public class GameManager : MonoBehaviour
             s_Singleton = this;
         }
     }
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        objEnigmaStatuette1 = statuette.transform.position;
+        objEnigmaStatuette2 = statuette2.transform.position;
     }
 
     // Update is called once per frame
@@ -78,6 +86,7 @@ public class GameManager : MonoBehaviour
         }*/
     }
 
+    #region Torche
     public void AppearTorchLight()
     {
         if(!torchLightIsBroke)
@@ -103,6 +112,7 @@ public class GameManager : MonoBehaviour
             cellphone.GetComponent<Téléphone>().ToggleLightAppear();
         }
     }
+    #endregion
 
     public void TpRelativePoint(Transform pos)
     {
@@ -193,6 +203,45 @@ public class GameManager : MonoBehaviour
 
         }
     }
+    #endregion
+
+    #region Mort
+    /*public void ResetEnigmaOnDeath()
+    {
+
+    }
+
+    private void SetToFalseBool()
+    {
+        firstEIsComplete = false;
+        secondEIsComplete = false;
+        thirdEIsComplete = false;
+
+        buttonOneE2 = false;
+        buttonTwoE2 = false;
+        buttonThreeE2 = false;
+        buttonFourE2 = false;
+
+        pullRock1 = false;
+        rockSort = false;
+
+        statueIsStatic = 0;
+
+        isPressMain = false;
+        isPress = false;
+    }
+
+    private void NullTargetToTaurus()
+    {
+        targetForTaurus = null;
+    }
+
+    private void EnigmaObjReturnToPosition()
+    {
+        statuette.transform.position = objEnigmaStatuette1;
+        statuette2.transform.position = objEnigmaStatuette2;
+
+    }*/
 
     #endregion
 }
