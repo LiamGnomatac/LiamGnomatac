@@ -26,6 +26,7 @@ public class Poubelle : MonoBehaviour
             ExitGame = true;
             Time.timeScale = 0;
             Application.Quit();
+            Debug.Log("ca marche");
         }
 
         if (triggerPapier > 0)
