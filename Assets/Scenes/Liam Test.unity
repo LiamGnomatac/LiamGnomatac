@@ -672,6 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66a7867240a54a4a890de944410134c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joueur: {fileID: 984103626}
 --- !u!136 &1049701974
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1112,31 +1113,61 @@ PrefabInstance:
       propertyPath: center
       value: 
       objectReference: {fileID: 984103626}
+    - target: {fileID: 4973494862875369034, guid: f7ed6c93d84cfbb4697b8954e7c97664,
+        type: 3}
+      propertyPath: chien
+      value: 
+      objectReference: {fileID: 1049701972}
     - target: {fileID: 4973494862905272470, guid: f7ed6c93d84cfbb4697b8954e7c97664,
+        type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 984103626}
+    - target: {fileID: 4973494862905272470, guid: f7ed6c93d84cfbb4697b8954e7c97664,
+        type: 3}
+      propertyPath: chien
+      value: 
+      objectReference: {fileID: 1049701972}
+    - target: {fileID: 4973494863157204925, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: center
       value: 
       objectReference: {fileID: 984103626}
     - target: {fileID: 4973494863157204925, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
+      propertyPath: chien
+      value: 
+      objectReference: {fileID: 1049701972}
+    - target: {fileID: 4973494863245479895, guid: f7ed6c93d84cfbb4697b8954e7c97664,
+        type: 3}
       propertyPath: center
       value: 
       objectReference: {fileID: 984103626}
     - target: {fileID: 4973494863245479895, guid: f7ed6c93d84cfbb4697b8954e7c97664,
+        type: 3}
+      propertyPath: chien
+      value: 
+      objectReference: {fileID: 1049701972}
+    - target: {fileID: 4973494863729468321, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: center
       value: 
       objectReference: {fileID: 984103626}
     - target: {fileID: 4973494863729468321, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
-      propertyPath: center
+      propertyPath: chien
       value: 
-      objectReference: {fileID: 984103626}
+      objectReference: {fileID: 1049701972}
     - target: {fileID: 5330022123395805771, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: center
       value: 
       objectReference: {fileID: 984103626}
+    - target: {fileID: 5330022123395805771, guid: f7ed6c93d84cfbb4697b8954e7c97664,
+        type: 3}
+      propertyPath: chien
+      value: 
+      objectReference: {fileID: 1049701972}
     - target: {fileID: 5330022124604658362, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: m_LocalPosition.x
