@@ -53,7 +53,7 @@ public class RocheTirer : MonoBehaviour
     {
         if (isEndE2 && GameManager.s_Singleton.rockSort)
         {
-            GameManager.s_Singleton.secondEIsComplete = true;
+            GameManager.s_Singleton.secondEIsComplete = !GameManager.s_Singleton.secondEIsComplete;
         }
         else
         {
