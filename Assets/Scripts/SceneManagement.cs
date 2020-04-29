@@ -53,4 +53,11 @@ public class SceneManagement : MonoBehaviour
         }
     }
 
+    public void GetKilled()
+    {
+        GetCurrentScene();
+        SceneManager.LoadScene("Death Scene");
+
+    }
+
 }

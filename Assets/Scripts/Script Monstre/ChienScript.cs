@@ -32,11 +32,21 @@ public class ChienScript : MonoBehaviour
 
     }
 
+    private void FixedUpdate()
+    {
+        if (GameManager.s_Singleton.objKeyLaunch >= 3)
+        {
+            GameManager.s_Singleton.objKeyLaunch = 0;
+            KillingDog();
+        }
+    }
+
 
 
     public void KillingDog()
     {
         Debug.Log("Joueur tué par le chien");
+        SceneManagement.s_Singleton.GetKilled();
     }
 
 }
