@@ -5,9 +5,13 @@ using Valve.VR.InteractionSystem;
 
 public class GameManager : MonoBehaviour
 {
+
     #region Variables
     [HideInInspector]
     public int objKeyLaunch = 0;
+    [HideInInspector]
+    public bool monsterCanMove;
+
     public GameObject torchLight;
     public GameObject cellphone;
 
@@ -31,7 +35,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public bool isPressMain, isPress;
 
-    public Vector3 objEnigmaTorche, objEnigmaStatuette1, objEnigmaStatuette2;
+    //public Vector3 objEnigmaTorche, objEnigmaStatuette1, objEnigmaStatuette2;
     #endregion
 
     public Transform targetForTaurus = null;
@@ -59,14 +63,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objEnigmaStatuette1 = statuette.transform.position;
-        objEnigmaStatuette2 = statuette2.transform.position;
+        //objEnigmaStatuette1 = statuette.transform.position;
+        //objEnigmaStatuette2 = statuette2.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         //Montrer ou cacher les controllers VR
 
         foreach( var hand in Player.instance.hands)
