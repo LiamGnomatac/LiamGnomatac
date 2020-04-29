@@ -6,15 +6,18 @@ using Valve.VR.InteractionSystem;
 public class GameManager : MonoBehaviour
 {
     #region Variables
+    [HideInInspector]
+    public int objKeyLaunch = 0;
     public GameObject torchLight;
     public GameObject cellphone;
-    public GameObject statuette, statuette2;
 
     public bool showController = false;
 
     [HideInInspector]
     public bool torchLightIsBroke;
     #region Variable Enigme
+    public GameObject statuette, statuette2;
+
     [HideInInspector]
     public bool firstEIsComplete = false , secondEIsComplete = false, thirdEIsComplete = false;
     

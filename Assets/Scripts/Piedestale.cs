@@ -31,15 +31,22 @@ public class Piedestale : MonoBehaviour
             statuette.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             GameManager.s_Singleton.statueIsStatic++;
         }
-        if (GameManager.s_Singleton.statueIsStatic == 2)
+        if (GameManager.s_Singleton.statueIsStatic >= 2)
         {
             GameManager.s_Singleton.thirdEIsComplete = true;
+            GameManager.s_Singleton.statueIsStatic = 2;
         }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (GameManager.s_Singleton.statueIsStatic > 2)
+        if(other.gameObject == statuette)
+        {
+            GameManager.s_Singleton.statueIsStatic--;
+        }
+
+        if (GameManager.s_Singleton.statueIsStatic < 2)
         {
             GameManager.s_Singleton.thirdEIsComplete = false;
         }

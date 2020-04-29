@@ -44,9 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48797344b17a0d345afc3fed0235ab96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDoor1: 1
+  isDoor1: 0
   isDoor2: 0
-  isDoor3: 0
+  isDoor3: 1
+  timeBeforeOpen: 1.5
 --- !u!1 &7901091277556766899
 GameObject:
   m_ObjectHideFlags: 0

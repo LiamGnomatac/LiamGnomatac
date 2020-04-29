@@ -7,6 +7,8 @@ public class Porte : MonoBehaviour
     public bool isDoor1;
     public bool isDoor2;
     public bool isDoor3;
+    public float timeBeforeOpen;
+    private bool justOneTime = false;
 
     private Transform pos;
     // Start is called before the first frame update
@@ -19,45 +21,93 @@ public class Porte : MonoBehaviour
     {
         if (isDoor1)
         {
-            if (!GameManager.s_Singleton.firstEIsComplete)
+            /*if (!GameManager.s_Singleton.firstEIsComplete)
             {
                 CloseDoor();
                 return;
             }
             else
-                Invoke("OpenDoor", 5);
+                Invoke("OpenDoor", timeBeforeOpen);*/
+            if(GameManager.s_Singleton.firstEIsComplete)
+            {
+                if(!justOneTime)
+                
+                {
+                    Invoke("OpenDoor", timeBeforeOpen);
+                }
+                Invoke("OneTime", 1.35f);
+            }
+            else
+            {
+                CloseDoor();
+                justOneTime = false;
+            }
         }
         if (isDoor2)
         {
-            if (!GameManager.s_Singleton.secondEIsComplete)
+            /*if (!GameManager.s_Singleton.secondEIsComplete)
             {
                 CloseDoor();
                 return;
             }
             else
-                Invoke("OpenDoor", 5);
+                Invoke("OpenDoor", timeBeforeOpen);*/
+            if (GameManager.s_Singleton.secondEIsComplete)
+            {
+                if (!justOneTime)
+                {
+                    Invoke("OpenDoor", timeBeforeOpen);
+                }
+                Invoke("OneTime", 1.35f);
+            }
+            else
+            {
+                CloseDoor();
+                justOneTime = false;
+            }
         }
         if (isDoor3)
         {
-            if (!GameManager.s_Singleton.thirdEIsComplete)
+            /*if (!GameManager.s_Singleton.thirdEIsComplete)
             {
                 CloseDoor();
                 return;
             }
             else
-               Invoke("OpenDoor",5);
+               Invoke("OpenDoor",timeBeforeOpen);*/
+            if (GameManager.s_Singleton.thirdEIsComplete)
+            {
+                if (!justOneTime)
+
+                {
+                    Invoke("OpenDoor", timeBeforeOpen);
+                }
+                Invoke("OneTime", 1.35f);
+            }
+            else
+            {
+                CloseDoor();
+                justOneTime = false;
+            }
         }
         else
             return;
-    }
+            
+        }
 
     private void OpenDoor()
     {
-        transform.rotation = Quaternion.Euler(0, -90, 0);
+        //transform.rotation = Quaternion.Euler(0, -90, 0);
+        transform.Rotate(pos.transform.rotation.x, pos.transform.rotation.y -1 , pos.transform.rotation.z,Space.World);
     }
 
     private void CloseDoor()
     {
-        transform.Rotate(-pos.transform.rotation.x, -pos.transform.rotation.y, -pos.transform.rotation.z);
+        transform.Rotate(-pos.transform.rotation.x, -pos.transform.rotation.y, -pos.transform.rotation.z,Space.World);
+    }
+
+    private void OneTime()
+    {
+        justOneTime = true;
     }
 }

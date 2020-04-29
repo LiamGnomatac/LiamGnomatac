@@ -315,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5dde2f60f56f87498339a77a008481d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEndE2: 0
   speed: 0.04
   LinearMapping: {fileID: 2163569643859215196}
 --- !u!114 &2163569644642306373
@@ -333,5 +334,5 @@ MonoBehaviour:
   endPosition: {fileID: 2163569643368589685}
   linearMapping: {fileID: 2163569643859215198}
   repositionGameObject: 1
-  maintainMomemntum: 1
+  maintainMomemntum: 0
   momemtumDampenRate: 0.1
