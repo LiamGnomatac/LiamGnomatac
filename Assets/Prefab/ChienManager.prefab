@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chienTimerTp: 0
   chienTPAt: 3
-  joueur: {fileID: 0}
+  joueur: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb, type: 3}
   joueurSurZone: 0
   chienCanTP: 0
   chienShouldTP: 0
