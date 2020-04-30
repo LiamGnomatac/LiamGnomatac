@@ -8,6 +8,7 @@ public class Porte : MonoBehaviour
     public bool isDoor2;
     public bool isDoor3;
     public float timeBeforeOpen;
+    public float timeForOpen = 1.35f;
     private bool justOneTime = false;
 
     private Transform pos;
@@ -35,7 +36,7 @@ public class Porte : MonoBehaviour
                 {
                     Invoke("OpenDoor", timeBeforeOpen);
                 }
-                Invoke("OneTime", 1.35f);
+                Invoke("OneTime", timeForOpen);
             }
             else
             {
@@ -58,7 +59,7 @@ public class Porte : MonoBehaviour
                 {
                     Invoke("OpenDoor", timeBeforeOpen);
                 }
-                Invoke("OneTime", 1.35f);
+                Invoke("OneTime", timeForOpen);
             }
             else
             {
@@ -82,7 +83,7 @@ public class Porte : MonoBehaviour
                 {
                     Invoke("OpenDoor", timeBeforeOpen);
                 }
-                Invoke("OneTime", 1.35f);
+                Invoke("OneTime", timeForOpen);
             }
             else
             {
