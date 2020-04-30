@@ -66,6 +66,7 @@ Transform:
   - {fileID: 7693753970149821864}
   - {fileID: 8695981364366238474}
   - {fileID: 697040146522976053}
+  - {fileID: 5389477088134499116}
   m_Father: {fileID: 4743152419991960021}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2489,6 +2490,9 @@ MonoBehaviour:
   teleport:
     actionPath: /actions/default/in/NewTeleport
     needsReinit: 0
+  flashlight:
+    actionPath: /actions/default/in/LampeTorche
+    needsReinit: 0
   zoneVue: {fileID: 4066487096019415764, guid: 26ea1431b5ea69a4aaa407bb8b23516e, type: 3}
   zoneSelect: {fileID: 7114271317903891769, guid: 49793fa64b81e8c4a92b85687270d875,
     type: 3}
@@ -2725,3 +2729,78 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8793421327956888227}
   m_Enabled: 1
+--- !u!1001 &1188486404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6897306392259177427}
+    m_Modifications:
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657653234038925478, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_Name
+      value: LampeTorche
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
+--- !u!4 &5389477088134499116 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1188486404}
+  m_PrefabAsset: {fileID: 0}

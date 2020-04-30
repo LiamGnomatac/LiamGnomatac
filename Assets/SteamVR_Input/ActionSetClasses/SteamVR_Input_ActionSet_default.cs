@@ -113,6 +113,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean LampeTorche
+        {
+            get
+            {
+                return SteamVR_Actions.default_LampeTorche;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Flash
+        {
+            get
+            {
+                return SteamVR_Actions.default_Flash;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

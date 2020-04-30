@@ -16,11 +16,13 @@ public class TPPerso : MonoBehaviour
     public GameObject center;
     private Vector3 fwd;
     public SteamVR_Action_Boolean teleport;
+    public SteamVR_Action_Boolean flashlight;
     private bool zoneVisible = false;
     public GameObject zoneVue;
     public GameObject zoneSelect;
     private bool zoneVueActive = false;
     private bool zoneSelectActive = false;
+    private bool flashlightSortie = false;
     private GameObject vue;
     private GameObject select;
 
@@ -122,7 +124,13 @@ public class TPPerso : MonoBehaviour
            
         }
 
-        
+
+        if (flashlight.stateDown)
+        {
+            
+            GameManager.s_Singleton.AppearTorchLight();
+        }
+
     }
 
     public void FadeToBlack()

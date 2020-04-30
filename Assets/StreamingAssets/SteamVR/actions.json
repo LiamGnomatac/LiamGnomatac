@@ -54,6 +54,14 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/LampeTorche",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Flash",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
