@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class RemonterM : MonoBehaviour
 {
-    public float totalTime;
-    public Collider first;
-    public Collider second;
-    public Collider third;
-    public Collider fin;
-
-    private float quarterTime;
-    private bool isFirst;
+    public enum WhichTrigger{Second, Third, End};
+    public WhichTrigger trigger;
+    private bool isEnd;
     private bool isSecond;
     private bool isThird;
 
@@ -20,41 +15,57 @@ public class RemonterM : MonoBehaviour
     {
         GameManager.s_Singleton.firstEIsComplete = true;
         GameManager.s_Singleton.secondEIsComplete = true;
-        GameManager.s_Singleton.thirdEIsComplete = true;
-
-        quarterTime = totalTime / 4;
-        quarterTime += Time.time;
+        GameManager.s_Singleton.thirdEIsComplete = true; 
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        /*if(GameManager.s_Singleton.thirdEIsComplete && Time.time > quarterTime || !isThird && Time.time > quarterTime)
-        {
-            Debug.Log("Die");
-        }*/
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other == fin)
+        if(other.gameObject.tag == "Player")
         {
-
-        }
-
-        if (other == first)
-        {
-            isFirst = true;
-        }
-
-        if (other == second)
-        {
-            isSecond = true;
-        }
-
-        if (other == third)
-        {
-            isThird = true;
+            switch (trigger)
+            {
+                case WhichTrigger.Second:
+                    if(!GameManager.s_Singleton.thirdEIsComplete)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        Debug.Log("Chute de pierre");
+                        isSecond = true;
+                    }
+                    break;
+                case WhichTrigger.Third:
+                    if (!GameManager.s_Singleton.secondEIsComplete)
+                    {
+                        if(!isSecond)
+                        {
+                            return;
+                        }
+                        else
+                        {
+                            Debug.Log("Chute de pierre");
+                        }
+                        return;
+                    }
+                    else
+                    {
+                        Debug.Log("Chute de pierre");
+                        isThird = true;
+                    }
+                    break;
+                case WhichTrigger.End:
+                    isEnd = true;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
