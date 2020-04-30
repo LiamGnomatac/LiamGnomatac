@@ -23,7 +23,7 @@ public class Piedestale : MonoBehaviour
     {
         if (other.gameObject == statuette)
         {
-            Debug.Log("je rentre");
+            Debug.Log(statuette.name);
             statuette.transform.position = transform.position;
             statuette.transform.Rotate(transform.rotation.eulerAngles);
             statuette.GetComponent<Interactable>().enabled = false;

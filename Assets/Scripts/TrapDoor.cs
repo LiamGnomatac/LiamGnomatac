@@ -11,7 +11,8 @@ public class TrapDoor : MonoBehaviour
     void Start()
     {
         pos = transform.position;
-        onPress = new Vector3 (transform.position.x,pressureDist, transform.position.z);
+        onPress = new Vector3 (transform.position.x, transform.position.y - pressureDist, transform.position.z);
+        Debug.Log(onPress);
     }
 
     // Update is called once per frame
