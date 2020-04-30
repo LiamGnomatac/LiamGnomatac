@@ -12,6 +12,8 @@ TagManager:
   - ZoneSelect
   - Papier
   - Essential
+  - LampeTorche
+  - Telephone
   layers:
   - Default
   - TransparentFX
