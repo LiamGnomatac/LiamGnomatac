@@ -325,7 +325,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219092249}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1987,6 +1987,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855924676}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &930054078 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 1084845838271711999, guid: 4fdd4e19a0c3b334995b4af8ab2ec1fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 343430815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1057072592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2211,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057072592}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1058948259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1058948261}
+  - component: {fileID: 1058948260}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1058948260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058948259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a32877fe2539f54fa0dfe15c4f708ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objKeyLaunch: 0
+  monsterCanMove: 0
+  torchLight: {fileID: 0}
+  cellphone: {fileID: 0}
+  showController: 0
+  torchLightIsBroke: 0
+  statuette: {fileID: 0}
+  statuette2: {fileID: 0}
+  firstEIsComplete: 0
+  secondEIsComplete: 0
+  thirdEIsComplete: 0
+  buttonOneE2: 0
+  buttonTwoE2: 0
+  buttonThreeE2: 0
+  buttonFourE2: 0
+  pullRock1: 0
+  rockSort: 0
+  statueIsStatic: 0
+  isPressMain: 0
+  isPress: 0
+  targetForTaurus: {fileID: 0}
+  tpRelativePoint: {fileID: 0}
+--- !u!4 &1058948261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058948259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1076615527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,22 +3889,22 @@ PrefabInstance:
     - target: {fileID: 391134226447022781, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 391134226447022781, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 391134226447022781, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.1231115
+      value: -0.19936797
       objectReference: {fileID: 0}
     - target: {fileID: 391134226447022781, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9923929
+      value: 0.97992474
       objectReference: {fileID: 0}
     - target: {fileID: 391134226447022781, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
@@ -3853,28 +3924,18 @@ PrefabInstance:
     - target: {fileID: 391134226447022781, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -14.143001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2035257587615302565, guid: fdb6984093a7c0d4c961392d382f0fc1,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 3099689544142281708, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
       propertyPath: m_Name
       value: Porte-Torche
       objectReference: {fileID: 0}
-    - target: {fileID: 8169756299383431003, guid: fdb6984093a7c0d4c961392d382f0fc1,
+    - target: {fileID: 4299712954446463492, guid: fdb6984093a7c0d4c961392d382f0fc1,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 8169756299383431003, guid: fdb6984093a7c0d4c961392d382f0fc1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.12
-      objectReference: {fileID: 0}
+      propertyPath: torchE
+      value: 
+      objectReference: {fileID: 930054078}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb6984093a7c0d4c961392d382f0fc1, type: 3}
 --- !u!1 &1792562817

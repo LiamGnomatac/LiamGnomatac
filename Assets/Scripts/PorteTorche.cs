@@ -6,10 +6,15 @@ using Valve.VR.InteractionSystem;
 public class PorteTorche : MonoBehaviour
 {
     public Collider torchE;
+    private Vector3 pos;
+    private Vector3 rot;
 
     // Start is called before the first frame update
     void Start()
     {
+        pos = transform.position;
+        pos.x += 0.1f;
+        rot = transform.rotation.eulerAngles;
         if(torchE == null)
         {
             Debug.Log("Torche à renseigner dans porteTorche");
@@ -30,9 +35,10 @@ public class PorteTorche : MonoBehaviour
         if(other == torchE)
         {
             GameManager.s_Singleton.firstEIsComplete = true;
-            torchE.transform.position = transform.position;
-            torchE.transform.Rotate(transform.rotation.eulerAngles);
-            torchE.GetComponent<Throwable>().enabled = false;
+            Destroy(torchE.GetComponent<Throwable>());
+            Destroy(torchE.GetComponent<Interactable>());
+            torchE.transform.position = pos;
+            torchE.transform.rotation = transform.rotation;
             torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
     }
@@ -45,7 +51,6 @@ public class PorteTorche : MonoBehaviour
         if (other == torchE)
         {
             GameManager.s_Singleton.firstEIsComplete = false;
-            torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
     }
 }
