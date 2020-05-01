@@ -57,4 +57,12 @@ public class ScorpionScript : MonoBehaviour
                 break;
         }
     }
+
+    public void KillingScorpion()
+    {
+        Debug.Log("Joueur tué par le chien");
+        
+        SceneManagement.s_Singleton.GetKilled();
+    }
+
 }
