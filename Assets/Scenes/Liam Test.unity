@@ -873,8 +873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75433ecd0a05b054eb91abec2ee9d145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zone1: {fileID: 0}
-  zone2: {fileID: 0}
+  zone1: {fileID: 1046155294}
+  zone2: {fileID: 1609811594}
   zone3: {fileID: 289771656}
 --- !u!136 &1052707336
 CapsuleCollider:
