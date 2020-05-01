@@ -426,11 +426,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289771656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.380565, y: 1.1741719, z: 6.614093}
-  m_LocalScale: {x: 1.0646003, y: 0.075571135, z: -0.94976765}
+  m_LocalPosition: {x: 1.9232674, y: 1.7486362, z: -1.7817268}
+  m_LocalScale: {x: 0.66959107, y: 0.108770445, z: -0.59736586}
   m_Children: []
-  m_Father: {fileID: 1052707339}
-  m_RootOrder: 0
+  m_Father: {fileID: 1508278159}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &305596422 stripped
 GameObject:
@@ -768,11 +768,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046155294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22, y: -0.984, z: 7.14}
-  m_LocalScale: {x: 0.10437866, y: 0.045612063, z: 0.10437866}
+  m_LocalPosition: {x: -3.8383615, y: -1.3576467, z: -1.450952}
+  m_LocalScale: {x: 0.06565001, y: 0.06564999, z: 0.06565001}
   m_Children: []
-  m_Father: {fileID: 1052707339}
-  m_RootOrder: 1
+  m_Father: {fileID: 1508278159}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1046155296
 MeshCollider:
@@ -876,6 +876,13 @@ MonoBehaviour:
   zone1: {fileID: 1046155294}
   zone2: {fileID: 1609811594}
   zone3: {fileID: 289771656}
+  compteurMur: 8
+  compteurPlafond: 15
+  timerNextTP: 20
+  scorpionMove: 0
+  scorpionMur: 0
+  scorpionHitFlash: 0
+  scorpionPlafond: 0
 --- !u!136 &1052707336
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -944,15 +951,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052707334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.85, y: 1.44, z: -5.25}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.9767327, y: 0.058636427, z: -5.9417267}
   m_LocalScale: {x: 0.62896, y: 1.4393121, z: 0.62896}
-  m_Children:
-  - {fileID: 289771660}
-  - {fileID: 1046155295}
-  - {fileID: 1609811595}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Children: []
+  m_Father: {fileID: 1508278159}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073955928
 GameObject:
@@ -1178,6 +1182,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc7b1d1f6cac03a4ca294a1c8b074abb, type: 3}
+--- !u!1 &1508278158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1508278159}
+  m_Layer: 0
+  m_Name: ScorpionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1508278159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508278158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1267328, y: 1.3813636, z: 0.6917267}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1052707339}
+  - {fileID: 289771660}
+  - {fileID: 1046155295}
+  - {fileID: 1609811595}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609811594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,11 +1243,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609811594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.49, y: -0.984, z: 14.96}
-  m_LocalScale: {x: 0.10437866, y: 0.045612063, z: 0.10437866}
+  m_LocalPosition: {x: 4.507938, y: -1.3576467, z: 3.467515}
+  m_LocalScale: {x: 0.06565001, y: 0.06564999, z: 0.06565001}
   m_Children: []
-  m_Father: {fileID: 1052707339}
-  m_RootOrder: 2
+  m_Father: {fileID: 1508278159}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1609811596
 MeshCollider:
@@ -1544,6 +1582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChienManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2217218949216620410, guid: 4f12124f26483be40bc3775b322e7c8e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2217218949216620413, guid: 4f12124f26483be40bc3775b322e7c8e,
         type: 3}
