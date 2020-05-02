@@ -16,6 +16,7 @@ public class ScorpionScript : MonoBehaviour
     public bool scorpionHitFlash = false;
     public bool scorpionPlafond = false;
     public Collider lightTrigger;
+    public Collider joueur;
 
 
 
@@ -153,6 +154,14 @@ public class ScorpionScript : MonoBehaviour
         {
             scorpionHitFlash = true;
         }
+
+        if(other == joueur)
+        {
+
+            KillingScorpion();
+
+        }
+        
     }
 
 

@@ -438,6 +438,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1324697273}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &320468912 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1178810506171393656, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324697273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389496544
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +890,7 @@ MonoBehaviour:
   scorpionHitFlash: 0
   scorpionPlafond: 0
   lightTrigger: {fileID: 1324697274}
+  joueur: {fileID: 320468912}
 --- !u!136 &1052707336
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -892,7 +899,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052707334}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -1101,6 +1108,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 355892335253745116, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 636299836447972252, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888592963621585065, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3204450113766971957, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
         type: 3}
       propertyPath: flash.actionPath
@@ -1179,6 +1201,11 @@ PrefabInstance:
     - target: {fileID: 8657653235151025570, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878804223259193425, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
