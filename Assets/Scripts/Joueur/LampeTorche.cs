@@ -5,6 +5,7 @@ using UnityEngine;
 public class LampeTorche : MonoBehaviour
 {
     public GameObject spotLight;
+    public GameObject lightTrigger;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class LampeTorche : MonoBehaviour
     public void ToggleLightAppear()
     {
         spotLight.SetActive(!spotLight.activeSelf);
+        lightTrigger.SetActive(!lightTrigger.activeSelf);
     }
 
     public void ToggleTorchLightAppear()

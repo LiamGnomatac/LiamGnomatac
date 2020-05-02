@@ -3224,6 +3224,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1691275638, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
+      propertyPath: lightTrigger
+      value: 
+      objectReference: {fileID: 4818934827907335393}
+    - target: {fileID: 1338461287014438468, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3286,6 +3295,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
+--- !u!1 &4818934827907335393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1338461287014438468, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4818934827907335392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6375297410977797846
 PrefabInstance:
   m_ObjectHideFlags: 0
