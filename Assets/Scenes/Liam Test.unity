@@ -883,6 +883,7 @@ MonoBehaviour:
   scorpionMur: 0
   scorpionHitFlash: 0
   scorpionPlafond: 0
+  lightTrigger: {fileID: 1324697274}
 --- !u!136 &1052707336
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1182,6 +1183,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc7b1d1f6cac03a4ca294a1c8b074abb, type: 3}
+--- !u!65 &1324697274 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 125174277575141686, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324697273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1508278158
 GameObject:
   m_ObjectHideFlags: 0

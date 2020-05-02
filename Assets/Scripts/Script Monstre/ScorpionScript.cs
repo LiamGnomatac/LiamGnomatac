@@ -15,6 +15,7 @@ public class ScorpionScript : MonoBehaviour
     public bool scorpionMur = false;
     public bool scorpionHitFlash = false;
     public bool scorpionPlafond = false;
+    public Collider lightTrigger;
 
 
 
@@ -52,6 +53,7 @@ public class ScorpionScript : MonoBehaviour
         {
 
             scorpionMur = false;
+            scorpionHitFlash = false;
             Debug.Log("Le scorpion a fui");
             ScorpionMove();
 
@@ -143,6 +145,16 @@ public class ScorpionScript : MonoBehaviour
         Debug.Log("Le scorpion est dans une cavité au plafond");
 
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other == lightTrigger)
+        {
+            scorpionHitFlash = true;
+        }
+    }
+
 
     public void KillingScorpion()
     {
