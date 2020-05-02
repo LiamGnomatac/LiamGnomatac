@@ -5,6 +5,7 @@ using UnityEngine;
 public class Téléphone : MonoBehaviour
 {
     public GameObject spotLight;
+    public GameObject lightTrigger;
     [Range(10, 30)]
     public float vibrationTime;
 
@@ -23,6 +24,7 @@ public class Téléphone : MonoBehaviour
     public void ToggleLightAppear()
     {
         spotLight.SetActive(!spotLight.activeSelf);
+        lightTrigger.SetActive(!lightTrigger.activeSelf);
     }
 
     public void ToggleTorchLightAppear()
