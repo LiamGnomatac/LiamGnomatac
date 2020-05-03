@@ -44,11 +44,11 @@ public class SceneManagement : MonoBehaviour
         {
             case 0:
                 // Do something...
-                SceneManager.LoadScene(buildIndex);
+                SceneManager.LoadScene("BureauAsset");
                 break;
             case 1:
                 // Do something...
-                SceneManager.LoadScene(buildIndex);
+                SceneManager.LoadScene("Niveau1");
                 break;
         }
     }
@@ -57,6 +57,14 @@ public class SceneManagement : MonoBehaviour
     {
         GetCurrentScene();
         SceneManager.LoadScene("Death Scene");
+
+    }
+
+
+
+    public void ReloadScene()
+    {
+
 
     }
 
