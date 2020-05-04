@@ -162,16 +162,15 @@ public class GameManager : MonoBehaviour
         {
             if (buttonTwoE2)
             {
-                Debug.Log("2");
+                Debug.Log("encore 3");
                 if (buttonFourE2)
                 {
-                    Debug.Log("4");
+                    Debug.Log("plus que 2");
                     if (buttonThreeE2)
                     {
-                        Debug.Log("3");
+                        Debug.Log("plus qu'un");
                         if (buttonOneE2)
                         {
-                            Debug.Log("1");
                             rockSort = true;
                             Debug.Log("première parti ok");
                         }
