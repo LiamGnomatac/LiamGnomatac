@@ -5,7 +5,8 @@ using UnityEngine;
 public class ChienScript : MonoBehaviour
 {
 
-    private float chienTimerAttaque = 0.0f;
+    private float chienTimerOutZone = 5f;
+    private float chienTimerAttaque = 5.0f;
     public float chienTimerTp = 0.0f;
     public float chienTPAt = 3.0f;
     public GameObject joueur;
@@ -16,7 +17,12 @@ public class ChienScript : MonoBehaviour
     public GameObject zone1;
     public GameObject zone2;
     public GameObject zone3;
-
+    public GameObject dogTorchLight;
+    public GameObject dogPhoneLight;
+    public bool thereIsLight;
+    public bool dogCanAttackOnLight;
+    public bool chienAttack;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -41,13 +47,17 @@ public class ChienScript : MonoBehaviour
             
         }
 
-        if (chienTimerAttaque >= 5.0f)
+        if (chienTimerAttaque <= 0.0f || chienTimerOutZone <= 0f)
         {
             KillingDog();
 
         }
 
-      
+      if (chienAttack == true)
+        {
+            chienTimerAttaque -= Time.deltaTime;
+
+        }
 
     }
 
@@ -65,20 +75,60 @@ public class ChienScript : MonoBehaviour
             ChienTP();
         }
 
+       if(dogPhoneLight.activeSelf == true || dogTorchLight.activeSelf == true)
+        {
+
+            thereIsLight = true;
+
+        }
+
+        else
+        {
+
+            thereIsLight = false;
+
+        }
+
+
+
         if (joueurSurZone == false)
         {
-            Debug.Log("Joueur pas sur zone");
-            chienTimerAttaque += Time.deltaTime;
+
+            chienTimerOutZone -= Time.deltaTime;
         }
+        else
+        {
+
+            chienTimerOutZone = 5f;
+
+        }
+
+
+        if (dogCanAttackOnLight == true && thereIsLight == true)
+        {
+
+            chienAttack = true;
+
+        }
+        else
+        {
+            chienAttack = false;
+            chienTimerAttaque = 5f;
+        }
+
+
+
 
     }
 
-
+ 
 
     public void KillingDog()
     {
         Debug.Log("Joueur tué par le chien");
-        chienTimerAttaque = 0 ;
+        chienAttack = false;
+        chienTimerAttaque = 5;
+        chienTimerOutZone = 5;
         SceneManagement.s_Singleton.GetKilled();
     }
 
@@ -98,6 +148,7 @@ public class ChienScript : MonoBehaviour
        
 
     }
+    
 
 
     public void ChienTP()

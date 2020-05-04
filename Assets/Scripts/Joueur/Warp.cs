@@ -7,11 +7,13 @@ public class Warp : MonoBehaviour
     public GameObject center;
     public GameObject limiteZone;
     public GameObject chien;
+    public bool isItDark;
+    
     
 
     private void Start()
     {
-        limiteZone.SetActive(false);
+        
        
     }
 
@@ -35,6 +37,26 @@ public class Warp : MonoBehaviour
             limiteZone.SetActive(false);
         }
     }
+
+
+    private void Update()
+    {
+        if(limiteZone == true && isItDark == true)
+        {
+
+            chien.GetComponent<ChienScript>().dogCanAttackOnLight = true;
+
+        }
+
+        else
+        {
+
+            chien.GetComponent<ChienScript>().dogCanAttackOnLight = false;
+
+        }
+    }
+
+
 }
 
     
