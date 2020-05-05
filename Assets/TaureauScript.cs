@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TaureauScript : MonoBehaviour
 {
+
+    public float vitesse = 1f;
+
+
     // Start is called before the first frame update
     void Start()
     {
