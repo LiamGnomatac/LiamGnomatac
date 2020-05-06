@@ -34,14 +34,17 @@ public class SceneManagement : MonoBehaviour
 
     public void GetCurrentScene()
     {
+        Debug.Log("Recup build index");
         Scene currentScene = SceneManager.GetActiveScene();
         buildIndex = currentScene.buildIndex;
     }
 
     public void LoadPreviewScene()
 	{
+        Debug.Log("Entré dans la fonction LPS");
         switch (buildIndex)
         {
+            
             case 0:
                 // Do something...
                 SceneManager.LoadScene("BureauAsset");
@@ -67,7 +70,13 @@ public class SceneManagement : MonoBehaviour
 
     public void GetKilled()
     {
+        Debug.Log("Joueur Mort");
         GetCurrentScene();
         SceneManager.LoadScene("Death Scene");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

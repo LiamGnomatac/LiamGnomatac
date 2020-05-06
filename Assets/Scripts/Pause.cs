@@ -9,7 +9,6 @@ public class Pause : MonoBehaviour
 {
 
     private bool isPause;
-
     public GameObject canvas;
     // Start is called before the first frame update
     void Start()
