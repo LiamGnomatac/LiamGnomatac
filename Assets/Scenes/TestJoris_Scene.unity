@@ -3905,10 +3905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8648ef0d328d2ea4c89a2876c9727142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1668641462}
   PauseWithY:
-    actionPath: 
+    actionPath: /actions/default/in/Pause
     needsReinit: 0
+  canvas: {fileID: 1668641462}
 --- !u!114 &1646685955814292655
 MonoBehaviour:
   m_ObjectHideFlags: 0
