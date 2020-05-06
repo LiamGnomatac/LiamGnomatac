@@ -64,7 +64,7 @@ public class TPPerso : MonoBehaviour
         //Range de 10
         if (Physics.Raycast(cameraVR.position, cameraVR.forward, out hit, 10, layerMask))
         {
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
 
             // Un comparetag sur le raycast
             if (hit.collider.gameObject.CompareTag("ZoneTP"))
@@ -113,7 +113,7 @@ public class TPPerso : MonoBehaviour
                 Destroy(select);
                 zoneSelectActive = false;
                 Debug.DrawRay(cameraVR.position, cameraVR.TransformDirection(Vector3.forward) * 1000, Color.white);
-                Debug.Log("Did not Hit");
+                //Debug.Log("Did not Hit");
             }
             if (Physics.Raycast(cameraVR.position, cameraVR.TransformDirection(Vector3.forward), out hit, 5, layerMask))
             {

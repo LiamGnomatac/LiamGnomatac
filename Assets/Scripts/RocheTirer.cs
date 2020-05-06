@@ -21,7 +21,7 @@ public class RocheTirer : MonoBehaviour
     void FixedUpdate()
     {
         FeedBack();
-        if (transform.position.x <= GetComponent<LinearDrive>().startPosition.position.x)
+        if (transform.position == GetComponent<LinearDrive>().startPosition.position)
         {
             //Debug.Log("Neutre");
             transform.position = GetComponent<LinearDrive>().startPosition.position;
@@ -32,7 +32,7 @@ public class RocheTirer : MonoBehaviour
         }
         else
         {
-            Debug.Log("tirer");
+            //Debug.Log("tirer");
             ReturnToPosition();
             ReActions();
         }
@@ -68,9 +68,10 @@ public class RocheTirer : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
     }
+
     private void CloseDoor()
     {
-        if(isReturn)
+        if(!isReturn)
         {
             GameManager.s_Singleton.secondEIsComplete = false;
             return;
