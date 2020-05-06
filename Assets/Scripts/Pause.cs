@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR.InteractionSystem;
+using Valve.VR;
 
 public class Pause : MonoBehaviour
 {
@@ -18,7 +20,7 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G))
+        if(PauseWithY.stateDown)
         {
             TogglePause();
             ToggleCanvas();
@@ -49,4 +51,6 @@ public class Pause : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public SteamVR_Action_Boolean PauseWithY;
 }
