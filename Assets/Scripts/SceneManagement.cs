@@ -31,10 +31,10 @@ public class SceneManagement : MonoBehaviour
     {
         
     }
+
     public void GetCurrentScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-
         buildIndex = currentScene.buildIndex;
     }
 
@@ -50,6 +50,18 @@ public class SceneManagement : MonoBehaviour
                 // Do something...
                 SceneManager.LoadScene("Niveau1");
                 break;
+            case 2:
+                SceneManager.LoadScene("Niveau2");
+                break;
+            case 3:
+                SceneManager.LoadScene("Niveau3");
+                break;
+            case 4:
+                SceneManager.LoadScene("Niveau4");
+                break;
+            case 5:
+                SceneManager.LoadScene("Remonter");
+                break;
         }
     }
 
@@ -57,15 +69,5 @@ public class SceneManagement : MonoBehaviour
     {
         GetCurrentScene();
         SceneManager.LoadScene("Death Scene");
-
     }
-
-
-
-    public void ReloadScene()
-    {
-
-
-    }
-
 }
