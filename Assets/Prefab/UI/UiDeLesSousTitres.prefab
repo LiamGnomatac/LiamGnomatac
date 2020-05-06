@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8290980503773065644}
   - component: {fileID: 8290980503773065635}
   - component: {fileID: 8290980503773065634}
-  - component: {fileID: 1812829104754442793}
+  - component: {fileID: -4978066563649365955}
   m_Layer: 5
   m_Name: UiDeLesSousTitres
   m_TagString: Untagged
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1812829104754442793
+--- !u!114 &-4978066563649365955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,18 +109,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8290980503773065633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0035708fb78134da30ad8915083ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4371d93f12c51d844b51c5c7fddbc533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NormalColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_HoverColor:
-    serializedVersion: 2
-    rgba: 4286611584
-  m_DownColor:
-    serializedVersion: 2
-    rgba: 4294967295
+  listeDesLignesDeSousTitres: []
+  uneLigneDeSousTitre: 0
 --- !u!1 &8290980504371873981
 GameObject:
   m_ObjectHideFlags: 0

@@ -1849,7 +1849,6 @@ GameObject:
   - component: {fileID: 2888154685550984770}
   - component: {fileID: 2888154685550984771}
   - component: {fileID: 2888154685550984768}
-  - component: {fileID: 3502595228553644014}
   m_Layer: 5
   m_Name: UiDeLesOptions
   m_TagString: Untagged
@@ -1944,27 +1943,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3502595228553644014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2888154685550984769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0035708fb78134da30ad8915083ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NormalColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_HoverColor:
-    serializedVersion: 2
-    rgba: 4286611584
-  m_DownColor:
-    serializedVersion: 2
-    rgba: 4294967295
 --- !u!1 &2888154685848183860
 GameObject:
   m_ObjectHideFlags: 0

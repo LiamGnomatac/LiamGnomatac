@@ -875,7 +875,6 @@ GameObject:
   - component: {fileID: 8300447831700404895}
   - component: {fileID: 8300447831700404894}
   - component: {fileID: 8300447831700404889}
-  - component: {fileID: 7359168175382184158}
   m_Layer: 5
   m_Name: UiDeLaMort
   m_TagString: Untagged
@@ -966,27 +965,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7359168175382184158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8300447831700404888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0035708fb78134da30ad8915083ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NormalColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_HoverColor:
-    serializedVersion: 2
-    rgba: 4286611584
-  m_DownColor:
-    serializedVersion: 2
-    rgba: 4294967295
 --- !u!1 &8300447832265802529
 GameObject:
   m_ObjectHideFlags: 0

@@ -595,7 +595,6 @@ GameObject:
   - component: {fileID: 7141963809568133525}
   - component: {fileID: 7141963809568133524}
   - component: {fileID: 7141963809568133527}
-  - component: {fileID: 6030424357953540691}
   m_Layer: 5
   m_Name: UiDeLaPause
   m_TagString: Untagged
@@ -686,27 +685,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6030424357953540691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7141963809568133526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0035708fb78134da30ad8915083ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NormalColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_HoverColor:
-    serializedVersion: 2
-    rgba: 4286611584
-  m_DownColor:
-    serializedVersion: 2
-    rgba: 4294967295
 --- !u!1 &7141963809821735923
 GameObject:
   m_ObjectHideFlags: 0
