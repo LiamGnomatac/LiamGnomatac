@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     //public Vector3 objEnigmaTorche, objEnigmaStatuette1, objEnigmaStatuette2;
     #endregion
 
-    public Transform targetForTaurus = null;
+    public Vector3 targetForTaurus;
 
     [HideInInspector]
     public Transform tpRelativePoint;
