@@ -40,7 +40,7 @@ public class Téléphone : MonoBehaviour
     public void VibrationLocation()
     {
         Debug.Log("Vibre");
-        GameManager.s_Singleton.targetForTaurus.position = transform.position;
+        GameManager.s_Singleton.targetForTaurus = transform.position;
     }
 
     private void OnEnable()
