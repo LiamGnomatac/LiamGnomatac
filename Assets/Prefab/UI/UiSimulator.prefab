@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c851a800f8305499539c463cc026d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Joueur: {fileID: 0}
   UiDeLaMort: {fileID: 2562078354040645729}
   UiDeLaPause: {fileID: 2562078353544077623}
   UiDeLesOptions: {fileID: 2562078353326078159}
@@ -169,6 +170,8 @@ MonoBehaviour:
   BoutonOptionsOui: {fileID: 2562078353293496340}
   BoutonOptionsNon: {fileID: 2562078353132774700}
   BoutonOptionsRetour: {fileID: 2562078354351652043}
+  lhand: {fileID: 0}
+  rhand: {fileID: 0}
   mort: 0
   audioMixer: {fileID: 0}
 --- !u!1 &2562078354019906855
@@ -343,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2562078354163725963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -530,7 +533,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2562078354594413934}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4371d93f12c51d844b51c5c7fddbc533, type: 3}
   m_Name: 
@@ -645,7 +648,7 @@ PrefabInstance:
     - target: {fileID: 2888154684543867057, guid: d36394aa2ad7f6444b2c205357756134,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2888154685203207375, guid: d36394aa2ad7f6444b2c205357756134,
         type: 3}
@@ -710,7 +713,7 @@ PrefabInstance:
     - target: {fileID: 2888154685402299794, guid: d36394aa2ad7f6444b2c205357756134,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2888154685520500378, guid: d36394aa2ad7f6444b2c205357756134,
         type: 3}
@@ -756,6 +759,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888154685550984770, guid: d36394aa2ad7f6444b2c205357756134,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888154685550984770, guid: d36394aa2ad7f6444b2c205357756134,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2888154685550984781, guid: d36394aa2ad7f6444b2c205357756134,
         type: 3}
@@ -1173,6 +1186,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7141963809568133525, guid: af4fad0b0c36dc04caa96f036ea88900,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141963809568133525, guid: af4fad0b0c36dc04caa96f036ea88900,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7141963809568133526, guid: af4fad0b0c36dc04caa96f036ea88900,
         type: 3}
       propertyPath: m_Name
@@ -1325,7 +1348,17 @@ PrefabInstance:
     - target: {fileID: 8290980503773065633, guid: f34b07dd37414894a903a65c34c4e41f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290980503773065644, guid: f34b07dd37414894a903a65c34c4e41f,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290980503773065644, guid: f34b07dd37414894a903a65c34c4e41f,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8290980503773065645, guid: f34b07dd37414894a903a65c34c4e41f,
         type: 3}
@@ -1435,7 +1468,7 @@ PrefabInstance:
     - target: {fileID: 8290980504371873981, guid: f34b07dd37414894a903a65c34c4e41f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1689,6 +1722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300447831700404895, guid: 67a7811b2b2dfa34b9f93728ec4b28ef,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

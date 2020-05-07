@@ -35,16 +35,23 @@ public class UiSimulator : MonoBehaviour
     public Button BoutonOptionsNon;
     public Button BoutonOptionsRetour;
 
-    public GameObject lhand;
-    public GameObject rhand;
 
     public bool mort;
 
     public AudioMixer audioMixer;
 
+    private int RetourALaScenePrecedente;
+
     public void EffetDesBoutonsRelancerLaSceneActive()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void EffetDesBoutonsRetournerALaSceneOuOnEstMort()
+    {
+        //  /!\  Dans les builds settings, il faut alterner entre les scenes de jeu et la scene de mort 
+        //(ex:BureauAsset(0), Niveau1(1), Death Scene(2), Niveau 2(3), Death Scene(4), ect...)
+        RetourALaScenePrecedente = SceneManager.GetActiveScene().buildIndex -1;
     }
 
     public void EffetDesBoutonsAllerAuBureau()
@@ -95,6 +102,11 @@ public class UiSimulator : MonoBehaviour
         UiDeLesOptions.SetActive(false);
         UiDeLesSousTitres.SetActive(false);
         mort = false;
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Death Scene"))
+        {
+            UiDeLaMort.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -136,17 +148,15 @@ public class UiSimulator : MonoBehaviour
             UiDeLesSousTitres.SetActive(!UiDeLesSousTitres);
         }
 
+
         if (mort == true)
         {
-            UiDeLaMort.SetActive(true);
-            //SceneManager.LoadScene("Death Scene");
+        
+            SceneManager.LoadScene("Death Scene");
 
         }
 
-        //if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Death Scene"))
-        //{
-          //  Instantiate(Joueur, new Vector3(0, 0, 0), Quaternion.identity);
-        //}
+        
 
     }
 
