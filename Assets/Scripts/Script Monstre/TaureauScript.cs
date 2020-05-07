@@ -17,7 +17,7 @@ public class TaureauScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<EncensCS>().EncensIsTurnOn)
+        if(GetComponent<EncensCS>().isTurnOn)
         {
 
             TaureauGoToEncens();
