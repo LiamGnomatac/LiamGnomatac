@@ -6,7 +6,7 @@ public class TaureauScript : MonoBehaviour
 {
 
     public float vitesse = 1f;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class TaureauScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<Encens>().EncensIsTurnOnOrNot == true)
+        if(GetComponent<EncensCS>().EncensIsTurnOn)
         {
 
             TaureauGoToEncens();
