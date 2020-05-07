@@ -7,7 +7,7 @@ using Valve.VR;
 
 public class WarpManager : MonoBehaviour
 {
-    public GameObject center;
+
     public GameObject zoneStart;
     public GameObject zone1;
     public GameObject zone2;
@@ -20,15 +20,15 @@ public class WarpManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        center.transform.position = zoneStart.transform.position;
+        TPPerso.s_Singleton.transform.position = zoneStart.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(zoneEnd.transform.position == center.transform.position)
+        if(zoneEnd.transform.position == TPPerso.s_Singleton.transform.position)
         {
-            center.GetComponent<TPPerso>().Invoke("FadeToBlack", 3);
+            TPPerso.s_Singleton.GetComponent<TPPerso>().Invoke("FadeToBlack", 3);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

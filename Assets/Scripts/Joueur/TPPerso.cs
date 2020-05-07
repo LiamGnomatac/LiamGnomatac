@@ -29,6 +29,20 @@ public class TPPerso : MonoBehaviour
 
     public float _fadeDuration = 5f;
 
+    public static TPPerso s_Singleton;
+
+    private void Awake()
+    {
+        if (s_Singleton != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            s_Singleton = this;
+        }
+    }
+
     void Start()
     {
         FadeFromBlack();

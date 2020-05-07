@@ -3275,6 +3275,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431777447}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1445988789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7375936394909185818, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 205444444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1447763014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4005,6 +4011,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724749861}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1726041668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8657653235151025570, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 205444444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1780229954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4135,10 +4147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objKeyLaunch: 0
   monsterCanMove: 0
-  torchLight: {fileID: 8657653234038925478, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
-    type: 3}
-  cellphone: {fileID: 4456441754901799502, guid: c8896178ef431be44bc26b458848d705,
-    type: 3}
+  torchLight: {fileID: 1726041668}
+  cellphone: {fileID: 1445988789}
   showController: 0
   torchLightIsBroke: 0
   statuette: {fileID: 0}
@@ -4155,7 +4165,7 @@ MonoBehaviour:
   statueIsStatic: 0
   isPressMain: 0
   isPress: 0
-  targetForTaurus: {fileID: 0}
+  targetForTaurus: {x: 0, y: 0, z: 0}
   tpRelativePoint: {fileID: 0}
 --- !u!4 &1785495066
 Transform:

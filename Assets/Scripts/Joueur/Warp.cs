@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Warp : MonoBehaviour
 {
-    public GameObject center;
+
     public GameObject limiteZone;
-    public GameObject chien;
+   
     public bool isItDark;
     
     
@@ -22,7 +22,7 @@ public class Warp : MonoBehaviour
         Debug.Log("pied");
         if (other.CompareTag("Player"))
         {
-            chien.GetComponent<ChienScript>().joueurSurZone = true;
+            ChienScript.s_Singleton.joueurSurZone = true;
             Debug.Log("c'est rouge");
             limiteZone.SetActive(true);
         }
@@ -32,7 +32,7 @@ public class Warp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            chien.GetComponent<ChienScript>().joueurSurZone = false;
+            ChienScript.s_Singleton.joueurSurZone = false;
             Debug.Log("C'est pu rouge");
             limiteZone.SetActive(false);
         }
@@ -44,14 +44,14 @@ public class Warp : MonoBehaviour
         if(limiteZone == true && isItDark == true)
         {
 
-            chien.GetComponent<ChienScript>().dogCanAttackOnLight = true;
+            ChienScript.s_Singleton.dogCanAttackOnLight = true;
 
         }
 
         else
         {
 
-            chien.GetComponent<ChienScript>().dogCanAttackOnLight = false;
+            ChienScript.s_Singleton.dogCanAttackOnLight = false;
 
         }
     }

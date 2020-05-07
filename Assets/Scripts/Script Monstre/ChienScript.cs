@@ -9,7 +9,6 @@ public class ChienScript : MonoBehaviour
     private float chienTimerAttaque = 5.0f;
     public float chienTimerTp = 0.0f;
     public float chienTPAt = 3.0f;
-    public GameObject joueur;
     public bool joueurSurZone = false;
     public bool chienCanTP = false;
     public bool chienShouldTP = false;
@@ -22,7 +21,20 @@ public class ChienScript : MonoBehaviour
     public bool thereIsLight;
     public bool dogCanAttackOnLight;
     public bool chienAttack;
- 
+
+    public static ChienScript s_Singleton;
+
+    private void Awake()
+    {
+        if (s_Singleton != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            s_Singleton = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
