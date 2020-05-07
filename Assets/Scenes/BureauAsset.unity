@@ -9278,6 +9278,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993435858}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &2003153572 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8513659499777197064, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 963535620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2012917100
 GameObject:
   m_ObjectHideFlags: 0
@@ -9510,6 +9516,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2562078353326078156, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078353326078156, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2003153572}
+    - target: {fileID: 2562078353326078156, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078353544077620, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078353544077620, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2003153572}
+    - target: {fileID: 2562078353544077620, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2562078353714199324, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
@@ -9518,12 +9554,12 @@ PrefabInstance:
     - target: {fileID: 2562078354006795482, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 320
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2562078354006795482, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 240
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2562078354006795482, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}
@@ -9590,6 +9626,11 @@ PrefabInstance:
       propertyPath: rhand
       value: 
       objectReference: {fileID: 1227792332}
+    - target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: Joueur
+      value: 
+      objectReference: {fileID: 442786148}
     - target: {fileID: 2562078354006795492, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}
       propertyPath: m_Name
@@ -9599,6 +9640,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BlockingObjects
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078354040645734, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078354040645734, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2003153572}
+    - target: {fileID: 2562078354040645734, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2562078354163725972, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}
@@ -9614,6 +9670,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078354594413923, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562078354594413923, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2003153572}
+    - target: {fileID: 2562078354594413923, guid: d31e44741b760ba40a1219c51efd1e13,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2562078354594413934, guid: d31e44741b760ba40a1219c51efd1e13,
         type: 3}

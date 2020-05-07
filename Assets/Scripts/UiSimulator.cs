@@ -12,6 +12,8 @@ using Valve.VR.InteractionSystem;
 
 public class UiSimulator : MonoBehaviour
 {
+    public GameObject Joueur;
+
     public GameObject UiDeLaMort;
     public GameObject UiDeLaPause;
     public GameObject UiDeLesOptions;
@@ -105,7 +107,7 @@ public class UiSimulator : MonoBehaviour
             UiDeLesOptions.SetActive(!UiDeLesOptions);
             UiDeLesSousTitres.SetActive(!UiDeLesSousTitres);
             mort = false;
-            gameObject.GetComponent<Throwable>().enabled = false; //a modif marche pas cette ligne là
+            //gameObject.GetComponent<Throwable>().enabled = false; //a modif marche pas cette ligne là
         }
 
         if (Input.GetKeyDown("o"))
@@ -137,10 +139,15 @@ public class UiSimulator : MonoBehaviour
         if (mort == true)
         {
             UiDeLaMort.SetActive(true);
-            
+            //SceneManager.LoadScene("Death Scene");
+
         }
 
-        
+        //if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Death Scene"))
+        //{
+          //  Instantiate(Joueur, new Vector3(0, 0, 0), Quaternion.identity);
+        //}
+
     }
 
     public void OnPointerClick(PointerEventData eventData)
