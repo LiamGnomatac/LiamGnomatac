@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5455286792719492257}
   - component: {fileID: 5455286792719492256}
   - component: {fileID: 5455286792719492259}
-  - component: {fileID: 5455286792719492258}
   - component: {fileID: 5455286792719492287}
+  - component: {fileID: 5455286792719492258}
   - component: {fileID: 354644873407077259}
   m_Layer: 0
   m_Name: Encens
@@ -96,27 +96,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5455286792719492258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5455286792719492261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed935d1fa8a530d489533e6fa2cf779e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  encens: {fileID: 5455286792719492261}
-  vfxSparx: {fileID: 0}
-  EncensIsTriggerOrNot: 0
-  EncensIsTurnOnOrNot: 0
-  FillOrNot: 0
-  SparkOrNot: 0
-  defaultMaterial: {fileID: 2100000, guid: 29b14cf4189894a4eb6b66ce4c9ec156, type: 2}
-  newMaterialTrigger: {fileID: 2100000, guid: 56ae7ef035e5d3e429067ca4ef210ce2, type: 2}
-  newMaterialTurnOn: {fileID: 2100000, guid: 2733eff3a51884d4b93d992c8555ecc0, type: 2}
 --- !u!54 &5455286792719492287
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,8 +110,29 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &5455286792719492258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5455286792719492261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed935d1fa8a530d489533e6fa2cf779e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  encens: {fileID: 5455286792719492261}
+  vfxSparx: {fileID: 1325963772890730, guid: bad4a586d8c2b4fc1adb20c80b9b13a1, type: 3}
+  EncensIsTriggerOrNot: 0
+  EncensIsTurnOnOrNot: 0
+  FillOrNot: 0
+  SparkOrNot: 0
+  defaultMaterial: {fileID: 2100000, guid: 29b14cf4189894a4eb6b66ce4c9ec156, type: 2}
+  newMaterialTrigger: {fileID: 2100000, guid: 56ae7ef035e5d3e429067ca4ef210ce2, type: 2}
+  newMaterialTurnOn: {fileID: 2100000, guid: 2733eff3a51884d4b93d992c8555ecc0, type: 2}
 --- !u!114 &354644873407077259
 MonoBehaviour:
   m_ObjectHideFlags: 0
