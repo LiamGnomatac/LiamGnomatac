@@ -31,17 +31,20 @@ public class SceneManagement : MonoBehaviour
     {
         
     }
+
     public void GetCurrentScene()
     {
+        Debug.Log("Recup build index");
         Scene currentScene = SceneManager.GetActiveScene();
-
         buildIndex = currentScene.buildIndex;
     }
 
     public void LoadPreviewScene()
 	{
+        Debug.Log("Entré dans la fonction LPS");
         switch (buildIndex)
         {
+            
             case 0:
                 // Do something...
                 SceneManager.LoadScene("BureauAsset");
@@ -50,22 +53,30 @@ public class SceneManagement : MonoBehaviour
                 // Do something...
                 SceneManager.LoadScene("Niveau1");
                 break;
+            case 2:
+                SceneManager.LoadScene("Niveau2");
+                break;
+            case 3:
+                SceneManager.LoadScene("Niveau3");
+                break;
+            case 4:
+                SceneManager.LoadScene("Niveau4");
+                break;
+            case 5:
+                SceneManager.LoadScene("Remonter");
+                break;
         }
     }
 
     public void GetKilled()
     {
+        Debug.Log("Joueur Mort");
         GetCurrentScene();
         SceneManager.LoadScene("Death Scene");
-
     }
 
-
-
-    public void ReloadScene()
+    public void QuitGame()
     {
-
-
+        Application.Quit();
     }
-
 }

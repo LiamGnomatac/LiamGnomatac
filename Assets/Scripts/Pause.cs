@@ -7,9 +7,8 @@ using Valve.VR;
 
 public class Pause : MonoBehaviour
 {
-
+    public SteamVR_Action_Boolean PauseWithY;
     private bool isPause;
-
     public GameObject canvas;
     // Start is called before the first frame update
     void Start()
@@ -52,5 +51,5 @@ public class Pause : MonoBehaviour
         Application.Quit();
     }
 
-    public SteamVR_Action_Boolean PauseWithY;
+   
 }

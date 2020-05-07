@@ -22,12 +22,12 @@ public class GameManager : MonoBehaviour
     #region Variable Enigme
     public GameObject statuette, statuette2;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool firstEIsComplete = false , secondEIsComplete = false, thirdEIsComplete = false;
     
-    //[HideInInspector]
+    [HideInInspector]
     public bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
-    //[HideInInspector]
+    [HideInInspector]
     public bool pullRock1, rockSort;
     [HideInInspector]
     public int statueIsStatic;
