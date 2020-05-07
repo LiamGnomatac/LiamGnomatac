@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using Valve.VR.InteractionSystem;
 
 
 
@@ -31,6 +32,9 @@ public class UiSimulator : MonoBehaviour
     public Button BoutonOptionsOui;
     public Button BoutonOptionsNon;
     public Button BoutonOptionsRetour;
+
+    public GameObject lhand;
+    public GameObject rhand;
 
     public bool mort;
 
@@ -101,6 +105,7 @@ public class UiSimulator : MonoBehaviour
             UiDeLesOptions.SetActive(!UiDeLesOptions);
             UiDeLesSousTitres.SetActive(!UiDeLesSousTitres);
             mort = false;
+            gameObject.GetComponent<Throwable>().enabled = false; //a modif marche pas cette ligne là
         }
 
         if (Input.GetKeyDown("o"))
@@ -135,6 +140,7 @@ public class UiSimulator : MonoBehaviour
             
         }
 
+        
     }
 
     public void OnPointerClick(PointerEventData eventData)
