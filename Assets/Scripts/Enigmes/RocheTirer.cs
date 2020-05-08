@@ -8,6 +8,7 @@ public class RocheTirer : MonoBehaviour
     public bool isEndE2;
     public bool isReturn;
     public float speed;
+    public GameObject encensToFill;
     public GameObject LinearMapping;
     private Renderer myMat;
 
@@ -23,7 +24,6 @@ public class RocheTirer : MonoBehaviour
         FeedBack();
         if (transform.position == GetComponent<LinearDrive>().startPosition.position)
         {
-            //Debug.Log("Neutre");
             transform.position = GetComponent<LinearDrive>().startPosition.position;
             LinearMapping.GetComponent<LinearMapping>().value = 0f;
             Actions();
@@ -32,7 +32,6 @@ public class RocheTirer : MonoBehaviour
         }
         else
         {
-            //Debug.Log("tirer");
             ReturnToPosition();
             ReActions();
         }
@@ -66,12 +65,13 @@ public class RocheTirer : MonoBehaviour
 
     private void ReturnToPosition()
     {
+        
         transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
     }
 
     private void CloseDoor()
     {
-        if(!isReturn)
+        if(isReturn)
         {
             GameManager.s_Singleton.secondEIsComplete = false;
             return;
@@ -110,6 +110,14 @@ public class RocheTirer : MonoBehaviour
             {
                 gameObject.GetComponent<Renderer>().material.color = Color.magenta;
             }
+        }
+    }
+
+    public void ToFilledEncens()
+    {
+        if(GameManager.s_Singleton.rockSort)
+        {
+            encensToFill.GetComponent<EncensCS>().FilledWithOil();
         }
     }
 }

@@ -331,7 +331,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chienTimerTp: 0
   chienTPAt: 5
-  joueur: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb, type: 3}
   joueurSurZone: 0
   chienCanTP: 0
   chienShouldTP: 0
@@ -339,6 +338,13 @@ MonoBehaviour:
   zone1: {fileID: 2217218949027020254}
   zone2: {fileID: 2217218950194890730}
   zone3: {fileID: 2217218948974185859}
+  dogTorchLight: {fileID: 8657653234038925478, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+    type: 3}
+  dogPhoneLight: {fileID: 4456441754901799502, guid: c8896178ef431be44bc26b458848d705,
+    type: 3}
+  thereIsLight: 0
+  dogCanAttackOnLight: 0
+  chienAttack: 0
 --- !u!1 &2217218950194890730
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class EncensCS : MonoBehaviour
         lightIntensity = pointLight.GetComponent<Light>().intensity;
         StartTurnOn();
         StayOn();
+        StartFilled();
     }
 
     // Update is called once per frame
@@ -36,11 +37,19 @@ public class EncensCS : MonoBehaviour
         }
     }
 
-    private void FilledWithOil()
+    public void FilledWithOil()
     {
         isFilled = true;
         oil.SetActive(true);
         Debug.Log("GlouGlouGlou");
+    }
+
+    private void StartFilled()
+    {
+        if(isFilled)
+        {
+            FilledWithOil();
+        }
     }
 
     private void StartTurnOn()
