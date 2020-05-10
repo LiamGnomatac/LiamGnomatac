@@ -2735,8 +2735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objKeyLaunch: 0
   monsterCanMove: 0
-  torchLight: {fileID: 0}
-  cellphone: {fileID: 0}
+  torchLight: {fileID: 1554448120}
+  cellphone: {fileID: 1962193285}
   showController: 0
   torchLightIsBroke: 0
   statuette: {fileID: 0}
@@ -2769,6 +2769,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1554448120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8657653235151025570, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 519941125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1557900108 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2163569644642306398, guid: 9923e9db3f3870f4cb830196cc9a3002,
@@ -3264,6 +3270,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958664206}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1962193285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7375936394909185818, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 519941125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983079545
 GameObject:
   m_ObjectHideFlags: 0
