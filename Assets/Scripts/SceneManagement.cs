@@ -69,6 +69,34 @@ public class SceneManagement : MonoBehaviour
         }
     }
 
+    public void ChooseLoadScene(int load)
+    {
+        switch (load)
+        {
+
+            case 0:
+                // Do something...
+                SceneManager.LoadScene("BureauAsset");
+                break;
+            case 1:
+                // Do something...
+                SceneManager.LoadScene("Niveau1");
+                break;
+            case 2:
+                SceneManager.LoadScene("Niveau2");
+                break;
+            case 3:
+                SceneManager.LoadScene("Niveau3");
+                break;
+            case 4:
+                SceneManager.LoadScene("Niveau4");
+                break;
+            case 5:
+                SceneManager.LoadScene("Remonter");
+                break;
+        }
+    }
+
     public void GetKilled()
     {
         Debug.Log("Joueur Mort");
