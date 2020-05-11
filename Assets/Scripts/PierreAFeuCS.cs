@@ -30,7 +30,7 @@ public class PierreAFeuCS : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.tag == "Etincelle")
+        if (collision.gameObject.layer == 8 && gameObject.tag == "Player")
         {
             Debug.Log("Tappe un autre silex");
             collisionNumber++;
