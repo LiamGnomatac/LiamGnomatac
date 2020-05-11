@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour
     public int statueIsStatic;
 
     [HideInInspector]
+    public int pillarBroke;
+
+    [HideInInspector]
     public bool isPressMain, isPress;
 
     //public Vector3 objEnigmaTorche, objEnigmaStatuette1, objEnigmaStatuette2;
