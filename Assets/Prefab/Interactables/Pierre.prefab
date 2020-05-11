@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7283622879307924266}
   - component: {fileID: 7283622879307924267}
   - component: {fileID: 7283622879307924270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pierre
   m_TagString: Etincelle
   m_Icon: {fileID: 0}
