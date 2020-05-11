@@ -12,6 +12,7 @@ public class TaureauScript : MonoBehaviour
     public bool isWalking;
     public bool stopMoving;
     private bool canMove;
+    private GameObject taureau;
 
     public static TaureauScript s_Singleton;
 
@@ -33,6 +34,7 @@ public class TaureauScript : MonoBehaviour
     {
         canMove = true;
         agent = GetComponent<NavMeshAgent>();
+        taureau = gameObject;
     }
 
     // Update is called once per frame
@@ -70,7 +72,22 @@ public class TaureauScript : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(isRunning == true)
+        {
+
+            TaureauStun();
+
+        }
 
 
+    }
 
+    public void TaureauStun()
+    {
+
+        taureau.GetComponent<NavMeshAgent>() = false;
+
+    }
 }
