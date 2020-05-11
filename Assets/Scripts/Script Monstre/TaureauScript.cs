@@ -7,13 +7,31 @@ public class TaureauScript : MonoBehaviour
 
     public float vitesse = 1f;
     private NavMeshAgent agent;
-    private Transform destination;
+    public Transform destination;
+    public bool isRunning;
+    public bool isWalking;
+    public bool stopMoving;
+    private bool canMove;
 
-    
+    public static TaureauScript s_Singleton;
+
+
+    private void Awake()
+    {
+        if (s_Singleton != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            s_Singleton = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        canMove = true;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -47,7 +65,7 @@ public class TaureauScript : MonoBehaviour
     public void TaureauGoToEncens()
     {
 
-
+        GetComponent<EncensCS>().TurnOff();
 
 
     }

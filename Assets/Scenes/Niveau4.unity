@@ -2618,7 +2618,7 @@ GameObject:
   - component: {fileID: 1228654428}
   - component: {fileID: 1228654434}
   m_Layer: 0
-  m_Name: taureau
+  m_Name: Taureau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2750,6 +2750,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 1
+  destination: {fileID: 1335698220}
+  isRunning: 0
+  isWalking: 0
+  stopMoving: 0
 --- !u!1001 &1297637821
 PrefabInstance:
   m_ObjectHideFlags: 0
