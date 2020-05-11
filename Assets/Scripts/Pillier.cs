@@ -23,12 +23,12 @@ public class Pillier : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject == taurus /*&& taurus.GetComponent<TaureauScript>().isRunning*/)
+        if(collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
         {
             RepeatingInvoke();
             GameManager.s_Singleton.pillarBroke++;
             BlindTp();
-            Invoke("DestroyGObj", invTime * 2);
+            Invoke("DestroyGObj", invTime);
         }
     }
 
@@ -39,7 +39,7 @@ public class Pillier : MonoBehaviour
 
     private void RepeatingInvoke()
     {
-        InvokeRepeating("InvokeGravel", invTime, invRepeatRate);
+        InvokeRepeating("InvokeGravel", 0, invRepeatRate);
     }
 
     private void InvokeGravel()
