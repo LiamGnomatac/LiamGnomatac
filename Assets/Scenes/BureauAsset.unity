@@ -439,19 +439,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &92313588
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92313587}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!114 &92313589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,52 +518,25 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!1 &100442222 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2562078353433813424, guid: d31e44741b760ba40a1219c51efd1e13,
-    type: 3}
-  m_PrefabInstance: {fileID: 2562078353202661627}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &100442223
+--- !u!65 &92313593
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100442222}
+  m_GameObject: {fileID: 92313587}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 227.0545, y: 29.557281, z: 1}
   m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
---- !u!114 &100442224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!1 &100442222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2562078353433813424, guid: d31e44741b760ba40a1219c51efd1e13,
+    type: 3}
+  m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100442222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onHandClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
-          type: 3}
-        m_MethodName: EffetDesBoutonsQuitterLeJeu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &100442225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +589,46 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &100442228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100442222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
+--- !u!114 &100442229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100442222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHandClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
+          type: 3}
+        m_MethodName: EffetDesBoutonsQuitterLeJeu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &117379313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,19 +1314,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &441146564
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441146563}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!114 &441146565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,6 +1393,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &441146569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441146563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!1 &442786148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
@@ -2563,19 +2563,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &658927856
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658927855}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!114 &658927857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2643,6 +2630,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &658927861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658927855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!1 &718610861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,19 +3077,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &814729502
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814729501}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100.40096, y: 57.548725, z: 1}
-  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!114 &814729503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3169,6 +3156,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &814729507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814729501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100.40096, y: 57.548725, z: 1}
+  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!1 &815102521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,19 +3815,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &898639848
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898639847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100.40096, y: 57.548725, z: 1}
-  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!114 &898639849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3907,6 +3894,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &898639853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898639847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100.40096, y: 57.548725, z: 1}
+  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!1 &898685433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,19 +4063,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &951600534
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951600533}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!114 &951600535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4155,6 +4142,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &951600539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951600533}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!1001 &963535620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4637,19 +4637,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &990805454
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990805453}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!114 &990805455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4729,6 +4716,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &990805459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990805453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!1 &1091761244
 GameObject:
   m_ObjectHideFlags: 0
@@ -6865,46 +6865,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1519216598
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519216597}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
---- !u!114 &1519216599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519216597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onHandClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
-          type: 3}
-        m_MethodName: EffetDesBoutonsRetour
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1519216600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6957,6 +6917,46 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &1519216603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519216597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
+--- !u!114 &1519216604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519216597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHandClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
+          type: 3}
+        m_MethodName: EffetDesBoutonsRetour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1539033723
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,19 +7803,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1620935889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620935888}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100.40096, y: 57.548725, z: 1}
-  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!114 &1620935890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7895,12 +7882,49 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &1620935894
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620935888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100.40096, y: 57.548725, z: 1}
+  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!1 &1623256819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7437931253791924763, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
     type: 3}
   m_PrefabInstance: {fileID: 963535620}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1623256824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623256819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pose: {fileID: 0}
+  interactWithUI:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  active: 1
+  color: {r: 1, g: 0.64744824, b: 0, a: 0}
+  thickness: 0.002
+  clickColor: {r: 0, g: 1, b: 0, a: 1}
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}
 --- !u!1 &1626731832
 GameObject:
   m_ObjectHideFlags: 0
@@ -8097,19 +8121,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1663535987
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663535986}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100.40096, y: 57.548725, z: 1}
-  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!114 &1663535988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8189,6 +8200,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &1663535992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663535986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100.40096, y: 57.548725, z: 1}
+  m_Center: {x: -1.1924688, y: -0.19902575, z: 3.8348665e-14}
 --- !u!1 &1688563742
 GameObject:
   m_ObjectHideFlags: 0
@@ -9342,46 +9366,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1860011952
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860011951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
---- !u!114 &1860011953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860011951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onHandClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
-          type: 3}
-        m_MethodName: EffetDesBoutonsQuitterLeJeu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1860011954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9434,6 +9418,46 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &1860011957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860011951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
+--- !u!114 &1860011958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860011951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cd2ef2dd3d5d64e96af4420220d1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHandClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2562078354006795483, guid: d31e44741b760ba40a1219c51efd1e13,
+          type: 3}
+        m_MethodName: EffetDesBoutonsQuitterLeJeu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1870329130
 GameObject:
   m_ObjectHideFlags: 0
@@ -10567,19 +10591,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2562078353202661627}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &2015973973
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015973972}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 227.0545, y: 29.557281, z: 1}
-  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!114 &2015973974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10659,6 +10670,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &2015973978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015973972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.0545, y: 29.557281, z: 1}
+  m_Center: {x: 0.57540894, y: 0.11643982, z: 0}
 --- !u!1 &2134712486
 GameObject:
   m_ObjectHideFlags: 0
