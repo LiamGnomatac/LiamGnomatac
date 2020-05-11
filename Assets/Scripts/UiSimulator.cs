@@ -18,6 +18,8 @@ public class UiSimulator : MonoBehaviour
     public GameObject UiDeLaPause;
     public GameObject UiDeLesOptions;
     public GameObject UiDeLesSousTitres;
+    public GameObject Pointer;
+    public GameObject VRInputModule;
 
     public Button BoutonMortOui;
     public Button BoutonMortNon;
@@ -156,7 +158,19 @@ public class UiSimulator : MonoBehaviour
 
         }
 
-        
+        if (UiDeLaPause ==true || UiDeLaMort == true || UiDeLesOptions ==true)
+        {
+            Pointer.SetActive(true);
+            VRInputModule.SetActive(true);
+            Debug.Log("Le pointer est présent");
+        }
+
+        if (UiDeLaPause == false || UiDeLaMort == false || UiDeLesOptions == false)
+        {
+            Pointer.SetActive(false);
+            VRInputModule.SetActive(false);
+            Debug.Log("Le pointer n'est pas là");
+        }
 
     }
 
