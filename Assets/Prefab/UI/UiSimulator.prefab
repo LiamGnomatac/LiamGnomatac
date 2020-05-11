@@ -157,6 +157,8 @@ MonoBehaviour:
   UiDeLaPause: {fileID: 2562078353544077623}
   UiDeLesOptions: {fileID: 2562078353326078159}
   UiDeLesSousTitres: {fileID: 2562078354594413934}
+  Pointer: {fileID: 0}
+  VRInputModule: {fileID: 0}
   BoutonMortOui: {fileID: 2562078353008945908}
   BoutonMortNon: {fileID: 2562078353483595009}
   BoutonMortQuitter: {fileID: 2562078353281192979}
@@ -170,8 +172,6 @@ MonoBehaviour:
   BoutonOptionsOui: {fileID: 2562078353293496340}
   BoutonOptionsNon: {fileID: 2562078353132774700}
   BoutonOptionsRetour: {fileID: 2562078354351652043}
-  lhand: {fileID: 0}
-  rhand: {fileID: 0}
   mort: 0
   audioMixer: {fileID: 0}
 --- !u!1 &2562078354019906855
@@ -1526,7 +1526,7 @@ PrefabInstance:
     - target: {fileID: 8300447830602315789, guid: 67a7811b2b2dfa34b9f93728ec4b28ef,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EffetDesBoutonsRelancerLaSceneActive
+      value: EffetDesBoutonsRetournerALaSceneOuOnEstMort
       objectReference: {fileID: 0}
     - target: {fileID: 8300447830602315789, guid: 67a7811b2b2dfa34b9f93728ec4b28ef,
         type: 3}

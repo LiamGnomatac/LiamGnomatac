@@ -158,14 +158,14 @@ public class UiSimulator : MonoBehaviour
 
         }
 
-        if (UiDeLaPause ==true || UiDeLaMort == true || UiDeLesOptions ==true)
+        if (UiDeLaPause.activeInHierarchy || UiDeLaMort.activeInHierarchy || UiDeLesOptions.activeInHierarchy)
         {
             Pointer.SetActive(true);
             VRInputModule.SetActive(true);
             Debug.Log("Le pointer est présent");
         }
 
-        if (UiDeLaPause == false || UiDeLaMort == false || UiDeLesOptions == false)
+        if (!UiDeLaPause.activeInHierarchy || !UiDeLaMort.activeInHierarchy || !UiDeLesOptions.activeInHierarchy)
         {
             Pointer.SetActive(false);
             VRInputModule.SetActive(false);
