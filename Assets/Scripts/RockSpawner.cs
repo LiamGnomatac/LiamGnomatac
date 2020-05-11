@@ -7,27 +7,16 @@ using Valve.VR.InteractionSystem;
  {
     public GameObject rock;
 
-    private GameObject InvokeRock()
+    private void InvokeRock()
     {
-        GameObject newrock = Instantiate(rock, transform.position, Quaternion.identity);
-        return newrock;
+        Instantiate(rock, transform.position, Quaternion.identity);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Hand>())
         {
-            Debug.Log("normalement ça marche");
-            other.gameObject.GetComponent<HandAttach>().SetAttachObj(InvokeRock());
+            InvokeRock();
         }
     }
-
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.GetComponent<Hand>())
-        {
-            Debug.Log("normalement ça marche");
-            collision.gameObject.GetComponent<HandAttach>().SetAttachObj(InvokeRock());
-        }
-    }*/
 }

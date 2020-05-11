@@ -21,8 +21,9 @@ public class Pause : MonoBehaviour
     {
         if(PauseWithY.stateDown)
         {
-            TogglePause();
             ToggleCanvas();
+            TogglePause();
+            isPause = !isPause;
         }
     }
 

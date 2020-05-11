@@ -41,5 +41,6 @@ public class ObjKeyInDark : MonoBehaviour
     {
         transform.position = pos;
         GameManager.s_Singleton.objKeyLaunch++;
+        Debug.Log(GameManager.s_Singleton.objKeyLaunch);
     }
 }
