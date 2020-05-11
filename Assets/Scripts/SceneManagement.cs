@@ -37,6 +37,7 @@ public class SceneManagement : MonoBehaviour
         Debug.Log("Recup build index");
         Scene currentScene = SceneManager.GetActiveScene();
         buildIndex = currentScene.buildIndex;
+        Debug.Log(buildIndex);
     }
 
     public void LoadPreviewScene()
