@@ -28,8 +28,15 @@ public class FlameWall : MonoBehaviour
     {
         for (int i = 0; i < spawnPointVFX.Length; i++)
         {
-            var main = spawnPointVFX[i].GetComponent<ParticleSystem>().main;
+            ParticleSystem ps = spawnPointVFX[i].GetComponentInChildren<ParticleSystem>();
+            var main = ps.main;
             main.maxParticles /= particuleDivide;
+
+            /*MainModule main = spawnPointVFX[i].GetComponent<ParticleSystem>().main;
+            main.maxParticles /= particuleDivide;*/
+
+            /*ParticleSystem.MainModule main = spawnPointVFX[i].GetComponent<ParticleSystem>().main;
+            main.maxParticles /= particuleDivide;*/
         }
     }
 

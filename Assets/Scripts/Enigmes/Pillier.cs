@@ -25,15 +25,22 @@ public class Pillier : MonoBehaviour
     {
         if(collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
         {
-            RepeatingInvoke();
-            GameManager.s_Singleton.pillarBroke++;
-            BlindTp();
             Invoke("DestroyGObj", invTime);
         }
     }
 
+    private void OnDestroy()
+    {
+
+        GameManager.s_Singleton.pillarBroke++;
+        BlindTp();
+        RepeatingInvoke();
+    }
+
     private void DestroyGObj()
     {
+        
+        Debug.Log("death");
         Destroy(gameObject);
     }
 
@@ -49,6 +56,7 @@ public class Pillier : MonoBehaviour
 
     private void BlindTp()
     {
+        Debug.Log("blind");
         if (GameManager.s_Singleton.pillarBroke < 4)
         {
             for (int i = 0; i < FlameWall.Length; i++)

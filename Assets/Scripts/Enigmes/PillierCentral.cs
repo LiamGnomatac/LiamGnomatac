@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Relique : MonoBehaviour
+public class PillierCentral : MonoBehaviour
 {
-    public float timeBeforeSceneChange;
+    public GameObject taurus;
     public GameObject gravas;
+    public float invTime;
     public float invRepeatRate;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "Floor")
+        if (collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
         {
-            Debug.Log("c'est cassé");
-            Invoke("SceneManagement.s_Singleton.ChooseLoadScene(5)", timeBeforeSceneChange);
+            DestroyGObj();
         }
+    }
+    private void OnDestroy()
+    {
+        RepeatingInvoke();
+    }
+
+    private void DestroyGObj()
+    {
+        Destroy(gameObject);
     }
 
     private void RepeatingInvoke()
