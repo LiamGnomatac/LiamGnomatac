@@ -13,6 +13,8 @@ public class TaureauScript : MonoBehaviour
     public bool stopMoving;
     private bool canMove;
     private GameObject taureau;
+    public bool isStun;
+    public float timerStun;
 
     public static TaureauScript s_Singleton;
 
@@ -44,7 +46,13 @@ public class TaureauScript : MonoBehaviour
         agent.destination = destination.position;
 
 
+        if(isStun == true)
+        {
 
+            timerStun -= Time.deltaTime;
+
+
+        }
 
 
         if(GetComponent<EncensCS>().isTurnOn)
@@ -53,6 +61,19 @@ public class TaureauScript : MonoBehaviour
             TaureauGoToEncens();
 
         }
+    }
+
+
+    private void FixedUpdate()
+    {
+        
+        if (timerStun <= 0)
+        {
+            isStun = false;
+            taureau.GetComponent<NavMeshAgent>().enabled = true;
+
+        }
+
     }
 
     public void SetDestination(Transform bruit)
@@ -87,7 +108,9 @@ public class TaureauScript : MonoBehaviour
     public void TaureauStun()
     {
 
-        taureau.GetComponent<NavMeshAgent>() = false;
+        taureau.GetComponent<NavMeshAgent>().enabled = false;
+        timerStun = 30f;
+        isStun = true;
 
     }
 }
