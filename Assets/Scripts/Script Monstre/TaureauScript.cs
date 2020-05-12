@@ -5,16 +5,17 @@ using UnityEngine.AI;
 public class TaureauScript : MonoBehaviour
 {
 
-    public float vitesse = 1f;
+    private float vitesse = 1.2f;
     private NavMeshAgent agent;
     public Transform destination;
     public bool isRunning;
-    public bool isWalking;
     public bool stopMoving;
     private bool canMove;
     private GameObject taureau;
     public bool isStun;
-    public float timerStun;
+    public float timerStun = 30f;
+    private bool goToEncens;
+    public Transform bruit;
 
     public static TaureauScript s_Singleton;
 
@@ -34,6 +35,8 @@ public class TaureauScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        vitesse = GetComponent<NavMeshAgent>().speed;
         canMove = true;
         agent = GetComponent<NavMeshAgent>();
         taureau = gameObject;
@@ -45,6 +48,8 @@ public class TaureauScript : MonoBehaviour
 
         agent.destination = destination.position;
 
+        
+    
 
         if(isStun == true)
         {
@@ -55,10 +60,10 @@ public class TaureauScript : MonoBehaviour
         }
 
 
-        if(GetComponent<EncensCS>().isTurnOn)
+        if(GetComponent<EncensCS>().isTurnOn && isRunning == false)
         {
-
-            TaureauGoToEncens();
+            GetComponent<EncensCS>().transform.position = destination.position;
+            goToEncens = true;
 
         }
     }
@@ -74,12 +79,23 @@ public class TaureauScript : MonoBehaviour
 
         }
 
+        if (isRunning == true)
+        {
+
+            vitesse = 3;
+        }
+       else
+        {
+
+            vitesse = 1.2f;
+        }
     }
 
-    public void SetDestination(Transform bruit)
+    public void SetDestination()
     {
 
-        destination = bruit;
+        destination.position = bruit.position;
+        isRunning = true;
 
 
     }
@@ -111,6 +127,16 @@ public class TaureauScript : MonoBehaviour
         taureau.GetComponent<NavMeshAgent>().enabled = false;
         timerStun = 30f;
         isStun = true;
+        isRunning = false;
 
     }
+
+
+    public void KillingTaureau()
+    {
+        Debug.Log("Joueur tué par le taureau");      
+        SceneManagement.s_Singleton.GetKilled();
+
+    }
+
 }

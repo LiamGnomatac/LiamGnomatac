@@ -15,6 +15,7 @@ TagManager:
   - LampeTorche
   - Telephone
   - Etincelle
+  - Monstre
   layers:
   - Default
   - TransparentFX
