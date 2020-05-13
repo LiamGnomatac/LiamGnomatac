@@ -205,8 +205,10 @@ public class GameManager : MonoBehaviour
             {
                 statuette.AddComponent<Interactable>();
                 statuette.AddComponent<Throwable>();
+                statuette.GetComponent<Renderer>().material.color = Color.green;
                 statuette2.AddComponent<Interactable>();
                 statuette2.AddComponent<Throwable>();
+                statuette2.GetComponent<Renderer>().material.color = Color.green;
             }
 
         }

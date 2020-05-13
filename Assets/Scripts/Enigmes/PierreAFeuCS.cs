@@ -45,7 +45,10 @@ public class PierreAFeuCS : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        gameObject.AddComponent<Throwable>();
+        if(!gameObject.GetComponent<Throwable>())
+        {
+            gameObject.AddComponent<Throwable>();
+        }
     }
 
 }

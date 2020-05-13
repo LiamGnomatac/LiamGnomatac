@@ -21,15 +21,19 @@ public class CatchRock : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<Throwable>())
+        Debug.Log(other.name);
+        if (other.gameObject.GetComponent<Throwable>())
         {
-            if(isMain)
+            Debug.Log("contact");
+            if (isMain)
             {
                 GameManager.s_Singleton.isPressMain = true;
+                GetComponent<Renderer>().material.color = Color.green;
             }
             else
             {
                 GameManager.s_Singleton.isPress = true;
+                GetComponent<Renderer>().material.color = Color.green;
             }
             GameManager.s_Singleton.StatueAreCatchable();
         }

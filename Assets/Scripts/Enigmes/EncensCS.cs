@@ -17,6 +17,7 @@ public class EncensCS : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pointLight.SetActive(false);
         lightIntensity = pointLight.GetComponent<Light>().intensity;
         StartTurnOn();
         StayOn();
