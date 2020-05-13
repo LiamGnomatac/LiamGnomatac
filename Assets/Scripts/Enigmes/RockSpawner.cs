@@ -14,7 +14,7 @@ using Valve.VR.InteractionSystem;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && other.GetComponent<HandCollider>())
+        if (other.gameObject.tag == "Player" /*&& other.GetComponent<HandCollider>()*/)
         {
             InvokeRock();
         }

@@ -53,7 +53,7 @@ public class RocheTirer : MonoBehaviour
 
     private void ReActions()
     {
-        if (isEndE2 && GameManager.s_Singleton.rockSort)
+        if (isEndE2 && GameManager.s_Singleton.rockSort || isEndE2 && isReturn)
         {
             CloseDoor();
         }

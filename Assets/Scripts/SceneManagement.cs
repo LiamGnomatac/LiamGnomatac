@@ -66,6 +66,9 @@ public class SceneManagement : MonoBehaviour
             case 5:
                 SceneManager.LoadScene("Remonter");
                 break;
+            case 6:
+                SceneManager.LoadScene("Credit");
+                break;
         }
     }
 
@@ -93,6 +96,9 @@ public class SceneManagement : MonoBehaviour
                 break;
             case 5:
                 SceneManager.LoadScene("Remonter");
+                break;
+            case 6:
+                SceneManager.LoadScene("Credit");
                 break;
         }
     }
