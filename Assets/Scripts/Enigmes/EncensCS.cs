@@ -130,4 +130,17 @@ public class EncensCS : MonoBehaviour
 
         }
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other == TaureauScript.s_Singleton)
+        {
+            TurnOff();
+            EncensManager.s_Singleton.thereIsLight = false;
+            EncensManager.s_Singleton.encensCheck.SetActive(false);
+        }
+    }
+
+
 }

@@ -9,14 +9,15 @@ public class TaureauScript : MonoBehaviour
     private NavMeshAgent agent;
     public Transform destination;
     public bool isRunning;
-    public bool stopMoving;
     private bool canMove;
     private GameObject taureau;
     public bool isStun;
     public float timerStun = 30f;
     private bool goToEncens;
     public Transform bruit;
+    public Transform encensCheck;
 
+    #region Singleton
     public static TaureauScript s_Singleton;
 
 
@@ -32,12 +33,13 @@ public class TaureauScript : MonoBehaviour
         }
     }
 
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
 
         vitesse = GetComponent<NavMeshAgent>().speed;
-        canMove = true;
         agent = GetComponent<NavMeshAgent>();
         taureau = gameObject;
     }
@@ -59,13 +61,13 @@ public class TaureauScript : MonoBehaviour
 
         }
 
-
-        if(GetComponent<EncensCS>().isTurnOn && isRunning == false)
+        if(encensCheck == true && isRunning == false)
         {
-            GetComponent<EncensCS>().transform.position = destination.position;
-            goToEncens = true;
+
+            destination.position = encensCheck.position;
 
         }
+        
     }
 
 
