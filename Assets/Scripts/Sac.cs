@@ -1,26 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class Sac : MonoBehaviour
 {
 
     public GameObject sac ;
     public GameObject porte ;
+    public GameObject poignee;
+    public GameObject porteRotation;
     public GameObject telephone;
     public GameObject lampeTorche;
+    public Interactable interactablePorte;
+    public Interactable interactablePoignee;
+    public Interactable interactablePorteRotation;
     public Rigidbody rigidbodyPorte ;
     public bool CanOpenDoor ; 
     float numberOfEssentialsObjects;
     int trigger = 0 ;
-
+    private Transform pos;
 
 
     // Start is called before the first frame update
     void Start()
     {
         numberOfEssentialsObjects = 0;
-        
+        porte.GetComponent<Interactable>().enabled = false;
+        poignee.GetComponent<Interactable>().enabled = false;
+        porteRotation.GetComponent<Interactable>().enabled = false;
+        porteRotation.GetComponent<CircularDrive>().enabled = false;
+
     }
 
     // Update is called once per frame
@@ -46,13 +56,19 @@ public class Sac : MonoBehaviour
 
         if (CanOpenDoor == true)
         {
-            rigidbodyPorte.constraints = RigidbodyConstraints.None;
+            //porte.GetComponent<Interactable>().enabled = true;
+            poignee.GetComponent<Interactable>().enabled = true;
+            //porteRotation.GetComponent<Interactable>().enabled = true;
+            porteRotation.GetComponent<CircularDrive>().enabled = true;
+
         }
 
         if (CanOpenDoor == false)
         {
-            rigidbodyPorte.constraints = RigidbodyConstraints.FreezePositionY;
-            rigidbodyPorte.constraints = RigidbodyConstraints.FreezeRotationY;
+            porte.GetComponent<Interactable>().enabled = false;
+            poignee.GetComponent<Interactable>().enabled = false;
+            porteRotation.GetComponent<Interactable>().enabled = false;
+            porteRotation.GetComponent<CircularDrive>().enabled = false;
         }
 
        
@@ -92,5 +108,16 @@ public class Sac : MonoBehaviour
             numberOfEssentialsObjects -= 1;
             Debug.Log("Un Objet important à été retiré du sac");
         }
+    }
+
+    private void OpenDoor()
+    {
+        //transform.rotation = Quaternion.Euler(0, -90, 0);
+        porte.transform.Rotate(pos.transform.rotation.x, pos.transform.rotation.y - 1, pos.transform.rotation.z, Space.World);
+    }
+
+    private void CloseDoor()
+    {
+        porte.transform.Rotate(-pos.transform.rotation.x, -pos.transform.rotation.y, -pos.transform.rotation.z, Space.World);
     }
 }
