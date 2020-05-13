@@ -16,6 +16,7 @@ TagManager:
   - Telephone
   - Etincelle
   - Monstre
+  - Encens
   layers:
   - Default
   - TransparentFX

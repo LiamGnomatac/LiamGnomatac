@@ -15,7 +15,7 @@ public class TaureauScript : MonoBehaviour
     public float timerStun = 30f;
     private bool goToEncens;
     public Transform bruit;
-    public Transform encensCheck;
+    
 
     #region Singleton
     public static TaureauScript s_Singleton;
@@ -61,10 +61,10 @@ public class TaureauScript : MonoBehaviour
 
         }
 
-        if(encensCheck == true && isRunning == false)
+        if(EncensManager.s_Singleton.encensCheck == true && isRunning == false)
         {
 
-            destination.position = encensCheck.position;
+            destination.position = EncensManager.s_Singleton.encensCheck.transform.position;
 
         }
         
@@ -120,6 +120,11 @@ public class TaureauScript : MonoBehaviour
 
         }
 
+        if (other.CompareTag("Encens"))
+        {
+
+            TaureauGoToEncens();
+        }
 
     }
 

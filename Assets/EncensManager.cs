@@ -47,6 +47,7 @@ public class EncensManager : MonoBehaviour
             encensCheck.SetActive(true);
         }
 
+
         if (encensLight2 == true && thereIsLight == false)
         {
             encensCheck.transform.position = encens2.transform.position;
