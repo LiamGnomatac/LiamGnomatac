@@ -13,7 +13,7 @@ public class EncensManager : MonoBehaviour
     public GameObject encensLight3;
     public GameObject encens4;
     public GameObject encensLight4;
-    public GameObject encensCheck;
+    public Vector3 encensCheck;
     public bool thereIsLight = false;
 
     public static EncensManager s_Singleton;
@@ -34,43 +34,54 @@ public class EncensManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        encensCheck.SetActive(false);
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (encensLight1 == true && thereIsLight == false)
-        {
-            encensCheck.transform.position = encens1.transform.position;
-            thereIsLight = true;
-            encensCheck.SetActive(true);
-        }
 
-
-        if (encensLight2 == true && thereIsLight == false)
-        {
-            encensCheck.transform.position = encens2.transform.position;
-            thereIsLight = true;
-            encensCheck.SetActive(true);
-        }
-
-        if (encensLight3 == true && thereIsLight == false)
-        {
-            encensCheck.transform.position = encens3.transform.position;
-            thereIsLight = true;
-            encensCheck.SetActive(true);
-        }
-
-
-        if (encensLight4 == true && thereIsLight == false)
-        {
-            encensCheck.transform.position = encens4.transform.position;
-            thereIsLight = true;
-            encensCheck.SetActive(true);
-        }
-
+        Invoke("CheckEncens", 5);
 
 
     }
+
+
+    private void CheckEncens()
+    {
+
+        if (encens1.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
+        {
+            encensCheck = encens1.transform.position;
+            thereIsLight = true;
+
+        }
+
+
+        if (encens2.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
+        {
+            encensCheck = encens2.transform.position;
+            thereIsLight = true;
+
+        }
+
+        if (encens3.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
+        {
+            encensCheck = encens3.transform.position;
+            thereIsLight = true;
+
+        }
+
+
+        if (encens4.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
+        {
+            encensCheck = encens4.transform.position;
+            thereIsLight = true;
+
+        }
+
+
+    }
+
+
 }

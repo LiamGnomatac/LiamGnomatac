@@ -15,6 +15,7 @@ public class TaureauScript : MonoBehaviour
     public float timerStun = 30f;
     private bool goToEncens;
     public Transform bruit;
+    private Vector3 posDestination;
     
 
     #region Singleton
@@ -39,7 +40,7 @@ public class TaureauScript : MonoBehaviour
     void Start()
     {
 
-        vitesse = GetComponent<NavMeshAgent>().speed;
+        GetComponent<NavMeshAgent>().speed = vitesse;
         agent = GetComponent<NavMeshAgent>();
         taureau = gameObject;
     }
@@ -48,7 +49,7 @@ public class TaureauScript : MonoBehaviour
     void Update()
     {
 
-        agent.destination = destination.position;
+        agent.destination = posDestination;
 
         
     
@@ -61,10 +62,10 @@ public class TaureauScript : MonoBehaviour
 
         }
 
-        if(EncensManager.s_Singleton.encensCheck == true && isRunning == false)
+        if(EncensManager.s_Singleton.thereIsLight == true && isRunning == false)
         {
 
-            destination.position = EncensManager.s_Singleton.encensCheck.transform.position;
+            posDestination = EncensManager.s_Singleton.encensCheck;
 
         }
         
@@ -96,7 +97,7 @@ public class TaureauScript : MonoBehaviour
     public void SetDestination()
     {
 
-        destination.position = bruit.position;
+        posDestination = bruit.position;
         isRunning = true;
 
 
@@ -105,8 +106,8 @@ public class TaureauScript : MonoBehaviour
 
     public void TaureauGoToEncens()
     {
-
-        GetComponent<EncensCS>().TurnOff();
+       
+        posDestination = destination.position;
 
 
     }
@@ -124,6 +125,12 @@ public class TaureauScript : MonoBehaviour
         {
 
             TaureauGoToEncens();
+        }
+
+        if (other.CompareTag("Player"))
+        {
+
+            KillingTaureau();
         }
 
     }

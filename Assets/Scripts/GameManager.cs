@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this);
+
         //objEnigmaStatuette1 = statuette.transform.position;
         //objEnigmaStatuette2 = statuette2.transform.position;
     }
@@ -254,4 +256,9 @@ public class GameManager : MonoBehaviour
     }*/
 
     #endregion
+
+
+    
+
+
 }
