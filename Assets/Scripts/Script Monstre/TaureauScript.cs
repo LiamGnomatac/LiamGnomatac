@@ -49,7 +49,19 @@ public class TaureauScript : MonoBehaviour
     void Update()
     {
 
-        agent.destination = posDestination;
+        if (EncensManager.s_Singleton.direction() != Vector3.zero)
+        {
+            agent.destination = EncensManager.s_Singleton.direction();
+
+        }
+        else
+        {
+
+            agent.isStopped = true;
+
+        }
+
+        
 
         
     
@@ -90,28 +102,7 @@ public class TaureauScript : MonoBehaviour
 
     }
 
-
-    public void TaureauGoToEncens()
-    {
-        if (EncensManager.s_Singleton.direction() == null)
-        {
-
-
-            Vector3 stay = transform.position;
-            posDestination = stay;
-
-
-        }
-        else
-        {
-
-            posDestination = EncensManager.s_Singleton.direction();
-
-        }
-       
-
-
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {

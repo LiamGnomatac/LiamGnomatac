@@ -328,6 +328,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Encens 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
+        type: 3}
+      propertyPath: isTurnOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
       propertyPath: m_Name
@@ -338,12 +343,6 @@ PrefabInstance:
 --- !u!4 &112959275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592906766065262085, guid: 726d5ff7009f11e40ba67ac8346ba71f,
-    type: 3}
-  m_PrefabInstance: {fileID: 112959274}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &112959276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
     type: 3}
   m_PrefabInstance: {fileID: 112959274}
   m_PrefabAsset: {fileID: 0}
@@ -445,6 +444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Encens 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
+        type: 3}
+      propertyPath: isTurnOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
       propertyPath: m_Name
@@ -455,12 +459,6 @@ PrefabInstance:
 --- !u!4 &120064008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592906766065262085, guid: 726d5ff7009f11e40ba67ac8346ba71f,
-    type: 3}
-  m_PrefabInstance: {fileID: 120064007}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &120064009 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
     type: 3}
   m_PrefabInstance: {fileID: 120064007}
   m_PrefabAsset: {fileID: 0}
@@ -969,7 +967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371803629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.12, y: 0, z: 1.84}
+  m_LocalPosition: {x: -1.34, y: 0.869, z: 3.523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2796,6 +2794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e29ca55081fc248bc8e29ba5a8f134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destination: {fileID: 0}
   isRunning: 0
   isStun: 0
   timerStun: 0
@@ -3103,6 +3102,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Encens 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
+        type: 3}
+      propertyPath: isTurnOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
       propertyPath: m_Name
@@ -3113,12 +3117,6 @@ PrefabInstance:
 --- !u!4 &1327362407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592906766065262085, guid: 726d5ff7009f11e40ba67ac8346ba71f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1327362406}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1327362408 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
     type: 3}
   m_PrefabInstance: {fileID: 1327362406}
   m_PrefabAsset: {fileID: 0}
@@ -3515,16 +3513,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f3f4f35d158c54ab23034ba350c209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  encens1: {fileID: 1545704973}
-  encensLight1: {fileID: 1545704972}
-  encens2: {fileID: 112959277}
-  encensLight2: {fileID: 112959276}
-  encens3: {fileID: 120064010}
-  encensLight3: {fileID: 120064009}
-  encens4: {fileID: 1327362409}
-  encensLight4: {fileID: 1327362408}
-  encensCheck: {fileID: 1810926803}
+  encensCheck: {x: 0, y: 0, z: 0}
   thereIsLight: 0
+  encensList:
+  - {fileID: 1545704973}
+  - {fileID: 112959277}
+  - {fileID: 120064010}
+  - {fileID: 1327362409}
+  encensTurnOn: []
 --- !u!1001 &1545704970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3612,6 +3608,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -1.01
       objectReference: {fileID: 0}
+    - target: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
+        type: 3}
+      propertyPath: isTurnOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
       propertyPath: m_Name
@@ -3622,12 +3623,6 @@ PrefabInstance:
 --- !u!4 &1545704971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592906766065262085, guid: 726d5ff7009f11e40ba67ac8346ba71f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1545704970}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1545704972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
     type: 3}
   m_PrefabInstance: {fileID: 1545704970}
   m_PrefabAsset: {fileID: 0}
