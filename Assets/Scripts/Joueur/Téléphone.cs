@@ -6,7 +6,7 @@ public class Téléphone : MonoBehaviour
 {
     public GameObject spotLight;
     public GameObject lightTrigger;
-    [Range(10, 30)]
+    [Range(120, 360)]
     public float vibrationTime;
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class Téléphone : MonoBehaviour
     public void VibrationLocation()
     {
         Debug.Log("Vibre");
-        GameManager.s_Singleton.targetForTaurus.position = transform.position;
+        TaureauScript.s_Singleton.SetDestination(transform.position);
     }
 
     private void OnEnable()

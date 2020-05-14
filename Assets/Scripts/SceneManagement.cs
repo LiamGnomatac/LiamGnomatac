@@ -7,6 +7,7 @@ public class SceneManagement : MonoBehaviour
 {
     int buildIndex;
     public static SceneManagement s_Singleton;
+    private int DeathCount;
 
     private void Awake()
     {
@@ -105,6 +106,7 @@ public class SceneManagement : MonoBehaviour
 
     public void GetKilled()
     {
+        DeathCount++;
         Debug.Log("Joueur Mort");
         GetCurrentScene();
         SceneManager.LoadScene("Death Scene");
@@ -113,5 +115,13 @@ public class SceneManagement : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    private void TorchToPhone()
+    {
+        if(DeathCount > 2)
+        {
+            GameManager.s_Singleton.torchLightIsBroke = true;
+        }
     }
 }

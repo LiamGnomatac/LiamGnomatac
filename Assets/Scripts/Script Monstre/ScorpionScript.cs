@@ -8,6 +8,8 @@ public class ScorpionScript : MonoBehaviour
     public GameObject zone1;
     public GameObject zone2;
     public GameObject zone3;
+    public GameObject zone4;
+    public GameObject zone5;
     public float compteurMur = 8f;
     public float compteurPlafond = 15f;
     public float timerNextTP = 20f;

@@ -25,6 +25,7 @@ public class Pillier : MonoBehaviour
     {
         if(collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
         {
+            TaureauScript.s_Singleton.TaureauStun();
             Invoke("DestroyGObj", invTime);
         }
     }

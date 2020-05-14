@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotLight: {fileID: 4316980919406168947}
   lightTrigger: {fileID: 2903873490803557405}
-  vibrationTime: 10
+  vibrationTime: 200
 --- !u!1 &4811899869059612036
 GameObject:
   m_ObjectHideFlags: 0

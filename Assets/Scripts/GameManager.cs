@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public bool torchLightIsBroke;
+
     #region Variable Enigme
     public GameObject statuette, statuette2;
 
@@ -40,8 +41,6 @@ public class GameManager : MonoBehaviour
 
     //public Vector3 objEnigmaTorche, objEnigmaStatuette1, objEnigmaStatuette2;
     #endregion
-
-    public Transform targetForTaurus;
 
     [HideInInspector]
     public Transform tpRelativePoint;
