@@ -100,6 +100,7 @@ public class RemonterM : MonoBehaviour
 
     private void InstanceLargeRock()
     {
+        Debug.Log("cailloux qui tombe");
         Instantiate(LargeRock, spawnPointLandslide[i]);
     }
 
