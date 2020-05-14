@@ -24,7 +24,7 @@ public class BruitManager : MonoBehaviour
 
 
         // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         bruit.SetActive(false);
     }
