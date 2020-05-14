@@ -16,7 +16,7 @@ public class PillierCentral : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
+        if (collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning && GameManager.s_Singleton.pillarBroke > 4)
         {
             DestroyGObj();
         }
