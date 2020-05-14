@@ -99,12 +99,12 @@ public class Porte : MonoBehaviour
     private void OpenDoor()
     {
         //transform.rotation = Quaternion.Euler(0, -90, 0);
-        transform.Rotate(pos.transform.rotation.x, pos.transform.rotation.y -1 , pos.transform.rotation.z,Space.World);
+        transform.Rotate(pos.transform.rotation.x, pos.transform.rotation.y -1 , pos.transform.rotation.z);
     }
 
     private void CloseDoor()
     {
-        transform.Rotate(-pos.transform.rotation.x, -pos.transform.rotation.y, -pos.transform.rotation.z,Space.World);
+        transform.Rotate(-pos.transform.rotation.x, -pos.transform.rotation.y, -pos.transform.rotation.z);
     }
 
     private void OneTime()
