@@ -49,17 +49,7 @@ public class TaureauScript : MonoBehaviour
     void Update()
     {
 
-        if (EncensManager.s_Singleton.direction() != Vector3.zero)
-        {
-            agent.destination = EncensManager.s_Singleton.direction();
-
-        }
-        else
-        {
-
-            agent.isStopped = true;
-
-        }
+        
 
         
 
@@ -90,6 +80,18 @@ public class TaureauScript : MonoBehaviour
         }
 
         
+    }
+
+    public void UpdateDestination()
+    {
+        if (EncensManager.s_Singleton.direction() != Vector3.zero)
+        {
+            agent.destination = EncensManager.s_Singleton.direction();
+        }
+        else
+        {
+            agent.isStopped = true;
+        }
     }
 
     public void SetDestination()

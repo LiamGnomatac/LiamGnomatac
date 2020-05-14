@@ -7,10 +7,7 @@ public class EncensManager : MonoBehaviour
 
     public Vector3 encensCheck;
     public bool thereIsLight = false;
-    public List<GameObject> encensList;
-    public List<GameObject> encensTurnOn = new List<GameObject>();
-
-
+    public List<EncensCS> encensList;
     public static EncensManager s_Singleton;
 
     private void Awake()
@@ -42,37 +39,18 @@ public class EncensManager : MonoBehaviour
     }
 
 
-    public void CheckEncens()
-    {
-
-        encensTurnOn.Clear();
-
-        for (int i = 0; i < encensList.Count; i++)
-        {
-           
-            if (encensList[i].GetComponent<EncensCS>().isTurnOn == true)
-            {
-
-               
-                encensTurnOn.Add(encensList[i]);
-                Debug.Log(encensList.Count);
-                
-            }
-        }
-
-        
-    }
+    
 
     public Vector3 direction()
     {
-        int rand = Random.Range(0, encensTurnOn.Count);
-
-        Vector3 direction = encensTurnOn[rand].transform.position;
-
-        encensTurnOn.RemoveAt(rand);
-
-        return direction;
-
+        for (int i = 0; i < encensList.Count; i++)
+        {
+            if (encensList[i].isTurnOn)
+            {
+                return encensList[i].transform.position;
+            }
+        }
+        return Vector3.zero;
     }
 
 }

@@ -71,6 +71,7 @@ public class EncensCS : MonoBehaviour
             pointLight.SetActive(true);
             pointLight.GetComponent<Light>().intensity = lightIntensity;
             Instantiate(vfxFlame, pointLight.transform);
+            TaureauScript.s_Singleton.UpdateDestination();
         }
     }
 
@@ -80,6 +81,7 @@ public class EncensCS : MonoBehaviour
         isTurnOn = false;
         pointLight.SetActive(false);
         Destroy(pointLight.GetComponentInChildren<ParticleSystem>().gameObject);
+        TaureauScript.s_Singleton.UpdateDestination();
     }
 
     private void RandTurnOn()
@@ -140,7 +142,6 @@ public class EncensCS : MonoBehaviour
             
             TurnOff();
             EncensManager.s_Singleton.thereIsLight = false;
-            TaureauScript.s_Singleton.TaureauGoToEncens();
            
         }
     }
