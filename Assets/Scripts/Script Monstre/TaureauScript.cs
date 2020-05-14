@@ -5,17 +5,12 @@ using UnityEngine.AI;
 public class TaureauScript : MonoBehaviour
 {
 
-    private float vitesse = 1.2f;
+    public float minSpeed = 1.2f;
+    public float maxSpeed = 3;
     private NavMeshAgent agent;
-    public Transform destination;
     public bool isRunning;
-    private bool canMove;
-    private GameObject taureau;
     public bool isStun;
     public float timerStun = 30f;
-    private bool goToEncens;
-    public Transform bruit;
-    private Vector3 posDestination;
     
 
     #region Singleton
@@ -39,23 +34,13 @@ public class TaureauScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        GetComponent<NavMeshAgent>().speed = vitesse;
         agent = GetComponent<NavMeshAgent>();
-        taureau = gameObject;
+        agent.speed = minSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        
-
-        
-
-        
-    
-
         if(isStun == true)
         {
 
@@ -63,23 +48,16 @@ public class TaureauScript : MonoBehaviour
 
 
         }
-
-       
-        
     }
 
 
     private void FixedUpdate()
     {
-        
         if (timerStun <= 0)
         {
             isStun = false;
-            taureau.GetComponent<NavMeshAgent>().enabled = true;
-
+            agent.enabled = true;
         }
-
-        
     }
 
     public void UpdateDestination()
@@ -94,14 +72,11 @@ public class TaureauScript : MonoBehaviour
         }
     }
 
-    public void SetDestination()
+    public void SetDestination(Vector3 bruit)
     {
-
-        posDestination = bruit.position;
+        agent.destination = bruit;
         isRunning = true;
-        vitesse = 3f;
-
-
+        agent.speed = maxSpeed;
     }
 
     
@@ -110,15 +85,12 @@ public class TaureauScript : MonoBehaviour
     {
         if(isRunning == true)
         {
-
             TaureauStun();
-
         }
 
 
         if (other.CompareTag("Player"))
         {
-
             KillingTaureau();
         }
 
@@ -126,12 +98,11 @@ public class TaureauScript : MonoBehaviour
 
     public void TaureauStun()
     {
-
-        taureau.GetComponent<NavMeshAgent>().enabled = false;
+        agent.enabled = false;
         timerStun = 30f;
         isStun = true;
         isRunning = false;
-        vitesse = 1.2f;
+        agent.speed = minSpeed;
     }
 
 
@@ -139,7 +110,6 @@ public class TaureauScript : MonoBehaviour
     {
         Debug.Log("Joueur tué par le taureau");      
         SceneManagement.s_Singleton.GetKilled();
-
     }
 
 }

@@ -42,9 +42,9 @@ public class BruitManager : MonoBehaviour
             if (thereIsSound == false)
             {
                 bruit.SetActive(true);
-               bruit.transform.position = other.transform.position;
-               thereIsSound = true;
-                TaureauScript.s_Singleton.SetDestination();
+                bruit.transform.position = other.transform.position;
+                thereIsSound = true;
+                //TaureauScript.s_Singleton.SetDestination();
 
             }
            
