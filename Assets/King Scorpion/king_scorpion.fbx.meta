@@ -1,0 +1,3422 @@
+fileFormatVersion: 2
+guid: 0aa25d75c740b384daf251e97a8c5323
+timeCreated: 1511422919
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bottom_Jaw
+    100002: Chest
+    100004: Head
+    100006: //RootNode
+    100008: LBackLeg
+    100010: LBackLeg2
+    100012: LBackLeg3
+    100014: LBackLegTip
+    100016: LClavicle
+    100018: LCLawBase
+    100020: LCLawTip
+    100022: LClawTop
+    100024: LElbow
+    100026: LFang01
+    100028: LFang02
+    100030: LFrontLeg
+    100032: LFrontLeg2
+    100034: LFrontLeg3
+    100036: LFrontLegTip
+    100038: LMandible_Base
+    100040: LMandiple_Fang01
+    100042: LMandiple_Fang02
+    100044: LMandiple_Tip
+    100046: Lower_Back
+    100048: LShoulder
+    100050: LSmall_FInger1a
+    100052: LSmall_Finger1b
+    100054: LSmall_FInger2a
+    100056: LSMall_Thumb1
+    100058: LSmall_Thumb2
+    100060: LSmall_Wrist
+    100062: LSmallArm
+    100064: LSmallElbow
+    100066: LSmallFInger2b
+    100068: LStinger_Base
+    100070: LStinger_Tip
+    100072: Neck_Base
+    100074: Pelvis
+    100076: RBackReg
+    100078: RBackReg2
+    100080: RBackReg3
+    100082: RBackRegTip
+    100084: RClavicle
+    100086: RClawTop
+    100088: RCRawBase
+    100090: RCRawTip
+    100092: RElbow
+    100094: RFang01
+    100096: RFang02
+    100098: RFrontReg
+    100100: RFrontReg2
+    100102: RFrontReg3
+    100104: RFrontRegTip
+    100106: RMandible_Base
+    100108: RMandiple_Fang01
+    100110: RMandiple_Fang02
+    100112: RMandiple_Tip
+    100114: Root
+    100116: RShoulder
+    100118: RSmall_FInger1a
+    100120: RSmall_Finger1b
+    100122: RSmall_FInger2a
+    100124: RSMall_Thumb1
+    100126: RSmall_Thumb2
+    100128: RSmall_Wrist
+    100130: RSmallArm
+    100132: RSmallElbow
+    100134: RSmallFInger2b
+    100136: RStinger_Base
+    100138: RStinger_Tip
+    100140: scorpion_mesh
+    100142: tail01
+    100144: tail02
+    100146: tail03
+    100148: tail04
+    100150: tail05
+    100152: tail06
+    100154: tail07
+    100156: tail07 1
+    100158: tail_base
+    100160: tail_tip
+    100162: Top_Jaw
+    400000: Bottom_Jaw
+    400002: Chest
+    400004: Head
+    400006: //RootNode
+    400008: LBackLeg
+    400010: LBackLeg2
+    400012: LBackLeg3
+    400014: LBackLegTip
+    400016: LClavicle
+    400018: LCLawBase
+    400020: LCLawTip
+    400022: LClawTop
+    400024: LElbow
+    400026: LFang01
+    400028: LFang02
+    400030: LFrontLeg
+    400032: LFrontLeg2
+    400034: LFrontLeg3
+    400036: LFrontLegTip
+    400038: LMandible_Base
+    400040: LMandiple_Fang01
+    400042: LMandiple_Fang02
+    400044: LMandiple_Tip
+    400046: Lower_Back
+    400048: LShoulder
+    400050: LSmall_FInger1a
+    400052: LSmall_Finger1b
+    400054: LSmall_FInger2a
+    400056: LSMall_Thumb1
+    400058: LSmall_Thumb2
+    400060: LSmall_Wrist
+    400062: LSmallArm
+    400064: LSmallElbow
+    400066: LSmallFInger2b
+    400068: LStinger_Base
+    400070: LStinger_Tip
+    400072: Neck_Base
+    400074: Pelvis
+    400076: RBackReg
+    400078: RBackReg2
+    400080: RBackReg3
+    400082: RBackRegTip
+    400084: RClavicle
+    400086: RClawTop
+    400088: RCRawBase
+    400090: RCRawTip
+    400092: RElbow
+    400094: RFang01
+    400096: RFang02
+    400098: RFrontReg
+    400100: RFrontReg2
+    400102: RFrontReg3
+    400104: RFrontRegTip
+    400106: RMandible_Base
+    400108: RMandiple_Fang01
+    400110: RMandiple_Fang02
+    400112: RMandiple_Tip
+    400114: Root
+    400116: RShoulder
+    400118: RSmall_FInger1a
+    400120: RSmall_Finger1b
+    400122: RSmall_FInger2a
+    400124: RSMall_Thumb1
+    400126: RSmall_Thumb2
+    400128: RSmall_Wrist
+    400130: RSmallArm
+    400132: RSmallElbow
+    400134: RSmallFInger2b
+    400136: RStinger_Base
+    400138: RStinger_Tip
+    400140: scorpion_mesh
+    400142: tail01
+    400144: tail02
+    400146: tail03
+    400148: tail04
+    400150: tail05
+    400152: tail06
+    400154: tail07
+    400156: tail07 1
+    400158: tail_base
+    400160: tail_tip
+    400162: Top_Jaw
+    4300000: scorpion_mesh
+    7400000: kingscorpion_gethit
+    7400002: kingscorpion_idle
+    7400004: kingscorpion_sting_small
+    7400006: kingscorpion_walk
+    7400008: kingscorpion_attack01
+    7400010: kingscorpion_attack02
+    7400012: kingscorpion_jump
+    7400014: kingscorpion_land
+    7400016: kingscorpion_taunt
+    7400018: kingscorpion_straferight
+    7400020: kingscorpion_strafeleft
+    7400022: kingscorpion_knockdown
+    7400024: kingscorpion_getup
+    7400026: kingscorpion_dead
+    7400028: kingscorpion_bigsting
+    7400030: kingscorpion_gethit2
+    9500000: //RootNode
+    13700000: scorpion_mesh
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: kingscorpion_idle
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_sting_small
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_walk
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_gethit
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_attack01
+      takeName: Take 001
+      firstFrame: 170
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_attack02
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_jump
+      takeName: Take 001
+      firstFrame: 260
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_land
+      takeName: Take 001
+      firstFrame: 270
+      lastFrame: 280
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_taunt
+      takeName: Take 001
+      firstFrame: 285
+      lastFrame: 310
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_straferight
+      takeName: Take 001
+      firstFrame: 315
+      lastFrame: 330
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_strafeleft
+      takeName: Take 001
+      firstFrame: 350
+      lastFrame: 365
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_knockdown
+      takeName: Take 001
+      firstFrame: 380
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_getup
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 445
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_dead
+      takeName: Take 001
+      firstFrame: 460
+      lastFrame: 485
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_bigsting
+      takeName: Take 001
+      firstFrame: 500
+      lastFrame: 610
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: kingscorpion_gethit2
+      takeName: Take 001
+      firstFrame: 620
+      lastFrame: 650
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Lower_Back
+        weight: 1
+      - path: Root/Lower_Back/Chest
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger1a/LSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSmall_FInger2a/LSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/LSmallArm/LSmallElbow/LSmall_Wrist/LSMall_Thumb1/LSmall_Thumb2
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Fang01/LMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/LMandible_Base/LMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Fang01/RMandiple_Fang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Bottom_Jaw/RMandible_Base/RMandiple_Tip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/LFang01/LFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/Head/Top_Jaw/RFang01/RFang02
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LCLawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/LClavicle/LShoulder/LElbow/LCLawBase/LClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RClawTop
+        weight: 1
+      - path: Root/Lower_Back/Chest/Neck_Base/RClavicle/RShoulder/RElbow/RCRawBase/RCRawTip
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger1a/RSmall_Finger1b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSmall_FInger2a/RSmallFInger2b
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1
+        weight: 1
+      - path: Root/Lower_Back/Chest/RSmallArm/RSmallElbow/RSmall_Wrist/RSMall_Thumb1/RSmall_Thumb2
+        weight: 1
+      - path: Root/Pelvis
+        weight: 1
+      - path: Root/Pelvis/LBackLeg
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3
+        weight: 1
+      - path: Root/Pelvis/LBackLeg/LBackLeg2/LBackLeg3/LBackLegTip
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3
+        weight: 1
+      - path: Root/Pelvis/LFrontLeg/LFrontLeg2/LFrontLeg3/LFrontLegTip
+        weight: 1
+      - path: Root/Pelvis/RBackReg
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3
+        weight: 1
+      - path: Root/Pelvis/RBackReg/RBackReg2/RBackReg3/RBackRegTip
+        weight: 1
+      - path: Root/Pelvis/RFrontReg
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3
+        weight: 1
+      - path: Root/Pelvis/RFrontReg/RFrontReg2/RFrontReg3/RFrontRegTip
+        weight: 1
+      - path: Root/Pelvis/tail_base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/LStinger_Base/LStinger_Tip
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base
+        weight: 1
+      - path: Root/Pelvis/tail_base/tail01/tail02/tail03/tail04/tail05/tail06/tail07/tail07
+          1/tail_tip/RStinger_Base/RStinger_Tip
+        weight: 1
+      - path: scorpion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

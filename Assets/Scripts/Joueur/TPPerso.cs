@@ -9,6 +9,7 @@ public class TPPerso : MonoBehaviour
 {
     // Variable
 
+    
     private Player player;
     private Vector3 lookAtPosition = Vector3.zero;
     private Transform lookAtJointTransform;
