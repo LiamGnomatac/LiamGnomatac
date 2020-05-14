@@ -12,6 +12,7 @@ public class Sac : MonoBehaviour
     public GameObject porteRotation;
     public GameObject telephone;
     public GameObject lampeTorche;
+    public GameObject zoneEnd;
     public Interactable interactablePorte;
     public Interactable interactablePoignee;
     public Interactable interactablePorteRotation;
@@ -30,7 +31,7 @@ public class Sac : MonoBehaviour
         poignee.GetComponent<Interactable>().enabled = false;
         porteRotation.GetComponent<Interactable>().enabled = false;
         porteRotation.GetComponent<CircularDrive>().enabled = false;
-
+        zoneEnd.SetActive(false);
     }
 
     // Update is called once per frame
@@ -119,5 +120,14 @@ public class Sac : MonoBehaviour
     private void CloseDoor()
     {
         porte.transform.Rotate(-pos.transform.rotation.x, -pos.transform.rotation.y, -pos.transform.rotation.z, Space.World);
+    }
+
+    private void FixedUpdate()
+    {
+        if(CanOpenDoor == true)
+        {
+            zoneEnd.SetActive(true);
+
+        }
     }
 }
