@@ -5,16 +5,11 @@ using UnityEngine;
 public class EncensManager : MonoBehaviour
 {
 
-    public GameObject encens1;
-    public GameObject encensLight1;
-    public GameObject encens2;
-    public GameObject encensLight2;
-    public GameObject encens3;
-    public GameObject encensLight3;
-    public GameObject encens4;
-    public GameObject encensLight4;
     public Vector3 encensCheck;
     public bool thereIsLight = false;
+    public List<GameObject> encensList;
+    public List<GameObject> encensTurnOn = new List<GameObject>();
+
 
     public static EncensManager s_Singleton;
 
@@ -41,47 +36,43 @@ public class EncensManager : MonoBehaviour
     void FixedUpdate()
     {
 
-        Invoke("CheckEncens", 5);
+        
 
 
     }
 
 
-    private void CheckEncens()
+    public void CheckEncens()
     {
 
-        if (encens1.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
-        {
-            encensCheck = encens1.transform.position;
-            thereIsLight = true;
+        encensTurnOn.Clear();
 
+        for (int i = 0; i < encensList.Count; i++)
+        {
+           
+            if (encensList[i].GetComponent<EncensCS>().isTurnOn == true)
+            {
+
+               
+                encensTurnOn.Add(encensList[i]);
+                Debug.Log(encensList.Count);
+                
+            }
         }
 
-
-        if (encens2.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
-        {
-            encensCheck = encens2.transform.position;
-            thereIsLight = true;
-
-        }
-
-        if (encens3.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
-        {
-            encensCheck = encens3.transform.position;
-            thereIsLight = true;
-
-        }
-
-
-        if (encens4.GetComponent<EncensCS>().isTurnOn == true && thereIsLight == false)
-        {
-            encensCheck = encens4.transform.position;
-            thereIsLight = true;
-
-        }
-
-
+        
     }
 
+    public Vector3 direction()
+    {
+        int rand = Random.Range(0, encensTurnOn.Count);
+
+        Vector3 direction = encensTurnOn[rand].transform.position;
+
+        encensTurnOn.RemoveAt(rand);
+
+        return direction;
+
+    }
 
 }

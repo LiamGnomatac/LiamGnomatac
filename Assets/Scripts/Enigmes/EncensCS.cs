@@ -71,6 +71,8 @@ public class EncensCS : MonoBehaviour
             pointLight.SetActive(true);
             pointLight.GetComponent<Light>().intensity = lightIntensity;
             Instantiate(vfxFlame, pointLight.transform);
+            EncensManager.s_Singleton.CheckEncens();
+            TaureauScript.s_Singleton.TaureauGoToEncens();
         }
     }
 

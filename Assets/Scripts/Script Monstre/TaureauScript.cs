@@ -62,12 +62,7 @@ public class TaureauScript : MonoBehaviour
 
         }
 
-        if(EncensManager.s_Singleton.thereIsLight == true && isRunning == false)
-        {
-
-            posDestination = EncensManager.s_Singleton.encensCheck;
-
-        }
+       
         
     }
 
@@ -82,16 +77,7 @@ public class TaureauScript : MonoBehaviour
 
         }
 
-        if (isRunning == true)
-        {
-
-            vitesse = 3;
-        }
-       else
-        {
-
-            vitesse = 1.2f;
-        }
+        
     }
 
     public void SetDestination()
@@ -99,6 +85,7 @@ public class TaureauScript : MonoBehaviour
 
         posDestination = bruit.position;
         isRunning = true;
+        vitesse = 3f;
 
 
     }
@@ -106,8 +93,22 @@ public class TaureauScript : MonoBehaviour
 
     public void TaureauGoToEncens()
     {
+        if (EncensManager.s_Singleton.direction() == null)
+        {
+
+
+            Vector3 stay = transform.position;
+            posDestination = stay;
+
+
+        }
+        else
+        {
+
+            posDestination = EncensManager.s_Singleton.direction();
+
+        }
        
-        posDestination = destination.position;
 
 
     }
@@ -121,11 +122,6 @@ public class TaureauScript : MonoBehaviour
 
         }
 
-        if (other.CompareTag("Encens"))
-        {
-
-            TaureauGoToEncens();
-        }
 
         if (other.CompareTag("Player"))
         {
@@ -142,7 +138,7 @@ public class TaureauScript : MonoBehaviour
         timerStun = 30f;
         isStun = true;
         isRunning = false;
-
+        vitesse = 1.2f;
     }
 
 
