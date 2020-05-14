@@ -21,13 +21,16 @@ public class Piedestale : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject == statuette && !statuette.GetComponent<Throwable>())
+        {
+            statuette.AddComponent<Interactable>();
+            statuette.AddComponent<Throwable>();
+        }
         if (other.gameObject == statuette)
         {
             Debug.Log(statuette.name);
             statuette.transform.position = transform.position;
             statuette.transform.Rotate(transform.rotation.eulerAngles);
-            statuette.GetComponent<Interactable>().enabled = false;
-            statuette.GetComponent<Throwable>().enabled = false;
             statuette.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             GameManager.s_Singleton.statueIsStatic++;
         }
@@ -41,9 +44,10 @@ public class Piedestale : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject == statuette)
+        if(other.gameObject == statuette )
         {
             GameManager.s_Singleton.statueIsStatic--;
+            statuette.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
 
         if (GameManager.s_Singleton.statueIsStatic < 2)

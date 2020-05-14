@@ -90,7 +90,7 @@ public class RemonterM : MonoBehaviour
 
     private void End()
     {
-        SceneManagement.s_Singleton.ChooseLoadScene(6);
+        SceneManagement.s_Singleton.ChooseLoadScene(0);
     }
 
     private void Landslide()
@@ -120,14 +120,21 @@ public class RemonterM : MonoBehaviour
             if(!isSecond)
             {
                 TpMonster(spawnPointMonsterR3);
+                isSecond = true;
+                time = countdown;
+                return;
             }
             if(!isThird)
             {
                 TpMonster(spawnPointMonsterR2);
+                isThird = true;
+                time = countdown;
+                return;
             }
             else
             {
                 TpMonster(spawnPointMonsterR1);
+                time = countdown;
             }
             time = countdown;
         }
