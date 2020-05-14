@@ -43,6 +43,7 @@ public class EncensManager : MonoBehaviour
 
     public Vector3 direction()
     {
+        Debug.Log("je vais par ici");
         for (int i = 0; i < encensList.Count; i++)
         {
             if (encensList[i].isTurnOn)

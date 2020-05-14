@@ -8,9 +8,10 @@ public class TaureauScript : MonoBehaviour
     public float minSpeed = 1.2f;
     public float maxSpeed = 3;
     private NavMeshAgent agent;
-    public bool isRunning;
-    public bool isStun;
-    public float timerStun = 30f;
+    public bool isRunning = false;
+    public bool isStun = false;
+    public float stunDuration = 30;
+    private float timerStun;
     
 
     #region Singleton
@@ -34,6 +35,7 @@ public class TaureauScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timerStun = stunDuration;
         agent = GetComponent<NavMeshAgent>();
         agent.speed = minSpeed;
     }
@@ -53,10 +55,10 @@ public class TaureauScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (timerStun <= 0)
+        if (timerStun <= 0 )
         {
             isStun = false;
-            agent.enabled = true;
+            agent.isStopped = false;
         }
     }
 
@@ -74,16 +76,24 @@ public class TaureauScript : MonoBehaviour
 
     public void SetDestination(Vector3 bruit)
     {
-        agent.destination = bruit;
-        isRunning = true;
+        Cancel();
+        agent.isStopped = true;
         agent.speed = maxSpeed;
+        agent.ResetPath();
+        transform.LookAt(bruit);
+        agent.destination = Vector3.forward.normalized;
+        isRunning = true;
+        Invoke("UpdateDestination", 5);
     }
 
-    
+    public void Cancel()
+    {
+        
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(isRunning == true)
+        if(isRunning == true && other.gameObject.layer == 9)
         {
             TaureauStun();
         }
@@ -98,8 +108,9 @@ public class TaureauScript : MonoBehaviour
 
     public void TaureauStun()
     {
-        agent.enabled = false;
-        timerStun = 30f;
+        agent.isStopped = true;
+        agent.ResetPath();
+        timerStun = stunDuration;
         isStun = true;
         isRunning = false;
         agent.speed = minSpeed;
