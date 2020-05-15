@@ -46,7 +46,8 @@ public class ChienScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canCount == true)
+        transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
+        if (canCount == true)
         {
             chienTimerTp += Time.deltaTime;
         }
