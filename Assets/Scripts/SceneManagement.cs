@@ -8,6 +8,7 @@ public class SceneManagement : MonoBehaviour
     int buildIndex;
     public static SceneManagement s_Singleton;
     private int DeathCount;
+    public bool niveau4 = false;
 
     private void Awake()
     {
@@ -63,6 +64,7 @@ public class SceneManagement : MonoBehaviour
                 break;
             case 4:
                 SceneManager.LoadScene("Niveau4");
+                niveau4 = true;
                 break;
             case 5:
                 SceneManager.LoadScene("Remonter");

@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScorpionScript : MonoBehaviour
 {
-
+    public GameObject mesh;
     public GameObject zone1;
     public GameObject zone2;
     public GameObject zone3;
@@ -89,7 +90,7 @@ public class ScorpionScript : MonoBehaviour
     {
 
 
-        int zoneChoisie = Random.Range(0, 3);
+        int zoneChoisie = Random.Range(0, 4);
 
         switch (zoneChoisie)
         {
@@ -111,17 +112,37 @@ public class ScorpionScript : MonoBehaviour
 
             case 2:
 
-                gameObject.transform.position = zone3.transform.position;
-                ScorpionPlaflond();
+                if (SceneManagement.s_Singleton.niveau4)
+                {
+                    ScorpionTP();
+                }
+                else
+                {
+                    gameObject.transform.position = zone3.transform.position;
+                    ScorpionPlaflond();
+                }
 
 
+                break;
+
+            case 3:
+
+                if (SceneManagement.s_Singleton.niveau4)
+                {
+                    gameObject.transform.position = zone3.transform.position;
+                    ScorpionMur();
+                }
+                else
+                {
+                    ScorpionTP();
+                }
                 break;
         }
     }
 
     public void ScorpionMove()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        mesh.SetActive(false);
         int tempsSup = Random.Range(0, 21);
         timerNextTP = 20 + tempsSup;
         scorpionMove = true;
@@ -133,7 +154,7 @@ public class ScorpionScript : MonoBehaviour
 
     public void ScorpionMur()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = true;
+        mesh.SetActive(true);
         compteurMur = 8f;
         scorpionMur = true;
         Debug.Log("Le scorpion est dans un mur");
@@ -142,7 +163,7 @@ public class ScorpionScript : MonoBehaviour
 
     public void ScorpionPlaflond()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = true;
+        mesh.SetActive(true);
         compteurPlafond = 15f;
         scorpionPlafond = true;
         Debug.Log("Le scorpion est dans une cavité au plafond");
