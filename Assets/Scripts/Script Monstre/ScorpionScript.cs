@@ -83,7 +83,7 @@ public class ScorpionScript : MonoBehaviour
 
         if(compteurMur <= 0)
         {
-            KillingScorpion();
+            ScreamerManager.s_Singleton.KillingScorpion();
             ScorpionMove();
         }
 
@@ -189,18 +189,13 @@ public class ScorpionScript : MonoBehaviour
         if (other.CompareTag("Joueur"))
         {
 
-            KillingScorpion();
+            ScreamerManager.s_Singleton.KillingScorpion();
 
         }
         
     }
 
 
-    public void KillingScorpion()
-    {
-        Debug.Log("Joueur tué par le scorpion");
-        
-      //  SceneManagement.s_Singleton.GetKilled();
-    }
+    
 
 }

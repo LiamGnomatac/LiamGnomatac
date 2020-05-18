@@ -42,7 +42,7 @@ public class ScreamerManager : MonoBehaviour
     public void KillingScorpion()
     {
 
-        SceneManagement.s_Singleton.Invoke("GetKilled", 2);
+        SceneManagement.s_Singleton.Invoke("GetKilled", 2.5f);
         Debug.Log("Joueur tué par le scorpion");
         scorpion.SetActive(true);
 

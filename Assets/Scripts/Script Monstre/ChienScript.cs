@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChienScript : MonoBehaviour
 {
-
+    public GameObject mesh;
     private float chienTimerOutZone = 5f;
     private float chienTimerAttaque = 5.0f;
     public float chienTimerTp = 0.0f;
@@ -39,7 +39,7 @@ public class ChienScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        mesh.SetActive(false);
         chienCanTP = false;
     }
 
@@ -147,7 +147,7 @@ public class ChienScript : MonoBehaviour
     {
         if (chienCanTP == true)
         {
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            mesh.SetActive(false);
             canCount = true;
 
         }
@@ -169,7 +169,7 @@ public class ChienScript : MonoBehaviour
 
                 gameObject.transform.position = zone1.transform.position;
                 chienCanTP = false;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                mesh.SetActive(true);
 
 
                 break;
@@ -177,7 +177,7 @@ public class ChienScript : MonoBehaviour
 
                 gameObject.transform.position = zone2.transform.position;
                 chienCanTP = false;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                mesh.SetActive(true);
 
                 break;
 
@@ -185,7 +185,7 @@ public class ChienScript : MonoBehaviour
 
                 gameObject.transform.position = zone3.transform.position;
                 chienCanTP = false;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                mesh.SetActive(true);
 
                 break;
         }
