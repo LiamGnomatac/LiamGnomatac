@@ -18,7 +18,7 @@ public class ScorpionScript : MonoBehaviour
     public bool scorpionMur = false;
     public bool scorpionHitFlash = false;
     public bool scorpionPlafond = false;
-    public Collider lightTrigger;
+    
     public Collider joueur;
 
 
@@ -32,7 +32,9 @@ public class ScorpionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scorpionMove == true)
+        transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
+
+        if (scorpionMove == true)
         {
 
             timerNextTP -= Time.deltaTime;
@@ -81,7 +83,8 @@ public class ScorpionScript : MonoBehaviour
 
         if(compteurMur <= 0)
         {
-            KillingScorpion();
+            ScreamerManager.s_Singleton.KillingScorpion();
+            ScorpionMove();
         }
 
     }
@@ -155,7 +158,7 @@ public class ScorpionScript : MonoBehaviour
     public void ScorpionMur()
     {
         mesh.SetActive(true);
-        compteurMur = 8f;
+        compteurMur = 12f;
         scorpionMur = true;
         Debug.Log("Le scorpion est dans un mur");
 
@@ -173,26 +176,26 @@ public class ScorpionScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other == lightTrigger)
+        if(other == LampeTorche.s_Singleton.lightTrigger)
         {
             scorpionHitFlash = true;
         }
 
-        if(other == joueur)
+        if (other == Téléphone.s_Singleton.lightTrigger)
+        {
+            scorpionHitFlash = true;
+        }
+
+        if (other.CompareTag("Joueur"))
         {
 
-            KillingScorpion();
+            ScreamerManager.s_Singleton.KillingScorpion();
 
         }
         
     }
 
 
-    public void KillingScorpion()
-    {
-        Debug.Log("Joueur tué par le scorpion");
-        
-        SceneManagement.s_Singleton.GetKilled();
-    }
+    
 
 }

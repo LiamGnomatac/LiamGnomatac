@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LampeTorche : MonoBehaviour
+public class Statuette2 : MonoBehaviour
 {
-    public GameObject spotLight;
-    public GameObject lightTrigger;
 
 
-    public static LampeTorche s_Singleton;
+    public static Statuette2 s_Singleton;
 
     private void Awake()
     {
@@ -31,17 +29,6 @@ public class LampeTorche : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    public void ToggleLightAppear()
-    {
-        spotLight.SetActive(!spotLight.activeSelf);
-        lightTrigger.SetActive(!lightTrigger.activeSelf);
-    }
-
-    public void ToggleTorchLightAppear()
-    {
-        gameObject.SetActive(!gameObject.activeSelf);
+        
     }
 }

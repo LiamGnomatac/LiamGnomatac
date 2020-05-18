@@ -28,19 +28,14 @@ public class ChienRemonteScript : MonoBehaviour
         if (other.CompareTag("Joueur"))
         {
 
-            KillingDog();
+            ScreamerManager.s_Singleton.KillingDog();
 
         }
     }
 
 
 
-    public void KillingDog()
-    {
-        Debug.Log("Joueur tué par le chien");
-
-        SceneManagement.s_Singleton.GetKilled();
-    }
+   
 
 
 }

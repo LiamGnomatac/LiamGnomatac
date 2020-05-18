@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public bool torchLightIsBroke;
 
     #region Variable Enigme
-    public GameObject statuette, statuette2;
+    
 
     [HideInInspector]
     public bool firstEIsComplete = false , secondEIsComplete = false, thirdEIsComplete = false;
@@ -66,6 +66,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
+
+
+        
 
         //objEnigmaStatuette1 = statuette.transform.position;
         //objEnigmaStatuette2 = statuette2.transform.position;
@@ -198,22 +201,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    public void StatueAreCatchable()
-    {
-        if(isPressMain && isPress)
-        {
-            if (!statuette.GetComponent<Interactable>())
-            {
-                statuette.AddComponent<Interactable>();
-                statuette.AddComponent<Throwable>();
-                statuette.GetComponent<Renderer>().material.color = Color.green;
-                statuette2.AddComponent<Interactable>();
-                statuette2.AddComponent<Throwable>();
-                statuette2.GetComponent<Renderer>().material.color = Color.green;
-            }
-
-        }
-    }
+   
     #endregion
 
     #region Mort

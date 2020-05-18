@@ -16,6 +16,10 @@ public class RocheTirer : MonoBehaviour
     void Start()
     {
         myMat = gameObject.GetComponent<Renderer>();
+        if (isReturn)
+        {
+            GameManager.s_Singleton.secondEIsComplete = true;
+        }
     }
 
     // Update is called once per frame
@@ -53,7 +57,7 @@ public class RocheTirer : MonoBehaviour
 
     private void ReActions()
     {
-        if (isEndE2 && GameManager.s_Singleton.rockSort || isEndE2 && isReturn)
+        if (isEndE2 /*&& GameManager.s_Singleton.rockSort*/ || isEndE2 && isReturn)
         {
             CloseDoor();
         }

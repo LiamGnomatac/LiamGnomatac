@@ -108,6 +108,9 @@ public class SceneManagement : MonoBehaviour
 
     public void GetKilled()
     {
+        ScreamerManager.s_Singleton.chien.SetActive(false);
+        ScreamerManager.s_Singleton.scorpion.SetActive(false);
+        ScreamerManager.s_Singleton.taureau.SetActive(false);
         DeathCount++;
         Debug.Log("Joueur Mort");
         GetCurrentScene();

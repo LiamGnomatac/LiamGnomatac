@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChienScript : MonoBehaviour
 {
-
+    public GameObject mesh;
     private float chienTimerOutZone = 5f;
     private float chienTimerAttaque = 5.0f;
     public float chienTimerTp = 0.0f;
@@ -39,7 +39,7 @@ public class ChienScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        mesh.SetActive(false);
         chienCanTP = false;
     }
 
@@ -62,7 +62,7 @@ public class ChienScript : MonoBehaviour
 
         if (chienTimerAttaque <= 0.0f || chienTimerOutZone <= 0f)
         {
-            KillingDog();
+            ScreamerManager.s_Singleton.KillingDog();
 
         }
 
@@ -79,7 +79,7 @@ public class ChienScript : MonoBehaviour
         if (GameManager.s_Singleton.objKeyLaunch >= 3)
         {
             GameManager.s_Singleton.objKeyLaunch = 0;
-            KillingDog();
+            ScreamerManager.s_Singleton.KillingDog();
         }
 
         if (chienShouldTP == true)
@@ -136,14 +136,7 @@ public class ChienScript : MonoBehaviour
 
  
 
-    public void KillingDog()
-    {
-        Debug.Log("Joueur tué par le chien");
-        chienAttack = false;
-        chienTimerAttaque = 5;
-        chienTimerOutZone = 5;
-        SceneManagement.s_Singleton.GetKilled();
-    }
+   
 
     public void OnBecameVisible()
     {
@@ -154,7 +147,7 @@ public class ChienScript : MonoBehaviour
     {
         if (chienCanTP == true)
         {
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            mesh.SetActive(false);
             canCount = true;
 
         }
@@ -176,7 +169,7 @@ public class ChienScript : MonoBehaviour
 
                 gameObject.transform.position = zone1.transform.position;
                 chienCanTP = false;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                mesh.SetActive(true);
 
 
                 break;
@@ -184,7 +177,7 @@ public class ChienScript : MonoBehaviour
 
                 gameObject.transform.position = zone2.transform.position;
                 chienCanTP = false;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                mesh.SetActive(true);
 
                 break;
 
@@ -192,7 +185,7 @@ public class ChienScript : MonoBehaviour
 
                 gameObject.transform.position = zone3.transform.position;
                 chienCanTP = false;
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                mesh.SetActive(true);
 
                 break;
         }
