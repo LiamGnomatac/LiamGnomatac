@@ -29,8 +29,6 @@ public class ScreamerManager : MonoBehaviour
         
     }
 
-
-
     public void KillingDog()
     {
 
@@ -39,6 +37,15 @@ public class ScreamerManager : MonoBehaviour
         chien.SetActive(true);
 
         
+    }
+
+    public void KillingScorpion()
+    {
+
+        SceneManagement.s_Singleton.Invoke("GetKilled", 2);
+        Debug.Log("Joueur tué par le scorpion");
+        scorpion.SetActive(true);
+
     }
 
 
