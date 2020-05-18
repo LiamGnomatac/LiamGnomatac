@@ -48,6 +48,14 @@ public class ScreamerManager : MonoBehaviour
 
     }
 
+    public void KillingTaureau()
+    {
+        SceneManagement.s_Singleton.Invoke("GetKilled", 2);
+        Debug.Log("Joueur tué par le taureau");
+        taureau.SetActive(true);
+    }
+
+}
 
 
 }
