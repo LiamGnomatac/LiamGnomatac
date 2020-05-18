@@ -60,9 +60,6 @@ public class Poubelle : MonoBehaviour
             vfxLoadingPlaytest.SetActive(false);
         }
     }
-    void OnGUI ()
-    {
-        GUI.Box(new Rect(700, 10, 150, 100), chrono.ToString());
-    }
+  
 }
 

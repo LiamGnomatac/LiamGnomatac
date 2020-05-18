@@ -5,6 +5,7 @@ using Valve.VR.InteractionSystem;
 
 public class CatchRock : MonoBehaviour
 {
+    public GameObject piedestale;
     public bool isMain;
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class CatchRock : MonoBehaviour
         Debug.Log(other.name);
         if (other.gameObject.GetComponent<Throwable>())
         {
+            
             Debug.Log("contact");
             if (isMain)
             {
@@ -35,7 +37,7 @@ public class CatchRock : MonoBehaviour
                 GameManager.s_Singleton.isPress = true;
                 GetComponent<Renderer>().material.color = Color.green;
             }
-            GameManager.s_Singleton.StatueAreCatchable();
+            piedestale.GetComponent<Piedestale>().StatueAreCatchable();
         }
     }
 }

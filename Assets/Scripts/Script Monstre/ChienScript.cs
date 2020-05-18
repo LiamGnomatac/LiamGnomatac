@@ -62,7 +62,7 @@ public class ChienScript : MonoBehaviour
 
         if (chienTimerAttaque <= 0.0f || chienTimerOutZone <= 0f)
         {
-            KillingDog();
+            ScreamerManager.s_Singleton.KillingDog();
 
         }
 
@@ -79,7 +79,7 @@ public class ChienScript : MonoBehaviour
         if (GameManager.s_Singleton.objKeyLaunch >= 3)
         {
             GameManager.s_Singleton.objKeyLaunch = 0;
-            KillingDog();
+            ScreamerManager.s_Singleton.KillingDog();
         }
 
         if (chienShouldTP == true)
@@ -136,14 +136,7 @@ public class ChienScript : MonoBehaviour
 
  
 
-    public void KillingDog()
-    {
-        Debug.Log("Joueur tué par le chien");
-        chienAttack = false;
-        chienTimerAttaque = 5;
-        chienTimerOutZone = 5;
-        SceneManagement.s_Singleton.GetKilled();
-    }
+   
 
     public void OnBecameVisible()
     {

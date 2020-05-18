@@ -21,8 +21,9 @@ public class Pause : MonoBehaviour
     {
         if(PauseWithY.stateDown)
         {
-            ToggleCanvas();
             TogglePause();
+            ToggleCanvas();
+            
         }
     }
 
@@ -37,7 +38,7 @@ public class Pause : MonoBehaviour
         {
             Time.timeScale = 1;
             isPause = false;
-            ToggleCanvas();
+            
         }
         else
         {

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6101740895947759382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6101740895947759381}
+  - component: {fileID: 6101740895947759380}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6101740895947759381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101740895947759382}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.3734775, y: 3.0464873, z: -8.891464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6101740895947759380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101740895947759382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a32877fe2539f54fa0dfe15c4f708ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objKeyLaunch: 0
+  monsterCanMove: 0
+  torchLight: {fileID: 0}
+  cellphone: {fileID: 0}
+  showController: 0
+  torchLightIsBroke: 0
+  statuette: {fileID: 0}
+  statuette2: {fileID: 0}
+  firstEIsComplete: 0
+  secondEIsComplete: 0
+  thirdEIsComplete: 0
+  buttonOneE2: 0
+  buttonTwoE2: 0
+  buttonThreeE2: 0
+  buttonFourE2: 0
+  pullRock1: 0
+  rockSort: 0
+  statueIsStatic: 0
+  pillarBroke: 0
+  isPressMain: 0
+  isPress: 0
+  tpRelativePoint: {fileID: 0}

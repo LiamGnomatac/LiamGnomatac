@@ -54,5 +54,24 @@ public class Piedestale : MonoBehaviour
         {
             GameManager.s_Singleton.thirdEIsComplete = false;
         }
+
+
+
     }
+
+
+    public void StatueAreCatchable()
+    {
+        if (GameManager.s_Singleton.isPressMain && GameManager.s_Singleton.isPress)
+        {
+            if (!statuette.GetComponent<Interactable>())
+            {
+                statuette.AddComponent<Interactable>();
+                statuette.AddComponent<Throwable>();
+                statuette.GetComponent<Renderer>().material.color = Color.green;
+            }
+
+        }
+    }
+
 }
