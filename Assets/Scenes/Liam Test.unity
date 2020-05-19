@@ -1291,11 +1291,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 459288985056143866, guid: 4f12124f26483be40bc3775b322e7c8e,
+    - target: {fileID: 459288985048850922, guid: 4f12124f26483be40bc3775b322e7c8e,
         type: 3}
-      propertyPath: m_Name
-      value: Chien
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4f55aaec030e4194c91bfb7e3a66c15a, type: 2}
     - target: {fileID: 2217218949216620410, guid: 4f12124f26483be40bc3775b322e7c8e,
         type: 3}
       propertyPath: m_Name
@@ -1356,19 +1356,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3829819542624680153, guid: 4f12124f26483be40bc3775b322e7c8e,
-        type: 3}
-      propertyPath: mesh
-      value: 
-      objectReference: {fileID: 886613665}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f12124f26483be40bc3775b322e7c8e, type: 3}
---- !u!1 &886613665 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3549465289286476531, guid: 4f12124f26483be40bc3775b322e7c8e,
-    type: 3}
-  m_PrefabInstance: {fileID: 886613664}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &916223436
 GameObject:
   m_ObjectHideFlags: 0
