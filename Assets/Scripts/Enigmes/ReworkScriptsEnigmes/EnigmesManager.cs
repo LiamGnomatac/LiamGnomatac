@@ -10,9 +10,9 @@ public class EnigmesManager : MonoBehaviour
     [HideInInspector]
     public bool firstEIsComplete = false, secondEIsComplete = false, thirdEIsComplete = false;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
-    [HideInInspector]
+    //[HideInInspector]
     public bool rockIsPull, rockSort;
     [HideInInspector]
     public int statueIsStatic;
@@ -24,6 +24,7 @@ public class EnigmesManager : MonoBehaviour
     public bool isPressMain, isPress;
 
     #endregion
+
     public static EnigmesManager s_Singleton;
     private void Awake()
     {

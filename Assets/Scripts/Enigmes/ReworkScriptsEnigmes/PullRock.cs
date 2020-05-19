@@ -8,7 +8,7 @@ public enum SliderStates { Idle, Pulled, EndReach, ComingBack};
 public class PullRock : MonoBehaviour
 {
     public float speed;
-    [HideInInspector]
+    //[HideInInspector]
     public SliderStates myState;
     public LinearMapping linearMapping;
 
