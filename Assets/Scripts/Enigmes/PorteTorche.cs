@@ -36,7 +36,7 @@ public class PorteTorche : MonoBehaviour
 
         if(other == torchE)
         {
-            GameManager.s_Singleton.firstEIsComplete = true;
+            EnigmesManager.s_Singleton.firstEIsComplete = true;
             //Destroy(torchE.GetComponent<Throwable>());
             //Destroy(torchE.GetComponent<Interactable>());
             torchE.transform.position = pos;
@@ -54,7 +54,7 @@ public class PorteTorche : MonoBehaviour
         if (other == torchE)
         {
             torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            GameManager.s_Singleton.firstEIsComplete = false;
+            EnigmesManager.s_Singleton.firstEIsComplete = false;
             VFX.SetActive(false);
         }
     }

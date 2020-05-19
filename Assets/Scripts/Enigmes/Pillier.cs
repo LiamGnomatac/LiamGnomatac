@@ -33,7 +33,7 @@ public class Pillier : MonoBehaviour
     private void OnDestroy()
     {
 
-        GameManager.s_Singleton.pillarBroke++;
+        EnigmesManager.s_Singleton.pillarBroke++;
         BlindTp();
         RepeatingInvoke();
     }
@@ -58,7 +58,7 @@ public class Pillier : MonoBehaviour
     private void BlindTp()
     {
         Debug.Log("blind");
-        if (GameManager.s_Singleton.pillarBroke < 4)
+        if (EnigmesManager.s_Singleton.pillarBroke < 4)
         {
             for (int i = 0; i < FlameWall.Length; i++)
             {

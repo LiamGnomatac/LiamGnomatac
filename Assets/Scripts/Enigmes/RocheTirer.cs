@@ -18,7 +18,7 @@ public class RocheTirer : MonoBehaviour
         myMat = gameObject.GetComponent<Renderer>();
         if (isReturn)
         {
-            GameManager.s_Singleton.secondEIsComplete = true;
+            EnigmesManager.s_Singleton.secondEIsComplete = true;
         }
     }
 
@@ -50,8 +50,8 @@ public class RocheTirer : MonoBehaviour
         }
         else
         {
-            GameManager.s_Singleton.pullRock1 = false;
-            GameManager.s_Singleton.ResetButton();
+            EnigmesManager.s_Singleton.rockIsPull = false;
+            EnigmesManager.s_Singleton.ResetButton();
         }
     }
 
@@ -63,7 +63,7 @@ public class RocheTirer : MonoBehaviour
         }
         else
         {
-            GameManager.s_Singleton.pullRock1 = true;
+            EnigmesManager.s_Singleton.rockIsPull = true;
         }
     }
 
@@ -77,12 +77,12 @@ public class RocheTirer : MonoBehaviour
     {
         if(isReturn)
         {
-            GameManager.s_Singleton.secondEIsComplete = false;
+            EnigmesManager.s_Singleton.secondEIsComplete = false;
             return;
         }
         else
         {
-            GameManager.s_Singleton.secondEIsComplete = true;
+            EnigmesManager.s_Singleton.secondEIsComplete = true;
         }
     }
 
@@ -119,7 +119,7 @@ public class RocheTirer : MonoBehaviour
 
     public void ToFilledEncens()
     {
-        if(GameManager.s_Singleton.rockSort)
+        if(EnigmesManager.s_Singleton.rockSort)
         {
             encensToFill.GetComponent<EncensCS>().FilledWithOil();
         }

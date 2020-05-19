@@ -29,12 +29,12 @@ public class CatchRock : MonoBehaviour
             Debug.Log("contact");
             if (isMain)
             {
-                GameManager.s_Singleton.isPressMain = true;
+                EnigmesManager.s_Singleton.isPressMain = true;
                 GetComponent<Renderer>().material.color = Color.green;
             }
             else
             {
-                GameManager.s_Singleton.isPress = true;
+                EnigmesManager.s_Singleton.isPress = true;
                 GetComponent<Renderer>().material.color = Color.green;
             }
             piedestale.GetComponent<Piedestale>().StatueAreCatchable();

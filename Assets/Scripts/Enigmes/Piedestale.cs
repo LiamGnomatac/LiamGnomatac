@@ -32,12 +32,12 @@ public class Piedestale : MonoBehaviour
             statuette.transform.position = transform.position;
             statuette.transform.Rotate(transform.rotation.eulerAngles);
             statuette.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            GameManager.s_Singleton.statueIsStatic++;
+            EnigmesManager.s_Singleton.statueIsStatic++;
         }
-        if (GameManager.s_Singleton.statueIsStatic >= 2)
+        if (EnigmesManager.s_Singleton.statueIsStatic >= 2)
         {
-            GameManager.s_Singleton.thirdEIsComplete = true;
-            GameManager.s_Singleton.statueIsStatic = 2;
+            EnigmesManager.s_Singleton.thirdEIsComplete = true;
+            EnigmesManager.s_Singleton.statueIsStatic = 2;
         }
 
     }
@@ -46,13 +46,13 @@ public class Piedestale : MonoBehaviour
     {
         if(other.gameObject == statuette )
         {
-            GameManager.s_Singleton.statueIsStatic--;
+            EnigmesManager.s_Singleton.statueIsStatic--;
             statuette.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
 
-        if (GameManager.s_Singleton.statueIsStatic < 2)
+        if (EnigmesManager.s_Singleton.statueIsStatic < 2)
         {
-            GameManager.s_Singleton.thirdEIsComplete = false;
+            EnigmesManager.s_Singleton.thirdEIsComplete = false;
         }
 
 
@@ -62,7 +62,7 @@ public class Piedestale : MonoBehaviour
 
     public void StatueAreCatchable()
     {
-        if (GameManager.s_Singleton.isPressMain && GameManager.s_Singleton.isPress)
+        if (EnigmesManager.s_Singleton.isPressMain && EnigmesManager.s_Singleton.isPress)
         {
             if (!statuette.GetComponent<Interactable>())
             {

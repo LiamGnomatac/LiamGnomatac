@@ -24,9 +24,9 @@ public class RemonterM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.s_Singleton.firstEIsComplete = true;
-        GameManager.s_Singleton.secondEIsComplete = true;
-        GameManager.s_Singleton.thirdEIsComplete = true;
+        EnigmesManager.s_Singleton.firstEIsComplete = true;
+        EnigmesManager.s_Singleton.secondEIsComplete = true;
+        EnigmesManager.s_Singleton.thirdEIsComplete = true;
         time = countdown;
     }
 
@@ -43,7 +43,7 @@ public class RemonterM : MonoBehaviour
             switch (trigger)
             {
                 case WhichTrigger.Second:
-                    if(!GameManager.s_Singleton.thirdEIsComplete)
+                    if(!EnigmesManager.s_Singleton.thirdEIsComplete)
                     {
                         return;
                     }
@@ -56,7 +56,7 @@ public class RemonterM : MonoBehaviour
                     }
                     break;
                 case WhichTrigger.Third:
-                    if (!GameManager.s_Singleton.secondEIsComplete)
+                    if (!EnigmesManager.s_Singleton.secondEIsComplete)
                     {
                         if(!isSecond)
                         {

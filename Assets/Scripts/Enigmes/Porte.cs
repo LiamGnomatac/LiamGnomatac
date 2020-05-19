@@ -29,7 +29,7 @@ public class Porte : MonoBehaviour
             }
             else
                 Invoke("OpenDoor", timeBeforeOpen);*/
-            if(GameManager.s_Singleton.firstEIsComplete)
+            if(EnigmesManager.s_Singleton.firstEIsComplete)
             {
                 if(!justOneTime)
                 
@@ -53,7 +53,7 @@ public class Porte : MonoBehaviour
             }
             else
                 Invoke("OpenDoor", timeBeforeOpen);*/
-            if (GameManager.s_Singleton.secondEIsComplete)
+            if (EnigmesManager.s_Singleton.secondEIsComplete)
             {
                 if (!justOneTime)
                 {
@@ -76,7 +76,7 @@ public class Porte : MonoBehaviour
             }
             else
                Invoke("OpenDoor",timeBeforeOpen);*/
-            if (GameManager.s_Singleton.thirdEIsComplete)
+            if (EnigmesManager.s_Singleton.thirdEIsComplete)
             {
                 if (!justOneTime)
 
