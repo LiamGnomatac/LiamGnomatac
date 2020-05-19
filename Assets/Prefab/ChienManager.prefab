@@ -325,7 +325,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 165900, guid: 7ad7904a9be3ffc4ca205f0a10d975f6, type: 3}
       propertyPath: m_Name
-      value: BARGHEST_LEGACY
+      value: Chien
       objectReference: {fileID: 0}
     - target: {fileID: 401660, guid: 7ad7904a9be3ffc4ca205f0a10d975f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,11 +386,22 @@ PrefabInstance:
       propertyPath: zone3
       value: 
       objectReference: {fileID: 2217218948974185859}
+    - target: {fileID: 3709268941667424559, guid: 7ad7904a9be3ffc4ca205f0a10d975f6,
+        type: 3}
+      propertyPath: mesh
+      value: 
+      objectReference: {fileID: 3549465289286476531}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ad7904a9be3ffc4ca205f0a10d975f6, type: 3}
 --- !u!4 &459288985055904010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 401660, guid: 7ad7904a9be3ffc4ca205f0a10d975f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 459288985056305654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3549465289286476531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3971474731239473925, guid: 7ad7904a9be3ffc4ca205f0a10d975f6,
     type: 3}
   m_PrefabInstance: {fileID: 459288985056305654}
   m_PrefabAsset: {fileID: 0}
