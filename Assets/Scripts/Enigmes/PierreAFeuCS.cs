@@ -18,7 +18,7 @@ public class PierreAFeuCS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(collisionNumber);
+
     }
 
     public int NumberTimeCollision()
@@ -26,6 +26,7 @@ public class PierreAFeuCS : MonoBehaviour
         return collisionNumber;
     }
 
+    
     
     private void OnCollisionEnter(Collision collision)
     {

@@ -5,10 +5,12 @@ using Valve.VR.InteractionSystem;
 
 public enum SliderStates { Idle, Pulled, EndReach, ComingBack};
 
-public class Pullrock : MonoBehaviour
+public class PullRock : MonoBehaviour
 {
+    public float speed;
     [HideInInspector]
     public SliderStates myState;
+    public LinearMapping linearMapping;
 
     private Hand hand;
 
@@ -26,14 +28,17 @@ public class Pullrock : MonoBehaviour
         {
             SetIdle();
             EnigmesManager.s_Singleton.rockIsPull = false;
+            linearMapping.value = 0;
         }
-        else if (hand && hand.isActive && transform.position != GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position && myState != SliderStates.Pulled)
+        if (hand && hand.isActive && transform.position != GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position && myState != SliderStates.Pulled)
         {
+            EnigmesManager.s_Singleton.rockIsPull = true;
             SetPulled();
         }
-        else if (!hand && !hand.isActive && myState != SliderStates.Idle)
+        if(!hand && myState != SliderStates.Idle)
         {
             SetComingBack();
+            ReturnToPosition();
         }
         
     }
@@ -82,5 +87,10 @@ public class Pullrock : MonoBehaviour
     private void OnHandHoverEnd(Hand hand)
     {
         this.hand = null;
+    }
+
+    private void ReturnToPosition()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
     }
 }
