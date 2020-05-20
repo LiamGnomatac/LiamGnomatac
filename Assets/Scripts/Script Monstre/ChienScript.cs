@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChienScript : MonoBehaviour
 {
+    public Animator animator;
     public GameObject mesh;
     private float chienTimerOutZone = 5f;
     private float chienTimerAttaque = 5.0f;
@@ -21,6 +22,8 @@ public class ChienScript : MonoBehaviour
     public bool thereIsLight;
     public bool dogCanAttackOnLight;
     public bool chienAttack;
+
+   
 
     public static ChienScript s_Singleton;
 
@@ -47,6 +50,18 @@ public class ChienScript : MonoBehaviour
     void Update()
     {
         transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
+
+        if (chienAttack == true)
+        {
+
+            animator.SetBool("isAttack", true);
+
+        }
+        else
+        {
+            animator.SetBool("isAttack", false);
+        }
+
         if (canCount == true)
         {
             chienTimerTp += Time.deltaTime;
@@ -129,8 +144,7 @@ public class ChienScript : MonoBehaviour
             chienTimerAttaque = 5f;
         }
 
-
-
+        
 
     }
 
