@@ -30,16 +30,13 @@ public class PierreAFeuCS : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.layer == 8 )
         {
-            Debug.Log("Tappe un autre silex");
             collisionNumber++;
             Instantiate(vfxSpark, transform.position, Quaternion.identity);
         }
         if (collisionNumber >= NumberTimeToFall)
         {
-            Debug.Log("tombe");
             Destroy(GetComponent<Throwable>());
             collisionNumber = 0;
         }

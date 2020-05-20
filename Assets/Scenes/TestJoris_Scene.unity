@@ -3192,7 +3192,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.4, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1197331757
 MonoBehaviour:
@@ -3594,7 +3594,7 @@ MonoBehaviour:
   buttonTwoE2: 0
   buttonThreeE2: 0
   buttonFourE2: 0
-  rockIsPull: 0
+  rockIsPull: 1
   rockSort: 0
   statueIsStatic: 0
   pillarBroke: 0

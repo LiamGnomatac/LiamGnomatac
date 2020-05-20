@@ -13,10 +13,15 @@ public class PullRock : MonoBehaviour
     public LinearMapping linearMapping;
 
     private Hand hand;
+    private Vector3 posStart;
+    private Vector3 posEnd;
+    private float setValueToLinearMapping;
 
     // Start is called before the first frame update
     void Start()
     {
+        posStart = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position;
+        posEnd = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().endPosition.position;
         SetIdle();
         EnigmesManager.s_Singleton.rockIsPull = false;
     }
@@ -24,18 +29,23 @@ public class PullRock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position == GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position && myState !=SliderStates.Idle)
+        if(transform.position == posStart && myState !=SliderStates.Idle)
         {
             SetIdle();
             EnigmesManager.s_Singleton.rockIsPull = false;
             linearMapping.value = 0;
         }
-        if (hand && hand.isActive && transform.position != GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position && myState != SliderStates.Pulled)
+        if(transform.position == posEnd && hand && hand.isActive || transform.position == posEnd && GetComponent<Interactable>().attachedToHand != null )
+        {
+            SetEndReach();
+            return;
+        }
+        if (hand && hand.isActive && transform.position != posStart && myState != SliderStates.Pulled || GetComponent<Interactable>().attachedToHand != null && transform.position != posStart && myState != SliderStates.Pulled)
         {
             EnigmesManager.s_Singleton.rockIsPull = true;
             SetPulled();
         }
-        if(!hand && myState != SliderStates.Idle)
+        if (!hand && GetComponent<Interactable>().attachedToHand == null && transform.position != posStart && myState != SliderStates.Idle)
         {
             SetComingBack();
             ReturnToPosition();
@@ -91,6 +101,13 @@ public class PullRock : MonoBehaviour
 
     private void ReturnToPosition()
     {
+        //Obj return to startPos
         transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
+        //Reset linearMapping value for return
+        setValueToLinearMapping = Vector3.Distance(posStart, transform.position);
+        if (setValueToLinearMapping <= 1)
+            linearMapping.value = setValueToLinearMapping;
+        else
+            linearMapping.value = 1;
     }
 }

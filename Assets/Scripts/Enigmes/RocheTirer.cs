@@ -50,7 +50,7 @@ public class RocheTirer : MonoBehaviour
         }
         else
         {
-            EnigmesManager.s_Singleton.rockIsPull = false;
+            //EnigmesManager.s_Singleton.rockIsPull = false;
             EnigmesManager.s_Singleton.ResetButton();
         }
     }
@@ -63,7 +63,7 @@ public class RocheTirer : MonoBehaviour
         }
         else
         {
-            EnigmesManager.s_Singleton.rockIsPull = true;
+            //EnigmesManager.s_Singleton.rockIsPull = true;
         }
     }
 
