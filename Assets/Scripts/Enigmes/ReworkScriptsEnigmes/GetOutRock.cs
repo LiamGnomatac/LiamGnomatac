@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
-public enum SliderStates { Idle, Pulled, EndReach, ComingBack};
-
-public class PullRock : MonoBehaviour
+public class GetOutRock : MonoBehaviour
 {
     public float speed;
     [HideInInspector]
     public SliderStates myState;
     public LinearMapping linearMapping;
+    public bool isReturn;
 
     private Hand hand;
-    private Vector3 posStart;
-    private Vector3 posEnd;
+    private Transform posStart;
+    private Transform posEnd;
+    private Vector3 posEndWait;
     private float distStartPos;
     private float distStartEnd;
     private float distDecimal;
@@ -22,39 +22,38 @@ public class PullRock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        posStart = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position;
-        posEnd = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().endPosition.position;
-        distStartEnd = Vector3.Distance(posStart, posEnd);
-        Debug.Log(distStartEnd);
+        posStart = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition;
+        posEnd = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().endPosition;
+        posEndWait = posEnd.position;
+        posEnd.position = posStart.position;
+        distStartEnd = Vector3.Distance(posStart.position, posEnd.position);
         SetIdle();
-        EnigmesManager.s_Singleton.rockIsPull = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position == posStart && myState !=SliderStates.Idle)
+        if (transform.position == posStart.position && myState != SliderStates.Idle)
         {
             SetIdle();
-            EnigmesManager.s_Singleton.rockIsPull = false;
             linearMapping.value = 0;
         }
-        if(transform.position == posEnd && hand && hand.isActive || transform.position == posEnd && GetComponent<Interactable>().attachedToHand != null )
+        if (transform.position == posEnd.position && hand && hand.isActive || transform.position == posEnd.position && GetComponent<Interactable>().attachedToHand != null)
         {
             SetEndReach();
             return;
         }
-        if (hand && hand.isActive && transform.position != posStart && myState != SliderStates.Pulled || GetComponent<Interactable>().attachedToHand != null && transform.position != posStart && myState != SliderStates.Pulled)
+        if (hand && hand.isActive && transform.position != posStart.position && myState != SliderStates.Pulled || GetComponent<Interactable>().attachedToHand != null && transform.position != posStart.position && myState != SliderStates.Pulled)
         {
-            EnigmesManager.s_Singleton.rockIsPull = true;
             SetPulled();
+            GetOut();
         }
-        if (!hand && GetComponent<Interactable>().attachedToHand == null && transform.position != posStart && myState != SliderStates.Idle)
+        if (!hand && GetComponent<Interactable>().attachedToHand == null && transform.position != posStart.position && myState != SliderStates.Idle)
         {
             SetComingBack();
             ReturnToPosition();
         }
-        
+
     }
 
     public void SetIdle()
@@ -108,8 +107,27 @@ public class PullRock : MonoBehaviour
         //Obj return to startPos
         transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
         //Reset linearMapping value for return
-        distStartPos = Vector3.Distance(posStart, transform.position);
+        distStartPos = Vector3.Distance(posStart.position, transform.position);
         distDecimal = distStartPos / distStartEnd;
         linearMapping.value = distDecimal;
     }
+
+    public void ReplaceEndPos()
+    {
+        posEnd.position = posEndWait;
+    }
+
+    private void GetOut()
+    {
+        if (!isReturn)
+        {
+            Debug.Log("Door E2 is open");
+        }
+        else if(isReturn)
+        {
+            Debug.Log("close door");
+        }
+    }
+
+
 }

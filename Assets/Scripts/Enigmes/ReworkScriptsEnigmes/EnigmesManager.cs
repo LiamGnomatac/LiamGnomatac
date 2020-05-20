@@ -10,10 +10,9 @@ public class EnigmesManager : MonoBehaviour
     [HideInInspector]
     public bool firstEIsComplete = false, secondEIsComplete = false, thirdEIsComplete = false;
 
+    
     //[HideInInspector]
-    public bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
-    //[HideInInspector]
-    public bool rockIsPull, rockSort;
+    public bool rockIsPull, rockGetOut;
     [HideInInspector]
     public int statueIsStatic;
 
@@ -51,74 +50,7 @@ public class EnigmesManager : MonoBehaviour
 
     #region Enigme
 
-    public void DownButtonOne()
-    {
-        buttonOneE2 = !buttonOneE2;
-    }
-    public void DownButtonTwo()
-    {
-        buttonTwoE2 = !buttonTwoE2;
-    }
-    public void DownButtonThree()
-    {
-        buttonThreeE2 = !buttonThreeE2;
-    }
-    public void DownButtonFour()
-    {
-        buttonFourE2 = !buttonFourE2;
-    }
-
-    public void ResetButton()
-    {
-        buttonOneE2 = false;
-        buttonTwoE2 = false;
-        buttonThreeE2 = false;
-        buttonFourE2 = false;
-    }
-
-    public void ActivateButton()
-    {
-        if (!rockIsPull)
-        {
-            ResetButton();
-            return;
-        }
-        else
-        {
-            if (buttonTwoE2)
-            {
-                Debug.Log("encore 3");
-                if (buttonFourE2)
-                {
-                    Debug.Log("plus que 2");
-                    if (buttonThreeE2)
-                    {
-                        Debug.Log("plus qu'un");
-                        if (buttonOneE2)
-                        {
-                            rockSort = true;
-                            Debug.Log("première parti ok");
-                        }
-                        return;
-                    }
-                    if (buttonOneE2)
-                    {
-                        ResetButton();
-                    }
-                    return;
-                }
-                if (buttonThreeE2 || buttonOneE2)
-                {
-                    ResetButton();
-                }
-                return;
-            }
-            if (buttonFourE2 || buttonThreeE2 || buttonOneE2)
-            {
-                ResetButton();
-            }
-        }
-    }
+    
 
     #endregion
 }

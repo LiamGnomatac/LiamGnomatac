@@ -51,7 +51,7 @@ public class RocheTirer : MonoBehaviour
         else
         {
             //EnigmesManager.s_Singleton.rockIsPull = false;
-            EnigmesManager.s_Singleton.ResetButton();
+            //EnigmesManager.s_Singleton.ResetButton();
         }
     }
 
@@ -117,11 +117,11 @@ public class RocheTirer : MonoBehaviour
         }
     }
 
-    public void ToFilledEncens()
+    /*public void ToFilledEncens()
     {
         if(EnigmesManager.s_Singleton.rockSort)
         {
             encensToFill.GetComponent<EncensCS>().FilledWithOil();
         }
-    }
+    }*/
 }
