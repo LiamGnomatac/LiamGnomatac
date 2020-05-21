@@ -6,6 +6,7 @@ using Valve.VR.InteractionSystem;
 public class LeadButton : MonoBehaviour
 {
     public GetOutRock getOut;
+    public List<GameObject> buttonList;
 
     private bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
 
@@ -78,8 +79,15 @@ public class LeadButton : MonoBehaviour
             }
         }
     }
-    private void UnlockButton()
+
+    public void UnlockButton()
     {
-        GetComponentInChildren<HoverButton>().enabled = true;
+        Debug.Log("reset script");
+        for (int i = 0; i < buttonList.Count; i++)
+        {
+            buttonList[i].GetComponent<HoverButton>().enabled = true;
+            buttonList[i].GetComponent<Interactable>().enabled = true;
+            buttonList[i].GetComponent<ButtonLock>().LockUp();
+        }
     }
 }
