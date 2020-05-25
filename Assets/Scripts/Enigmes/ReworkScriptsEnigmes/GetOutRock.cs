@@ -9,6 +9,7 @@ public class GetOutRock : MonoBehaviour
     [HideInInspector]
     public SliderStates myState;
     public LinearMapping linearMapping;
+    public Door door;
     public bool isReturn;
 
     private Hand hand;
@@ -108,7 +109,7 @@ public class GetOutRock : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, GetComponent<LinearDrive>().startPosition.position, Time.deltaTime * speed);
         //Reset linearMapping value for return
         distStartPos = Vector3.Distance(posStart.position, transform.position);
-        distDecimal = distStartPos / distStartEnd;
+        distDecimal =  distStartEnd / distStartPos;
         linearMapping.value = distDecimal;
     }
 
@@ -122,10 +123,12 @@ public class GetOutRock : MonoBehaviour
         if (!isReturn)
         {
             Debug.Log("Door E2 is open");
+            door.Open();
         }
         else if(isReturn)
         {
             Debug.Log("close door");
+            door.Close();
         }
     }
 

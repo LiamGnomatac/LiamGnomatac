@@ -17,7 +17,7 @@ public class PorteTorche : MonoBehaviour
         pos = transform.position;
         pos.x += 0.1f;
         rot = transform.rotation.eulerAngles;
-        if(torchE == null)
+        if(torchE != gameObject)
         {
             Debug.Log("Torche à renseigner dans porteTorche");
         }
@@ -37,8 +37,6 @@ public class PorteTorche : MonoBehaviour
         if(other == torchE)
         {
             EnigmesManager.s_Singleton.firstEIsComplete = true;
-            //Destroy(torchE.GetComponent<Throwable>());
-            //Destroy(torchE.GetComponent<Interactable>());
             torchE.transform.position = pos;
             torchE.transform.rotation = transform.rotation;
             torchE.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
