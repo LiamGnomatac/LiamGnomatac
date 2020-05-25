@@ -19,7 +19,7 @@ public class EnigmesManager : MonoBehaviour
     [HideInInspector]
     public int pillarBroke;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool isPressMain, isPress;
 
     #endregion

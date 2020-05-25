@@ -49,14 +49,10 @@ public class Piedestale : MonoBehaviour
             EnigmesManager.s_Singleton.statueIsStatic--;
             statuette.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
-
         if (EnigmesManager.s_Singleton.statueIsStatic < 2)
         {
             EnigmesManager.s_Singleton.thirdEIsComplete = false;
         }
-
-
-
     }
 
 
@@ -70,7 +66,6 @@ public class Piedestale : MonoBehaviour
                 statuette.AddComponent<Throwable>();
                 statuette.GetComponent<Renderer>().material.color = Color.green;
             }
-
         }
     }
 
