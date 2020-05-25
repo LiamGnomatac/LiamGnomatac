@@ -79,7 +79,6 @@ public class Porte : MonoBehaviour
             if (EnigmesManager.s_Singleton.thirdEIsComplete)
             {
                 if (!justOneTime)
-
                 {
                     Invoke("OpenDoor", timeBeforeOpen);
                 }
