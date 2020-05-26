@@ -5,13 +5,14 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public float rotationResetSpeed = 1f;
+    public int rotationAngle = 90;
     private Quaternion rotation;
     private Quaternion originalRotation;
     // Start is called before the first frame update
     void Start()
     {
         rotation = transform.rotation;
-        rotation.y -= 90;
+        rotation.y -= rotationAngle;
         originalRotation = transform.rotation;
     }
     

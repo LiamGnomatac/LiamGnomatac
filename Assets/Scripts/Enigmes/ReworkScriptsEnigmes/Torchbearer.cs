@@ -7,8 +7,9 @@ public class Torchbearer : MonoBehaviour
     public GameObject torch;
     public Door door;
     public GameObject VFX;
+    public Vector3 rotationAngle;
     private Vector3 pos;
-    private Vector3 rot;
+    private Quaternion rot;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class Torchbearer : MonoBehaviour
             Debug.Log("Torche à renseigner dans porteTorche");
         }
         pos = transform.position;
-        rot = transform.rotation.eulerAngles;
+        rot.eulerAngles = rotationAngle;
     }
 
     // Update is called once per frame
@@ -32,7 +33,7 @@ public class Torchbearer : MonoBehaviour
         {
             door.Open();
             torch.transform.position = pos;
-            torch.transform.rotation = transform.rotation;
+            torch.transform.rotation = rot;
             torch.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             VFX.SetActive(true);
         }

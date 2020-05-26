@@ -6,6 +6,7 @@ using Valve.VR.InteractionSystem;
 public class LeadButton : MonoBehaviour
 {
     public GetOutRock getOut;
+    public EncensCS encens;
     public List<GameObject> buttonList;
 
     private bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
@@ -57,6 +58,7 @@ public class LeadButton : MonoBehaviour
                         if (buttonFourE2)
                         {
                             getOut.ReplaceEndPos();
+                            encens.FilledWithOil();
                             Debug.Log("première parti ok");
                         }
                         return;

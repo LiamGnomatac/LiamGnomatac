@@ -18,12 +18,6 @@ public class LeadStatue : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StatueAreCatchable()
     {
         if (EnigmesManager.s_Singleton.isPressMain && EnigmesManager.s_Singleton.isPress)
@@ -33,6 +27,7 @@ public class LeadStatue : MonoBehaviour
                 if (!statuettes[i].GetComponent<Throwable>())
                 {
                     statuettes[i].AddComponent<Throwable>();
+                    statuettes[i].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     statuettes[i].GetComponent<Renderer>().material.color = Color.green;
                 }
             }
