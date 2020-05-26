@@ -116,6 +116,7 @@ public class GetOutRock : MonoBehaviour
     public void ReplaceEndPos()
     {
         posEnd.position = posEndWait;
+        linearMapping.value = 0;
     }
 
     private void GetOut()
