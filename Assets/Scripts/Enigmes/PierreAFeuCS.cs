@@ -46,9 +46,9 @@ public class PierreAFeuCS : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnCollisionStay(Collision collision)
     {
-        if(other.GetComponent<HandPhysics>())
+        if (collision.gameObject.GetComponent<HandPhysics>())
         {
             isPlayer = true;
         }
