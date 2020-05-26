@@ -6,24 +6,12 @@ using Valve.VR.InteractionSystem;
 public class Piedestale : MonoBehaviour
 {
     public GameObject statuette;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Door door;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject == statuette && !statuette.GetComponent<Throwable>())
         {
-            statuette.AddComponent<Interactable>();
             statuette.AddComponent<Throwable>();
         }
         if (other.gameObject == statuette)
@@ -36,7 +24,8 @@ public class Piedestale : MonoBehaviour
         }
         if (EnigmesManager.s_Singleton.statueIsStatic >= 2)
         {
-            EnigmesManager.s_Singleton.thirdEIsComplete = true;
+            Debug.Log("porte ouverte");
+            door.Open();
             EnigmesManager.s_Singleton.statueIsStatic = 2;
         }
 
@@ -51,22 +40,8 @@ public class Piedestale : MonoBehaviour
         }
         if (EnigmesManager.s_Singleton.statueIsStatic < 2)
         {
-            EnigmesManager.s_Singleton.thirdEIsComplete = false;
+            Debug.Log("porte fermer");
+            door.Close();
         }
     }
-
-
-    public void StatueAreCatchable()
-    {
-        if (EnigmesManager.s_Singleton.isPressMain && EnigmesManager.s_Singleton.isPress)
-        {
-            if (!statuette.GetComponent<Interactable>())
-            {
-                statuette.AddComponent<Interactable>();
-                statuette.AddComponent<Throwable>();
-                statuette.GetComponent<Renderer>().material.color = Color.green;
-            }
-        }
-    }
-
 }
