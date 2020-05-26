@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private Vector3 rotation = Vector3.zero;
+    public float rotationResetSpeed = 1f;
+    private Quaternion rotation;
+    private Quaternion originalRotation;
     // Start is called before the first frame update
     void Start()
     {
-        rotation = transform.rotation.eulerAngles;
+        rotation = transform.rotation;
+        rotation.y -= 90;
+        originalRotation = transform.rotation;
     }
     
 
     public void Open()
     {
-        transform.Rotate(rotation.x, rotation.y -90, rotation.z);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.time * rotationResetSpeed);
     }
 
     public void Close()
     {
-        transform.Rotate(rotation.x, rotation.y + 90, rotation.z);
+        transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, Time.time * rotationResetSpeed);
     }
 }
