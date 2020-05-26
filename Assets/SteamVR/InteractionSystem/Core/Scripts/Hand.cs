@@ -360,6 +360,7 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         public void AttachObject(GameObject objectToAttach, GrabTypes grabbedWithType, AttachmentFlags flags = defaultAttachmentFlags, Transform attachmentOffset = null)
         {
+            objectToAttach.GetComponent<Interactable>().SetIsGrab(true);
             AttachedObject attachedObject = new AttachedObject();
             attachedObject.attachmentFlags = flags;
             attachedObject.attachedOffsetTransform = attachmentOffset;
@@ -598,6 +599,7 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         public void DetachObject(GameObject objectToDetach, bool restoreOriginalParent = true)
         {
+            objectToDetach.GetComponent<Interactable>().SetIsGrab(false);
             int index = attachedObjects.FindIndex(l => l.attachedObject == objectToDetach);
             if (index != -1)
             {

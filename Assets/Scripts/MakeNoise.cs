@@ -21,7 +21,6 @@ public class MakeNoise : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("true");
             justOneHit = true;
         }
         if(collision.gameObject.layer == 9 && justOneHit)

@@ -5,7 +5,8 @@ using Valve.VR.InteractionSystem;
 
 public class PierreAFeuCS : MonoBehaviour
 {
-    private bool isPlayer;
+    public LayerMask thisLayer;
+    private bool isPlayer = false;
     private int collisionNumber;
     public int NumberTimeToFall;
     public GameObject vfxSpark;
@@ -27,17 +28,20 @@ public class PierreAFeuCS : MonoBehaviour
         return collisionNumber;
     }
 
-    
+    private void Spark()
+    {
+        if (GetComponent<Interactable>().GetIsGrab())
+        {
+            collisionNumber++;
+            Instantiate(vfxSpark, transform.position, Quaternion.identity);
+        }
+    }
     
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 8 )
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Etincelle"))
         {
-            if(isPlayer)
-            {
-                collisionNumber++;
-                Instantiate(vfxSpark, transform.position, Quaternion.identity);
-            }
+            Spark();
         }
         if (collisionNumber >= NumberTimeToFall)
         {
@@ -51,6 +55,7 @@ public class PierreAFeuCS : MonoBehaviour
         if (collision.gameObject.GetComponent<HandPhysics>())
         {
             isPlayer = true;
+            Debug.Log(isPlayer);
         }
     }
 
@@ -59,6 +64,10 @@ public class PierreAFeuCS : MonoBehaviour
         if(!gameObject.GetComponent<Throwable>())
         {
             gameObject.AddComponent<Throwable>();
+        }
+        if (collision.gameObject.GetComponent<HandPhysics>())
+        {
+            isPlayer = false;
         }
     }
 

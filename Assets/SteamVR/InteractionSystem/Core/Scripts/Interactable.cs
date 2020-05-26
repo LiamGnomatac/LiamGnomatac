@@ -92,6 +92,7 @@ namespace Valve.VR.InteractionSystem
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
 
+        private bool isGrab = false;
 
         private void Awake()
         {
@@ -361,6 +362,16 @@ namespace Valve.VR.InteractionSystem
 
             if (highlightHolder != null)
                 Destroy(highlightHolder);
+        }
+
+        public void SetIsGrab(bool value)
+        {
+            isGrab = value;
+        }
+
+        public bool GetIsGrab()
+        {
+            return isGrab;
         }
     }
 }
