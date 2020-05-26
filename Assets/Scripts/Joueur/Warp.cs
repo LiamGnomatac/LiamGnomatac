@@ -6,18 +6,19 @@ public class Warp : MonoBehaviour
 {
 
     public GameObject limiteZone;
+    public GameObject encens;
    
     public bool isItDark;
     
     
 
-    private void Start()
+    void Start()
     {
         
        
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log("pied");
         if (other.CompareTag("Player"))
@@ -28,7 +29,7 @@ public class Warp : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -39,8 +40,18 @@ public class Warp : MonoBehaviour
     }
 
 
-    private void Update()
+    void Update()
     {
+
+        if(encens.GetComponent<EncensCS>().isTurnOn == true)
+        {
+            isItDark = false;
+        }
+        else
+        {
+            isItDark = true;
+        }
+
         if(limiteZone == true && isItDark == true)
         {
 
