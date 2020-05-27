@@ -30,7 +30,7 @@ public class PierreAFeuCS : MonoBehaviour
 
     private void Spark()
     {
-        if (GetComponent<Interactable>().GetIsGrab())
+        if (GetComponent<Interactable>().attachedToHand != null)
         {
             collisionNumber++;
             Instantiate(vfxSpark, transform.position, Quaternion.identity);
@@ -52,7 +52,7 @@ public class PierreAFeuCS : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.GetComponentInParent<HandPhysics>())
+        if (collision.gameObject.GetComponentInParent<HandCollider>())
         {
             isPlayer = true;
             Debug.Log(isPlayer);

@@ -7,16 +7,16 @@ using Valve.VR.InteractionSystem;
  {
     public GameObject rock;
 
-    private void InvokeRock(Hand value)
+    private void InvokeRock(HandCollider value)
     {
         GameObject thisRock;
         thisRock = Instantiate(rock, transform.position, Quaternion.identity);
-        value.AttachObject(thisRock, GrabTypes.Grip);
+        value.hand.hand.AttachObject(thisRock, GrabTypes.Grip);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Hand hand = other.GetComponentInParent<Hand>();
+        HandCollider hand = other.GetComponentInParent<HandCollider>();
         if (hand)
         {
             InvokeRock(hand);
