@@ -52,7 +52,7 @@ public class PierreAFeuCS : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.GetComponent<HandPhysics>())
+        if (collision.gameObject.GetComponentInParent<HandPhysics>())
         {
             isPlayer = true;
             Debug.Log(isPlayer);
