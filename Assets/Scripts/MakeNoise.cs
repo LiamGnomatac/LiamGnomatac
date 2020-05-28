@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class MakeNoise : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class MakeNoise : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(GetComponent<Interactable>().attachedToHand != null)
         {
             justOneHit = true;
         }

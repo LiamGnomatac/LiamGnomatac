@@ -119,7 +119,7 @@ public class EncensCS : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<PierreAFeuCS>())
         {
@@ -132,19 +132,12 @@ public class EncensCS : MonoBehaviour
             }
 
         }
-    }
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Monstre"))
+        if (other.CompareTag("Monstre"))
         {
-            
+
             TurnOff();
             EncensManager.s_Singleton.thereIsLight = false;
-           
+
         }
     }
-
-
 }
