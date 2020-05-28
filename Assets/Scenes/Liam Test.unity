@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScorpionManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2541767556758560322, guid: b98d278777f77a44993803cf07d333a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2541767556758560323, guid: b98d278777f77a44993803cf07d333a2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1765,14 +1770,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3829819542624680153, guid: 4f12124f26483be40bc3775b322e7c8e,
         type: 3}
-      propertyPath: dogPhoneLight
-      value: 
-      objectReference: {fileID: 243110374}
-    - target: {fileID: 3829819542624680153, guid: 4f12124f26483be40bc3775b322e7c8e,
-        type: 3}
       propertyPath: dogTorchLight
       value: 
-      objectReference: {fileID: 185800410}
+      objectReference: {fileID: 1517296891}
+    - target: {fileID: 3829819542624680153, guid: 4f12124f26483be40bc3775b322e7c8e,
+        type: 3}
+      propertyPath: dogPhoneLight
+      value: 
+      objectReference: {fileID: 1680676303}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f12124f26483be40bc3775b322e7c8e, type: 3}
 --- !u!1001 &914007860
@@ -2330,6 +2335,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1344462918}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1517296891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7409392928729972428, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 80310475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1569458998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2679,6 +2690,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
     type: 3}
   m_PrefabInstance: {fileID: 1599564012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1680676303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6947961852849823271, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+    type: 3}
+  m_PrefabInstance: {fileID: 80310475}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785851918
 GameObject:
