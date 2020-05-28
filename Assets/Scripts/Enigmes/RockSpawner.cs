@@ -17,8 +17,10 @@ using Valve.VR.InteractionSystem;
     private void OnTriggerEnter(Collider other)
     {
         HandCollider hand = other.GetComponentInParent<HandCollider>();
+        Debug.Log("collision with" + other);
         if (hand)
         {
+            Debug.Log("collide" + other);
             InvokeRock(hand);
         }
     }

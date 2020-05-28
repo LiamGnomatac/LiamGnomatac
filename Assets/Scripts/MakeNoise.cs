@@ -20,11 +20,13 @@ public class MakeNoise : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(GetComponent<Interactable>().attachedToHand != null)
+        Debug.Log("collision with" + collision);
+        if (GetComponent<Interactable>().attachedToHand != null)
         {
             justOneHit = true;
+            Debug.Log(justOneHit);
         }
-        if(collision.gameObject.layer == 9 && justOneHit)
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Salle") && justOneHit)
         {
             Debug.Log("bruit");
             Vector3 pos = transform.position;
