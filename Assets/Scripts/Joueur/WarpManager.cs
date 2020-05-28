@@ -9,18 +9,7 @@ public class WarpManager : MonoBehaviour
 {
 
     public GameObject zoneStart;
-    public GameObject zone1;
-    public GameObject zone2;
-    public GameObject zone3;
-    public GameObject zone4;
-    public GameObject zone5;
-    public GameObject zone6;
-    public GameObject zone7;
-    public GameObject zone8;
-    public GameObject zone9;
-    public GameObject zone10;
-    public GameObject zone11;
-    public GameObject zone12;
+    
     public GameObject zoneEnd;
 
 

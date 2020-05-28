@@ -7,9 +7,9 @@ using Valve.VR;
 
 public class TPPerso : MonoBehaviour
 {
-    // Variable
+    #region Variable
 
-    
+
     private Player player;
     private Vector3 lookAtPosition = Vector3.zero;
     private Transform lookAtJointTransform;
@@ -30,6 +30,10 @@ public class TPPerso : MonoBehaviour
 
     public float _fadeDuration = 5f;
 
+    #endregion
+
+    #region Singleton
+
     public static TPPerso s_Singleton;
 
     private void Awake()
@@ -44,6 +48,9 @@ public class TPPerso : MonoBehaviour
         }
     }
 
+
+    #endregion
+
     void Start()
     {
         FadeFromBlack();
@@ -57,6 +64,10 @@ public class TPPerso : MonoBehaviour
     //-------------------------------------------------
     void Update()
     {
+
+    #region TP
+
+
         vue = GameObject.FindGameObjectWithTag("ZoneVue");
 
         select = GameObject.FindGameObjectWithTag("ZoneSelect");
@@ -140,19 +151,22 @@ public class TPPerso : MonoBehaviour
            
         }
 
+        #endregion
 
         if (flashlight.stateDown)
         {
             
-            GameManager.s_Singleton.AppearTorchLight();
+            AppearTorchLight();
         }
 
         if (flash.stateDown)
         {
 
-            GameManager.s_Singleton.AppearLight();
+            AppearLight();
         }
     }
+
+    #region Fade
 
     public void FadeToBlack()
     {
@@ -171,5 +185,36 @@ public class TPPerso : MonoBehaviour
         //set and start fade to
         SteamVR_Fade.Start(Color.clear, _fadeDuration);
     }
+
+    #endregion
+
+    #region Torche
+    public void AppearTorchLight()
+    {
+        if (!torchLightIsBroke)
+        {
+            torchLight.GetComponent<LampeTorche>().ToggleTorchLightAppear();
+            torchLight.GetComponent<LampeTorche>().spotLight.SetActive(false);
+        }
+        else
+        {
+            cellphone.GetComponent<Téléphone>().ToggleTorchLightAppear();
+            cellphone.GetComponent<Téléphone>().spotLight.SetActive(false);
+        }
+    }
+
+    public void AppearLight()
+    {
+        if (!torchLightIsBroke)
+        {
+            torchLight.GetComponent<LampeTorche>().ToggleLightAppear();
+        }
+        else
+        {
+            cellphone.GetComponent<Téléphone>().ToggleLightAppear();
+        }
+    }
+    #endregion
+
 
 }
