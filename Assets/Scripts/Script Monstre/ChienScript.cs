@@ -8,8 +8,7 @@ public class ChienScript : MonoBehaviour
 
     public Animator animator;
     public GameObject mesh;
-    private float chienTimerOutZone = 5f;
-    private float chienTimerAttaque = 5.0f;
+    public float chienTimerAttaque = 5.0f;
     public float chienTimerTp = 0.0f;
     public float chienTPAt = 3.0f;
     public bool joueurSurZone = false;
@@ -24,7 +23,7 @@ public class ChienScript : MonoBehaviour
     public bool thereIsLight;
     public bool dogCanAttackOnLight;
     public bool chienAttack;
-
+    
     #endregion
 
     #region Singleton
@@ -80,7 +79,7 @@ public class ChienScript : MonoBehaviour
             
         }
 
-        if (chienTimerAttaque <= 0.0f || chienTimerOutZone <= 0f)
+        if (chienTimerAttaque <= 0.0f )
         {
             ScreamerManager.s_Singleton.KillingDog();
 
@@ -124,20 +123,18 @@ public class ChienScript : MonoBehaviour
 
 
 
-        if (joueurSurZone == false)
-        {
+       
+    }
 
-            chienTimerOutZone -= Time.deltaTime;
-        }
-        else
-        {
+    private void DogAttack()
+    {
+        ScreamerManager.s_Singleton.KillingDog();
+    }
 
-            chienTimerOutZone = 5f;
-
-        }
-
-
-        if (dogCanAttackOnLight == true && thereIsLight == true)
+ 
+    public void ChienAttackOnLight()
+    {
+        if (thereIsLight == true)
         {
 
             chienAttack = true;
@@ -149,13 +146,23 @@ public class ChienScript : MonoBehaviour
             chienTimerAttaque = 5f;
         }
 
-        
+    }
+   
+    public void PlayerOutZone()
+    {
+
+        if (!joueurSurZone)
+        {
+            Invoke("DogAttack", chienTimerAttaque);
+        }
 
     }
 
- 
+    public void CancelDogAttack()
+    {
+        CancelInvoke("DogAttack");
 
-   
+    }
 
     public void OnBecameVisible()
     {
@@ -174,7 +181,7 @@ public class ChienScript : MonoBehaviour
 
     }
     
-
+   
 
     public void ChienTP()
     {
@@ -209,5 +216,6 @@ public class ChienScript : MonoBehaviour
                 break;
         }
     }
+
 
 }

@@ -12,13 +12,12 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public bool monsterCanMove;
 
-    public GameObject torchLight;
-    public GameObject cellphone;
+    
 
     public bool showController = false;
 
-    [HideInInspector]
-    public bool torchLightIsBroke;
+    
+    
 
     [HideInInspector]
     public Transform tpRelativePoint;
@@ -77,33 +76,7 @@ public class GameManager : MonoBehaviour
         }*/
     }
 
-    #region Torche
-    public void AppearTorchLight()
-    {
-        if(!torchLightIsBroke)
-        {
-            torchLight.GetComponent<LampeTorche>().ToggleTorchLightAppear();
-            torchLight.GetComponent<LampeTorche>().spotLight.SetActive(false);
-        }
-        else
-        {
-            cellphone.GetComponent<Téléphone>().ToggleTorchLightAppear();
-            cellphone.GetComponent<Téléphone>().spotLight.SetActive(false);
-        }
-    }
-
-    public void AppearLight()
-    {
-        if (!torchLightIsBroke)
-        {
-            torchLight.GetComponent<LampeTorche>().ToggleLightAppear();
-        }
-        else
-        {
-            cellphone.GetComponent<Téléphone>().ToggleLightAppear();
-        }
-    }
-    #endregion
+    
 
     public void TpRelativePoint(Transform pos)
     {

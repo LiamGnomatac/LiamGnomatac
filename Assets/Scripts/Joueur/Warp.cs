@@ -6,7 +6,7 @@ public class Warp : MonoBehaviour
 {
 
     public GameObject limiteZone;
-    public GameObject encens;
+    public EncensCS encens;
 
     public bool isItDark = true;
     
@@ -26,20 +26,9 @@ public class Warp : MonoBehaviour
             ChienScript.s_Singleton.joueurSurZone = true;
             Debug.Log("c'est rouge");
             limiteZone.SetActive(true);
+            IsItDark();
 
-            if (limiteZone == true && isItDark == true)
-            {
-
-                ChienScript.s_Singleton.dogCanAttackOnLight = true;
-
-            }
-
-            else
-            {
-
-                ChienScript.s_Singleton.dogCanAttackOnLight = false;
-
-            }
+            
         }
     }
 
@@ -59,7 +48,17 @@ public class Warp : MonoBehaviour
     void Update()
     {
 
-        if(encens.GetComponent<EncensCS>().isTurnOn == true)
+        
+
+
+        
+
+    }
+
+
+    private void IsItDark()
+    {
+        if (encens.isTurnOn)
         {
             isItDark = false;
         }
@@ -68,9 +67,25 @@ public class Warp : MonoBehaviour
             isItDark = true;
         }
 
-        
+        Debug.Log("c'est allumé " + isItDark);
     }
 
+    private void CanAttack()
+    {
+        if (limiteZone == true && isItDark == true)
+        {
+
+            ChienScript.s_Singleton.dogCanAttackOnLight = true;
+
+        }
+
+        else
+        {
+
+            ChienScript.s_Singleton.ChienAttackOnLight();
+
+        }
+    }
 
 }
 
