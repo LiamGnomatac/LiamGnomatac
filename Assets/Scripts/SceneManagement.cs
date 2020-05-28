@@ -126,7 +126,7 @@ public class SceneManagement : MonoBehaviour
     {
         if(DeathCount > 2)
         {
-            GameManager.s_Singleton.torchLightIsBroke = true;
+            TPPerso.s_Singleton.torchLightIsBroke = true;
         }
     }
 }
