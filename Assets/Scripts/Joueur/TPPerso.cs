@@ -28,6 +28,10 @@ public class TPPerso : MonoBehaviour
     private GameObject vue;
     private GameObject select;
 
+    public bool torchLightIsBroke;
+    public GameObject torchLight;
+    public GameObject cellphone;
+
     public float _fadeDuration = 5f;
 
     #endregion

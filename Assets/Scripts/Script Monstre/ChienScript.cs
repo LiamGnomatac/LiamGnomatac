@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChienScript : MonoBehaviour
 {
+    #region Variable
+
     public Animator animator;
     public GameObject mesh;
     private float chienTimerOutZone = 5f;
@@ -23,8 +25,9 @@ public class ChienScript : MonoBehaviour
     public bool dogCanAttackOnLight;
     public bool chienAttack;
 
-   
+    #endregion
 
+    #region Singleton
     public static ChienScript s_Singleton;
 
     private void Awake()
@@ -39,6 +42,8 @@ public class ChienScript : MonoBehaviour
         }
     }
 
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +56,7 @@ public class ChienScript : MonoBehaviour
     {
         transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
 
-        if (chienAttack == true)
+        if (chienAttack == true || joueurSurZone == false)
         {
 
             animator.SetBool("isAttack", true);

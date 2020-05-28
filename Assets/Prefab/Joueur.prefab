@@ -625,6 +625,38 @@ MonoBehaviour:
   disableAllOtherActionSets: 0
   activateOnStart: 1
   deactivateOnDestroy: 1
+--- !u!114 &2012690681456243823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242378087344998588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &3647650639769991752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242378087344998588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02fe8a068cf91a24f854c08af54b85f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 5727684670617351912}
+  m_TargetSource: 2
+  m_ClickAction:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
 --- !u!1 &1317472233891272147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,38 +1327,6 @@ MonoBehaviour:
   speed: 4
   shiftSpeed: 16
   showInstructions: 1
---- !u!114 &2012690681456243823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242378087344998588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &3647650639769991752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242378087344998588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02fe8a068cf91a24f854c08af54b85f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Camera: {fileID: 5727684670617351912}
-  m_TargetSource: 2
-  m_ClickAction:
-    actionPath: /actions/default/in/InteractUI
-    needsReinit: 0
 --- !u!1 &4225550883692551401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,6 +2534,9 @@ MonoBehaviour:
   zoneVue: {fileID: 4066487096019415764, guid: 26ea1431b5ea69a4aaa407bb8b23516e, type: 3}
   zoneSelect: {fileID: 7114271317903891769, guid: 49793fa64b81e8c4a92b85687270d875,
     type: 3}
+  torchLightIsBroke: 0
+  torchLight: {fileID: 8657653235151025570}
+  cellphone: {fileID: 7375936394909185818}
   _fadeDuration: 5
 --- !u!65 &2888592963621585065
 BoxCollider:
@@ -2841,6 +2844,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
+--- !u!1 &8657653235151025570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8657653234038925478, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1188486404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5389477088134499116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
@@ -3086,6 +3095,12 @@ PrefabInstance:
 --- !u!4 &6009062749881048567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 639682136663460003, guid: c8896178ef431be44bc26b458848d705,
+    type: 3}
+  m_PrefabInstance: {fileID: 6594643386409162068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7375936394909185818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4456441754901799502, guid: c8896178ef431be44bc26b458848d705,
     type: 3}
   m_PrefabInstance: {fileID: 6594643386409162068}
   m_PrefabAsset: {fileID: 0}
