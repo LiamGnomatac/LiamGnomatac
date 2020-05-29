@@ -76,19 +76,12 @@ public class TaureauScript : MonoBehaviour
 
     public void SetDestination(Vector3 bruit)
     {
-        Cancel();
         agent.isStopped = true;
         agent.speed = maxSpeed;
         agent.ResetPath();
         transform.LookAt(bruit);
         agent.destination = Vector3.forward.normalized;
         isRunning = true;
-        Invoke("UpdateDestination", 5);
-    }
-
-    public void Cancel()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -114,6 +107,7 @@ public class TaureauScript : MonoBehaviour
         isStun = true;
         isRunning = false;
         agent.speed = minSpeed;
+        //Invoke("UpdateDestination", timerStun);
     }
 
 

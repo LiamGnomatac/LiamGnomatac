@@ -21,7 +21,7 @@ public class MakeNoise : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collision with" + collision);
-        if (GetComponent<Interactable>().attachedToHand != null)
+        if (GetComponent<Interactable>().attachedToHand != null || collision.gameObject.GetComponentInParent<HandCollider>())
         {
             justOneHit = true;
             Debug.Log(justOneHit);

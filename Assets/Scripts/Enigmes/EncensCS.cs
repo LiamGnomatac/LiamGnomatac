@@ -31,7 +31,7 @@ public class EncensCS : MonoBehaviour
         {
             return;
         }
-        else if (isStayOn && GetComponentInChildren<Light>())
+        else if (isStayOn && GetComponentInChildren<Light>().enabled)
         {
             Debug.Log("va s'eteindre");
             Invoke("TurnOffWithTime", stayOnTimer);
