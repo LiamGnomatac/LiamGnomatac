@@ -10,7 +10,7 @@ using Valve.VR.InteractionSystem;
     private void InvokeRock(HandCollider value)
     {
         GameObject thisRock;
-        thisRock = Instantiate(rock, transform.position, Quaternion.identity);
+        thisRock = Instantiate(rock, value.transform);//transform.position, Quaternion.identity);
         value.hand.hand.AttachObject(thisRock, GrabTypes.Grip);
     }
 

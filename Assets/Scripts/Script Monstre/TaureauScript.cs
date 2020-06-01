@@ -45,11 +45,9 @@ public class TaureauScript : MonoBehaviour
     {
         if(isStun == true)
         {
-
             timerStun -= Time.deltaTime;
-
-
         }
+
     }
 
 
@@ -76,11 +74,9 @@ public class TaureauScript : MonoBehaviour
 
     public void SetDestination(Vector3 bruit)
     {
-        agent.isStopped = true;
         agent.speed = maxSpeed;
         agent.ResetPath();
-        transform.LookAt(bruit);
-        agent.destination = Vector3.forward.normalized;
+        agent.destination = bruit;
         isRunning = true;
     }
 

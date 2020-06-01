@@ -20,8 +20,8 @@ public class EncensCS : MonoBehaviour
         pointLight.SetActive(false);
         lightIntensity = pointLight.GetComponent<Light>().intensity;
         StartTurnOn();
-        StayOn();
         StartFilled();
+        StayOn();
     }
 
     // Update is called once per frame
