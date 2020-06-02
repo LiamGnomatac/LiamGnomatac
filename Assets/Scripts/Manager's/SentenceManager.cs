@@ -7,6 +7,7 @@ public class SentenceManager : MonoBehaviour
 {
     private Queue<string> sentences;
 
+    public float timeBeforeDisplayText;
     public TextMeshProUGUI monologueText;
     public static SentenceManager s_Singleton;
 
@@ -21,6 +22,7 @@ public class SentenceManager : MonoBehaviour
             s_Singleton = this;
         }
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +30,17 @@ public class SentenceManager : MonoBehaviour
         sentences = new Queue<string>();
     }
     
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void StartMonologue(Monologues monologue)
     {
-        Debug.Log("Starting conversation" + monologue.name);
+        Debug.Log("Starting conversation " + monologue.name);
         sentences.Clear();
         foreach (string sentence in monologue.sentences)
         {
@@ -50,6 +60,7 @@ public class SentenceManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        Invoke("DisplayNextSentence",timeBeforeDisplayText);
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -65,5 +76,6 @@ public class SentenceManager : MonoBehaviour
     public void EndMonologue()
     {
         Debug.Log("end of conversation");
+        monologueText.text = "";
     }
 }

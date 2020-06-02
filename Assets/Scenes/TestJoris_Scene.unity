@@ -1571,6 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8cd51c76e2fb74fa3126f1c678a1ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeDisplayText: 5
   monologueText: {fileID: 1590138956}
 --- !u!4 &421230316
 Transform:
@@ -3768,8 +3769,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologue:
-    name: 
-    sentences: []
+    name: Apparition
+    sentences:
+    - "Qu\u2019est ce que je vais faire, les fouilles ont \xE9t\xE9 annul\xE9e."
+    - "Pff. C\u2019\xE9tait la chance de ma vie pour prouver que je suis un bon arch\xE9ologue."
+    - "Pourquoi mon patron m\u2019a vir\xE9 ?"
 --- !u!4 &1339197210
 Transform:
   m_ObjectHideFlags: 0
