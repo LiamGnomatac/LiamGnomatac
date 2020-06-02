@@ -9,12 +9,10 @@ public class ChienScript : MonoBehaviour
     public Animator animator;
     public GameObject mesh;
     public float chienTimerAttaque = 5.0f;
-    public float chienTimerTp = 0.0f;
-    public float chienTPAt = 3.0f;
+   
+    
     public bool joueurSurZone = false;
-    public bool chienCanTP = false;
-    public bool chienShouldTP = false;
-    public bool canCount = true;
+    public bool chienCanTP = true;
     public GameObject zone1;
     public GameObject zone2;
     public GameObject zone3;
@@ -47,50 +45,13 @@ public class ChienScript : MonoBehaviour
     void Start()
     {
         mesh.SetActive(false);
-        chienCanTP = false;
+        ChienTP();
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
-
-        if (chienAttack == true || joueurSurZone == false)
-        {
-
-            animator.SetBool("isAttack", true);
-
-        }
-        else
-        {
-            animator.SetBool("isAttack", false);
-        }
-
-        if (canCount == true)
-        {
-            chienTimerTp += Time.deltaTime;
-        }
-
-        if (chienTimerTp >= chienTPAt)
-        {
-            canCount = false;
-            chienTimerTp = 0;
-            chienShouldTP = true;
-            
-        }
-
-        if (chienTimerAttaque <= 0.0f )
-        {
-            ScreamerManager.s_Singleton.KillingDog();
-
-        }
-
-      if (chienAttack == true)
-        {
-            chienTimerAttaque -= Time.deltaTime;
-
-        }
-
     }
 
     private void FixedUpdate()
@@ -101,11 +62,6 @@ public class ChienScript : MonoBehaviour
             ScreamerManager.s_Singleton.KillingDog();
         }
 
-        if (chienShouldTP == true)
-        {
-            chienShouldTP = false;
-            ChienTP();
-        }
 
        if(dogPhoneLight.activeSelf == true || dogTorchLight.activeSelf == true)
         {
@@ -126,12 +82,9 @@ public class ChienScript : MonoBehaviour
        
     }
 
-    private void DogAttack()
-    {
-        ScreamerManager.s_Singleton.KillingDog();
-    }
+    
 
- 
+
     public void ChienAttackOnLight()
     {
         if (thereIsLight == true)
@@ -147,13 +100,18 @@ public class ChienScript : MonoBehaviour
         }
 
     }
-   
+    private void DogAttack()
+    {
+        ScreamerManager.s_Singleton.KillingDog();
+    }
+
     public void PlayerOutZone()
     {
 
         if (!joueurSurZone)
         {
             Invoke("DogAttack", chienTimerAttaque);
+            animator.SetBool("isAttack", true);
         }
 
     }
@@ -161,38 +119,24 @@ public class ChienScript : MonoBehaviour
     public void CancelDogAttack()
     {
         CancelInvoke("DogAttack");
+        animator.SetBool("isAttack", false);
 
     }
 
-    public void OnBecameVisible()
-    {
-        chienCanTP = true;
-    }
-
-    public void OnBecameInvisible()
-    {
-        if (chienCanTP == true)
-        {
-            mesh.SetActive(false);
-            canCount = true;
-
-        }
-       
-
-    }
+    
     
    
 
     public void ChienTP()
     {
-        
-        
+        Debug.Log("Chien choisi une zone");
+
         int zoneChoisie = Random.Range(0, 3);
 
         switch (zoneChoisie)
         {
             case 0:
-
+                Debug.Log(zoneChoisie);
                 gameObject.transform.position = zone1.transform.position;
                 chienCanTP = false;
                 mesh.SetActive(true);
@@ -200,7 +144,7 @@ public class ChienScript : MonoBehaviour
 
                 break;
             case 1:
-
+                Debug.Log(zoneChoisie);
                 gameObject.transform.position = zone2.transform.position;
                 chienCanTP = false;
                 mesh.SetActive(true);
@@ -208,7 +152,7 @@ public class ChienScript : MonoBehaviour
                 break;
 
             case 2:
-
+                Debug.Log(zoneChoisie);
                 gameObject.transform.position = zone3.transform.position;
                 chienCanTP = false;
                 mesh.SetActive(true);

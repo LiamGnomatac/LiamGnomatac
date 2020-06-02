@@ -12,12 +12,12 @@ public class ScorpionScript : MonoBehaviour
     public GameObject zone4;
     public GameObject zone5;
     public float compteurMur = 8f;
-    public float compteurPlafond = 15f;
+    
     public float timerNextTP = 20f;
     public bool scorpionMove = false;
     public bool scorpionMur = false;
     public bool scorpionHitFlash = false;
-    public bool scorpionPlafond = false;
+    
     
     public Collider joueur;
 
@@ -41,11 +41,7 @@ public class ScorpionScript : MonoBehaviour
            
         }
 
-       if (scorpionPlafond == true)
-        {
-            compteurPlafond -= Time.deltaTime;
-            
-        }
+       
 
        if(scorpionMur == true)
         {
@@ -75,11 +71,7 @@ public class ScorpionScript : MonoBehaviour
             ScorpionTP();
         }
 
-        if (compteurPlafond <= 0 && scorpionPlafond == true)
-        {
-            scorpionPlafond = false;
-            ScorpionMove();
-        }
+        
 
         if(compteurMur <= 0)
         {
@@ -93,7 +85,7 @@ public class ScorpionScript : MonoBehaviour
     {
 
 
-        int zoneChoisie = Random.Range(0, 4);
+        int zoneChoisie = Random.Range(0, 3);
 
         switch (zoneChoisie)
         {
@@ -113,22 +105,8 @@ public class ScorpionScript : MonoBehaviour
 
                 break;
 
+       
             case 2:
-
-                if (SceneManagement.s_Singleton.niveau4)
-                {
-                    ScorpionTP();
-                }
-                else
-                {
-                    gameObject.transform.position = zone3.transform.position;
-                    ScorpionPlaflond();
-                }
-
-
-                break;
-
-            case 3:
 
                 if (SceneManagement.s_Singleton.niveau4)
                 {
@@ -164,15 +142,7 @@ public class ScorpionScript : MonoBehaviour
 
     }
 
-    public void ScorpionPlaflond()
-    {
-        mesh.SetActive(true);
-        compteurPlafond = 15f;
-        scorpionPlafond = true;
-        Debug.Log("Le scorpion est dans une cavité au plafond");
-
-    }
-
+   
 
     private void OnTriggerEnter(Collider other)
     {
