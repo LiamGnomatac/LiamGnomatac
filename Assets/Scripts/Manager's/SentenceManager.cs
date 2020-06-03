@@ -10,6 +10,7 @@ public class SentenceManager : MonoBehaviour
     public float timeBeforeDisplayText;
     public TextMeshProUGUI monologueText;
     public static SentenceManager s_Singleton;
+    public Animator animator;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class SentenceManager : MonoBehaviour
 
     public void StartMonologue(Monologues monologue)
     {
+        animator.SetBool("isOpen", true);
         Debug.Log("Starting conversation " + monologue.name);
         sentences.Clear();
         foreach (string sentence in monologue.sentences)
@@ -76,5 +78,6 @@ public class SentenceManager : MonoBehaviour
     {
         Debug.Log("end of conversation");
         monologueText.text = "";
+        animator.SetBool("isOpen", false);
     }
 }
