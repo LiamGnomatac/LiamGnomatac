@@ -770,12 +770,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ed6c93d84cfbb4697b8954e7c97664, type: 3}
---- !u!1 &185800410 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8657653235151025570, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-    type: 3}
-  m_PrefabInstance: {fileID: 80310475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &195351704
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,12 +804,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &243110374 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7375936394909185818, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
-    type: 3}
-  m_PrefabInstance: {fileID: 80310475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &268479920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1205,10 +1193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objKeyLaunch: 0
   monsterCanMove: 0
-  torchLight: {fileID: 185800410}
-  cellphone: {fileID: 243110374}
   showController: 0
-  torchLightIsBroke: 0
   tpRelativePoint: {fileID: 0}
 --- !u!4 &411458327
 Transform:
