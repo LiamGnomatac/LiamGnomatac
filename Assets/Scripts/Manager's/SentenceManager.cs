@@ -26,7 +26,6 @@ public class SentenceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
         sentences = new Queue<string>();
     }
     

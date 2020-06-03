@@ -103,7 +103,7 @@ public class TaureauScript : MonoBehaviour
         isStun = true;
         isRunning = false;
         agent.speed = minSpeed;
-        //Invoke("UpdateDestination", timerStun);
+        Invoke("UpdateDestination", timerStun);
     }
 
 

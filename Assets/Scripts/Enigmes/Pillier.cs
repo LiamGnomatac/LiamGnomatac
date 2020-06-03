@@ -20,10 +20,10 @@ public class Pillier : MonoBehaviour
     {
 
     }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
+        Debug.Log("toucher couler");
+        if (collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning)
         {
             TaureauScript.s_Singleton.TaureauStun();
             Invoke("DestroyGObj", invTime);
@@ -32,7 +32,6 @@ public class Pillier : MonoBehaviour
 
     private void OnDestroy()
     {
-
         EnigmesManager.s_Singleton.pillarBroke++;
         BlindTp();
         RepeatingInvoke();
