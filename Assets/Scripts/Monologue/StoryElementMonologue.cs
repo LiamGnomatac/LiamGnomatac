@@ -13,6 +13,9 @@ public class StoryElementMonologue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        TriggerMonologue();
+        if(other.CompareTag("Player"))
+        {
+            TriggerMonologue();
+        }
     }
 }
