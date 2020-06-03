@@ -90,13 +90,12 @@ public class ChienScript : MonoBehaviour
         if (thereIsLight == true)
         {
 
-            chienAttack = true;
-
+            Invoke("DogAttack", chienTimerAttaque);
+            animator.SetBool("isAttack", true);
         }
         else
         {
-            chienAttack = false;
-            chienTimerAttaque = 5f;
+            CancelDogAttack();
         }
 
     }
@@ -118,6 +117,7 @@ public class ChienScript : MonoBehaviour
 
     public void CancelDogAttack()
     {
+        if(joueurSurZone && !thereIsLight)
         CancelInvoke("DogAttack");
         animator.SetBool("isAttack", false);
 
