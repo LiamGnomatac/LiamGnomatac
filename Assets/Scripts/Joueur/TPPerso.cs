@@ -99,7 +99,7 @@ public class TPPerso : MonoBehaviour
             // Un comparetag sur le raycast
             if (hit.collider.gameObject.CompareTag("ZoneTP"))
             {
-                Debug.Log("Zone visible OK");
+                //Debug.Log("Zone visible OK");
                 if (zoneVueActive == false)
                 {
                     Instantiate(zoneVue, hit.transform.position, hit.transform.rotation);

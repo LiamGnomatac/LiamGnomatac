@@ -16,11 +16,14 @@ public class PillierCentral : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("toucher");
         if (collision.gameObject == taurus && taurus.GetComponent<TaureauScript>().isRunning && EnigmesManager.s_Singleton.pillarBroke > 4)
         {
+            FindObjectOfType<Relique>().DeFreeze();
             DestroyGObj();
         }
     }
+    
     private void OnDestroy()
     {
         RepeatingInvoke();

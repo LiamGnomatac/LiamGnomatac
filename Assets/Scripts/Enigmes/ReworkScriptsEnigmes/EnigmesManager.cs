@@ -16,7 +16,7 @@ public class EnigmesManager : MonoBehaviour
     [HideInInspector]
     public int statueIsStatic;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int pillarBroke;
 
     //[HideInInspector]
