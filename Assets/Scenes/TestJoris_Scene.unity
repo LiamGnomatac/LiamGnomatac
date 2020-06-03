@@ -3380,6 +3380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBeforeDisplayText: 3
   monologueText: {fileID: 1590138956}
+  animator: {fileID: 1192262333}
 --- !u!1 &1197331752
 GameObject:
   m_ObjectHideFlags: 0
