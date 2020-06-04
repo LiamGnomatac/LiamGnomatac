@@ -25,7 +25,6 @@ public class PullRock : MonoBehaviour
         posStart = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().startPosition.position;
         posEnd = GetComponentInParent<Transform>().GetComponentInChildren<LinearDrive>().endPosition.position;
         distStartEnd = Vector3.Distance(posStart, posEnd);
-        Debug.Log(distStartEnd);
         SetIdle();
         EnigmesManager.s_Singleton.rockIsPull = false;
     }

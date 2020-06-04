@@ -3801,6 +3801,7 @@ MonoBehaviour:
     - "Qu\u2019est ce que je vais faire, les fouilles ont \xE9t\xE9 annul\xE9e."
     - "Pff. C\u2019\xE9tait la chance de ma vie pour prouver que je suis un bon arch\xE9ologue."
     - "Pourquoi mon patron m\u2019a vir\xE9 ?"
+  activateWithTrigger: 0
 --- !u!4 &1339197210
 Transform:
   m_ObjectHideFlags: 0

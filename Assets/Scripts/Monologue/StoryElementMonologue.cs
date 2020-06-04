@@ -5,6 +5,7 @@ using UnityEngine;
 public class StoryElementMonologue : MonoBehaviour
 {
     public Monologues monologue;
+    public bool activateWithTrigger = false;
 
     public void TriggerMonologue()
     {
@@ -13,7 +14,7 @@ public class StoryElementMonologue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && activateWithTrigger)
         {
             TriggerMonologue();
         }

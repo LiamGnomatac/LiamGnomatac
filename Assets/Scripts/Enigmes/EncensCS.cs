@@ -27,7 +27,7 @@ public class EncensCS : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!isStayOn)
+        if (!isStayOn || GetComponentInChildren<Light>() == null)
         {
             return;
         }
