@@ -67,13 +67,14 @@ public class ChienScript : MonoBehaviour
         {
 
             thereIsLight = true;
-
+            ChienAttackOnLight();
         }
 
         else
         {
 
             thereIsLight = false;
+            CancelDogAttack();
 
         }
 
@@ -87,16 +88,13 @@ public class ChienScript : MonoBehaviour
 
     public void ChienAttackOnLight()
     {
-        if (thereIsLight == true)
+        if (thereIsLight)
         {
 
             Invoke("DogAttack", chienTimerAttaque);
             animator.SetBool("isAttack", true);
         }
-        else
-        {
-            CancelDogAttack();
-        }
+        
 
     }
     private void DogAttack()
@@ -117,10 +115,11 @@ public class ChienScript : MonoBehaviour
 
     public void CancelDogAttack()
     {
-        if(joueurSurZone && !thereIsLight)
-        CancelInvoke("DogAttack");
-        animator.SetBool("isAttack", false);
-
+        if (joueurSurZone && !thereIsLight)
+        {
+            CancelInvoke("DogAttack");
+            animator.SetBool("isAttack", false);
+        }
     }
 
     
