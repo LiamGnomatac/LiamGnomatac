@@ -2220,7 +2220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1955805228155854763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2314,7 +2314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeDisplayText: 3
-  monologueName: {fileID: 0}
+  monologueName: {fileID: 3493161149401398618}
   monologueText: {fileID: 6311478520623511801}
   animator: {fileID: 2458552644941476060}
 --- !u!95 &2458552644941476060
