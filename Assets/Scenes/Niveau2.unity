@@ -428,6 +428,7 @@ GameObject:
   - component: {fileID: 289025077}
   - component: {fileID: 289025076}
   - component: {fileID: 289025075}
+  - component: {fileID: 289025078}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -510,6 +511,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289025073}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &289025078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289025073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Grade
+    sentences:
+    - "Cette embl\xE8me correspond au Miles, \"le soldat\""
+  activateWithTrigger: 0
 --- !u!1 &291600810
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +601,7 @@ GameObject:
   - component: {fileID: 292427099}
   - component: {fileID: 292427100}
   m_Layer: 0
-  m_Name: SpriteFaux
+  m_Name: PersesLune
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437331866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.121, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1059252463}
@@ -1051,6 +1069,7 @@ GameObject:
   - component: {fileID: 551661660}
   - component: {fileID: 551661659}
   - component: {fileID: 551661658}
+  - component: {fileID: 551661661}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1066,7 +1085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551661656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.291, y: -0.347, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 292427099}
@@ -1133,6 +1152,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551661656}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &551661661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551661656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Grade
+    sentences:
+    - "Celui l\xE0 correspond au Perses, \"la lune\""
+  activateWithTrigger: 0
 --- !u!1 &558619740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,7 +1319,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 437331868}
-        m_MethodName: DownButtonThree
+        m_MethodName: DownButtonFour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2043410665}
+        m_MethodName: TriggerMonologue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1373,7 +1420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573312189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.104, y: 0.264, z: -2.728}
+  m_LocalPosition: {x: 0.814, y: 0.218, z: -2.728}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2043410661}
@@ -1410,7 +1457,7 @@ PrefabInstance:
     - target: {fileID: 2217218948974185858, guid: 4f12124f26483be40bc3775b322e7c8e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.521
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 2217218948974185860, guid: 4f12124f26483be40bc3775b322e7c8e,
         type: 3}
@@ -1790,6 +1837,7 @@ GameObject:
   - component: {fileID: 751957015}
   - component: {fileID: 751957014}
   - component: {fileID: 751957013}
+  - component: {fileID: 751957016}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1872,6 +1920,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751957011}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &751957016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751957011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Grade
+    sentences:
+    - "Celui-\xE7i correspond au Leo, \"le Lion\""
+  activateWithTrigger: 0
 --- !u!1 &767984309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,7 +2851,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 437331868}
-        m_MethodName: DownButtonFour
+        m_MethodName: DownButtonOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 289025078}
+        m_MethodName: TriggerMonologue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2876,7 +2952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059252458}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.514, y: 0.786, z: -0.8629999}
+  m_LocalPosition: {x: 1.361, y: 1.044, z: -0.8629999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 289025074}
@@ -2952,7 +3028,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 437331868}
-        m_MethodName: DownButtonTwo
+        m_MethodName: DownButtonThree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 551661661}
+        m_MethodName: TriggerMonologue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3042,7 +3129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067514330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.121, y: 0.466, z: -2.727}
+  m_LocalPosition: {x: 0.213, y: 0.386, z: -2.727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 551661657}
@@ -3410,6 +3497,7 @@ GameObject:
   - component: {fileID: 1176895263}
   - component: {fileID: 1176895262}
   - component: {fileID: 1176895261}
+  - component: {fileID: 1176895266}
   m_Layer: 0
   m_Name: Code&Mesh
   m_TagString: Untagged
@@ -3546,6 +3634,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1176895266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176895259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: "Un mecanisme \xE9trange"
+    sentences:
+    - "\xC9tant donn\xE9 que les boutons sont fixes, je suppose qu'il faille d'abord
+      activer \xE7a."
+    - Il me semble entendre quelques cliquetis.
+  activateWithTrigger: 0
 --- !u!1 &1200455228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,7 +3767,7 @@ GameObject:
   - component: {fileID: 1236017189}
   - component: {fileID: 1236017190}
   m_Layer: 0
-  m_Name: SpriteLion
+  m_Name: LeoLion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4046,6 +4153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413404194347993139, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+        type: 3}
+      propertyPath: timeBeforeDisplayText
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8293642922993964315, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
         type: 3}
@@ -4576,7 +4688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571022918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.341, y: 0.657, z: -2.74}
+  m_LocalPosition: {x: 0.268, y: 0.316, z: -2.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 751957012}
@@ -4632,7 +4744,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 437331868}
-        m_MethodName: DownButtonOne
+        m_MethodName: DownButtonTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 751957016}
+        m_MethodName: TriggerMonologue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5210,7 +5333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704926429}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000077486027}
-  m_LocalPosition: {x: -0.8, y: 2.152, z: -2.49}
+  m_LocalPosition: {x: -0.8, y: 2.152, z: 2.074}
   m_LocalScale: {x: 0.20319, y: 0.20319, z: 0.20319}
   m_Children: []
   m_Father: {fileID: 1633642542}
@@ -5516,7 +5639,7 @@ GameObject:
   - component: {fileID: 1800198696}
   - component: {fileID: 1800198697}
   m_Layer: 0
-  m_Name: "SpriteP\xE8re"
+  m_Name: MilesSoldat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5702,7 +5825,7 @@ GameObject:
   - component: {fileID: 1920067574}
   - component: {fileID: 1920067575}
   m_Layer: 0
-  m_Name: SpriteSoleil
+  m_Name: HeliodromusMessagerSoleil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6334,6 +6457,7 @@ GameObject:
   - component: {fileID: 2043410664}
   - component: {fileID: 2043410663}
   - component: {fileID: 2043410662}
+  - component: {fileID: 2043410665}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -6416,6 +6540,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043410660}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2043410665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043410660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Grade
+    sentences:
+    - "Cette embl\xE8me correspond au Heliodromus \"le messager du Soleil\""
+  activateWithTrigger: 0
 --- !u!4 &2053203358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 437918, guid: 4b1aea5082805a246b7a8abb21701da7,

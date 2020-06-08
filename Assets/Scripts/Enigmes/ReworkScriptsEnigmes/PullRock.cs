@@ -47,6 +47,11 @@ public class PullRock : MonoBehaviour
         {
             EnigmesManager.s_Singleton.rockIsPull = true;
             SetPulled();
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
         if (!hand && GetComponent<Interactable>().attachedToHand == null && transform.position != posStart && myState != SliderStates.Idle)
         {
