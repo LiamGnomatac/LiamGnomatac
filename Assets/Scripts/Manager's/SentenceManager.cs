@@ -34,9 +34,8 @@ public class SentenceManager : MonoBehaviour
     public void StartMonologue(Monologues monologue)
     {
         animator.SetBool("isOpen", true);
-        Debug.Log("Starting conversation " + monologue.name);
-        sentences.Clear();
         monologueName.text = monologue.name;
+        sentences.Clear();
         foreach (string sentence in monologue.sentences)
         {
             sentences.Enqueue(sentence);
