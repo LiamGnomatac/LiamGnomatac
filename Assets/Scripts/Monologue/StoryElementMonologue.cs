@@ -17,6 +17,7 @@ public class StoryElementMonologue : MonoBehaviour
         if(other.CompareTag("Player") && activateWithTrigger)
         {
             TriggerMonologue();
+            Destroy(gameObject);
         }
     }
 }

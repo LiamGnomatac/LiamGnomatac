@@ -8,6 +8,7 @@ public class SentenceManager : MonoBehaviour
     private Queue<string> sentences;
 
     public float timeBeforeDisplayText;
+    public TextMeshProUGUI monologueName;
     public TextMeshProUGUI monologueText;
     public static SentenceManager s_Singleton;
     public Animator animator;
@@ -29,19 +30,12 @@ public class SentenceManager : MonoBehaviour
     {
         sentences = new Queue<string>();
     }
-    
-    public void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            DisplayNextSentence();
-        }
-    }
 
     public void StartMonologue(Monologues monologue)
     {
         animator.SetBool("isOpen", true);
         Debug.Log("Starting conversation " + monologue.name);
+        monologueName.text = monologue.name;
         sentences.Clear();
         foreach (string sentence in monologue.sentences)
         {
