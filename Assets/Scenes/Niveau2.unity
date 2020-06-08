@@ -4180,6 +4180,7 @@ GameObject:
   - component: {fileID: 1335857318}
   - component: {fileID: 1335857317}
   - component: {fileID: 1335857316}
+  - component: {fileID: 1335857322}
   m_Layer: 0
   m_Name: Code&Mesh
   m_TagString: Untagged
@@ -4318,6 +4319,23 @@ Transform:
   m_Father: {fileID: 1415380422}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335857322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335857315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Une porte de sortie
+    sentences:
+    - Je peux poursuivre mon exploration.
+  activateWithTrigger: 0
 --- !u!1 &1415380421
 GameObject:
   m_ObjectHideFlags: 0

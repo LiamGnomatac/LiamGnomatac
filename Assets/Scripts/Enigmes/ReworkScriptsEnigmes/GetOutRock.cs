@@ -48,6 +48,11 @@ public class GetOutRock : MonoBehaviour
         {
             SetPulled();
             GetOut();
+            if(GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
         if (!hand && GetComponent<Interactable>().attachedToHand == null && transform.position != posStart.position && myState != SliderStates.Idle)
         {
