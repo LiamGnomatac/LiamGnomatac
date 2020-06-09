@@ -639,6 +639,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150868949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &170385222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989874123}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132f8029c470664409e356de97f301b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &204906571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1889,7 +1901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582528030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6446934, y: 1.623, z: -2.137}
+  m_LocalPosition: {x: 4.6446934, y: 1.623, z: -2.174}
   m_LocalScale: {x: 0.49051, y: 3.3007593, z: 0.76610094}
   m_Children: []
   m_Father: {fileID: 1474828287}
@@ -2954,7 +2966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835587484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6446934, y: 2.9770873, z: -1.3985566}
+  m_LocalPosition: {x: 4.6446934, y: 2.9770873, z: -1.413}
   m_LocalScale: {x: 0.49051, y: 0.6480131, z: 0.76610094}
   m_Children: []
   m_Father: {fileID: 1474828287}
@@ -3314,7 +3326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945769220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6446934, y: 1.5770874, z: 2.64}
+  m_LocalPosition: {x: 4.6446934, y: 1.5770874, z: 2.678}
   m_LocalScale: {x: 0.49051, y: 3.4571, z: 5.6954713}
   m_Children: []
   m_Father: {fileID: 1474828287}
@@ -4201,7 +4213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095436604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6446934, y: 0.94708735, z: -1.3985566}
+  m_LocalPosition: {x: 4.6446934, y: 0.94708735, z: -1.407}
   m_LocalScale: {x: 0.49051, y: 2.219147, z: 0.76610094}
   m_Children: []
   m_Father: {fileID: 1474828287}
@@ -6000,6 +6012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33c1bfb2053a654299f3ad87365a32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encens: {fileID: 170385222}
   statuettes:
   - {fileID: 421903944}
   - {fileID: 59025489}
@@ -7741,7 +7754,7 @@ PrefabInstance:
     - target: {fileID: 8592906766065262085, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.155
+      value: -3.058
       objectReference: {fileID: 0}
     - target: {fileID: 8592906766065262085, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
