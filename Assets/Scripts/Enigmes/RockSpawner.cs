@@ -11,7 +11,7 @@ using Valve.VR.InteractionSystem;
 
     private void Start()
     {
-        Invoke("justOneTime", timeBeforeResetInvoke);
+        Invoke("OneTime", timeBeforeResetInvoke);
     }
     private void InvokeRock(HandCollider value)
     {
@@ -41,5 +41,6 @@ using Valve.VR.InteractionSystem;
     private void OneTime()
     {
         justOneTime = true;
+        Debug.Log("tu peux attraper une pierre");
     }
  }
