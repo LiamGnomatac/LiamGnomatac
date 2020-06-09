@@ -8,7 +8,7 @@ public class LightTrigger : MonoBehaviour
     private int i;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("LightTrigger"))
+        if(other.gameObject.layer == 10)
         {
             monologue[i].TriggerMonologue();
             monologue.RemoveAt(i);
