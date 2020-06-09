@@ -5,6 +5,7 @@ using Valve.VR.InteractionSystem;
 
 public class LeadStatue : MonoBehaviour
 {
+    public EncensCS encens;
     public List<GameObject> statuettes;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,14 @@ public class LeadStatue : MonoBehaviour
                 {
                     statuettes[i].AddComponent<Throwable>();
                     statuettes[i].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    encens.FilledWithOil();
+                    encens.TurnOn();
                     statuettes[i].GetComponent<Renderer>().material.color = Color.green;
+                    if (GetComponent<StoryElementMonologue>())
+                    {
+                        GetComponent<StoryElementMonologue>().TriggerMonologue();
+                        Destroy(GetComponent<StoryElementMonologue>());
+                    }
                 }
             }
         }

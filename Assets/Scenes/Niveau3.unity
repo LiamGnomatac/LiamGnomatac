@@ -2048,6 +2048,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619833580}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &631403521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3572675859035033234, guid: dda68a630f7232542a702d262c6a961c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121277299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &631403522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631403521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: mecanisme
+    sentences:
+    - On dirait que lancer une pierre ici active un boutons
+  activateWithTrigger: 0
 --- !u!1 &636969296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,6 +5966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587615136}
   - component: {fileID: 1587615137}
+  - component: {fileID: 1587615138}
   m_Layer: 0
   m_Name: LeadStatue
   m_TagString: Untagged
@@ -5979,6 +6003,25 @@ MonoBehaviour:
   statuettes:
   - {fileID: 421903944}
   - {fileID: 59025489}
+--- !u!114 &1587615138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587615135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Statues
+    sentences:
+    - Quel est ce bruit ?
+    - "Au vue des deux m\xE9canismes que j'ai touch\xE9s, \xE7a a s\xFBrement d\xE9bloqu\xE9es
+      les statuettes !"
+  activateWithTrigger: 0
 --- !u!1 &1596314296
 GameObject:
   m_ObjectHideFlags: 0
@@ -7708,7 +7751,12 @@ PrefabInstance:
     - target: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}
       propertyPath: isTurnOn
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592906766065262087, guid: 726d5ff7009f11e40ba67ac8346ba71f,
+        type: 3}
+      propertyPath: isFilled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8592906767293395682, guid: 726d5ff7009f11e40ba67ac8346ba71f,
         type: 3}

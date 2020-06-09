@@ -62,7 +62,7 @@ public class EncensCS : MonoBehaviour
         }
     }
 
-    private void TurnOn()
+    public void TurnOn()
     {
         if(isFilled)
         {

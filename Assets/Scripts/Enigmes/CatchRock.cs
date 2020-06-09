@@ -31,6 +31,11 @@ public class CatchRock : MonoBehaviour
             {
                 EnigmesManager.s_Singleton.isPressMain = true;
                 GetComponent<Renderer>().material.color = Color.green;
+                if (GetComponent<StoryElementMonologue>())
+                {
+                    GetComponent<StoryElementMonologue>().TriggerMonologue();
+                    Destroy(GetComponent<StoryElementMonologue>());
+                }
             }
             else
             {
