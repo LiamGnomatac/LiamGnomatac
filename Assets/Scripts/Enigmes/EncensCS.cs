@@ -109,6 +109,11 @@ public class EncensCS : MonoBehaviour
         {
             TurnOff();
         }
+        if (GetComponent<StoryElementMonologue>())
+        {
+            GetComponent<StoryElementMonologue>().TriggerMonologue();
+            Destroy(GetComponent<StoryElementMonologue>());
+        }
     }
 
     private void StayOn()

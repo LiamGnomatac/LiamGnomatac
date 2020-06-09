@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8cd51c76e2fb74fa3126f1c678a1ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeDisplayText: 3
+  timeBeforeDisplayText: 2.5
   monologueName: {fileID: 3493161149401398618}
   monologueText: {fileID: 6311478520623511801}
   animator: {fileID: 2458552644941476060}
@@ -3276,7 +3276,7 @@ GameObject:
   - component: {fileID: 7490664953587601710}
   - component: {fileID: 1178810506171393656}
   - component: {fileID: 2552079007035403511}
-  m_Layer: 26
+  m_Layer: 0
   m_Name: HeadCollider
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4520,6 +4520,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6897306392259177427}
     m_Modifications:
+    - target: {fileID: 1338461287014438468, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5389477087097378344, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4862,6 +4867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2903873490803557405, guid: c8896178ef431be44bc26b458848d705,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4456441754901799502, guid: c8896178ef431be44bc26b458848d705,
         type: 3}

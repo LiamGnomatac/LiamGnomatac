@@ -7,6 +7,7 @@ public class LeadButton : MonoBehaviour
 {
     public GetOutRock getOut;
     public EncensCS encens;
+    public Transform monologueInformationsToDestroy;
     public List<GameObject> buttonList;
 
     private bool buttonOneE2, buttonTwoE2, buttonThreeE2, buttonFourE2;
@@ -60,6 +61,12 @@ public class LeadButton : MonoBehaviour
                             getOut.ReplaceEndPos();
                             encens.FilledWithOil();
                             Debug.Log("première parti ok");
+                            if (GetComponent<StoryElementMonologue>())
+                            {
+                                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                                Destroy(GetComponent<StoryElementMonologue>());
+                                Destroy(monologueInformationsToDestroy.gameObject);
+                            }
                         }
                         return;
                     }

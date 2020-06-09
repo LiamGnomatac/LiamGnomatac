@@ -23,12 +23,17 @@ using Valve.VR.InteractionSystem;
     private void OnTriggerEnter(Collider other)
     {
         HandCollider hand = other.GetComponentInParent<HandCollider>();
-        Debug.Log("collision with" + other);
+        
         if (hand && justOneTime)
         {
             Debug.Log("collide" + other);
             InvokeRock(hand);
             Invoke("OneTime", timeBeforeResetInvoke);
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
         justOneTime = false;
     }
