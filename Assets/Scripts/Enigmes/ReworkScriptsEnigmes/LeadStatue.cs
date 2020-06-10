@@ -33,13 +33,13 @@ public class LeadStatue : MonoBehaviour
                     encens.FilledWithOil();
                     encens.TurnOn();
                     statuettes[i].GetComponent<Renderer>().material.color = Color.green;
-                    if (GetComponent<StoryElementMonologue>())
-                    {
-                        Destroy(monologueToDestroy);
-                        GetComponent<StoryElementMonologue>().TriggerMonologue();
-                        Destroy(GetComponent<StoryElementMonologue>());
-                    }
                 }
+            }
+            if (GetComponent<StoryElementMonologue>())
+            {
+                Destroy(monologueToDestroy);
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
             }
         }
     }
