@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class Relique : MonoBehaviour
 {
@@ -21,6 +23,10 @@ public class Relique : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(GetComponentInChildren<ParticleSystem>().gameObject);
+        }
         if(collision.gameObject.name == "Floor")
         {
             Debug.Log("c'est cassé");
@@ -36,15 +42,16 @@ public class Relique : MonoBehaviour
     public void DeFreeze()
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        gameObject.AddComponent<Throwable>();
     }
 
     private void InvokeGravel()
     {
-        Instantiate(gravas, gameObject.transform);
+        Instantiate(gravas, gameObject.transform.position, Quaternion.identity);
     }
 
     private void changeScene()
     {
-        SceneManagement.s_Singleton.ChooseLoadScene(5);
+        SceneManagement.s_Singleton.ChooseLoadScene(6);
     }
 }
