@@ -2863,6 +2863,7 @@ MonoBehaviour:
     sentences:
     - Mais c'est quoi encore que cette chose !
     - Pourquoi suis-je venu ici moi !?
+    - "On dirait quelle s'est enfuit \xE0 cause de l'\xE9clairage."
   activateWithTrigger: 0
 --- !u!1 &781734677
 GameObject:
@@ -3795,6 +3796,7 @@ Transform:
   - {fileID: 1335680063}
   - {fileID: 715382808}
   - {fileID: 1706371813}
+  - {fileID: 1336449641}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4882,6 +4884,54 @@ MonoBehaviour:
     sentences:
     - "Et maintenant me voila dans le spel\xE6um."
   activateWithTrigger: 1
+--- !u!1 &1336449640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336449641}
+  - component: {fileID: 1336449642}
+  m_Layer: 0
+  m_Name: le debut de la fin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336449641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336449640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1001237580}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1336449642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336449640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: "Le d\xE9but de la Fin"
+    sentences:
+    - Le passage vers l'antichambre est ouvert.
+  activateWithTrigger: 0
 --- !u!1 &1370801832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4909,7 +4959,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370801832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2977872, y: 0.86617553, z: 6.4221287}
+  m_LocalPosition: {x: 0.2977872, y: 0.86617553, z: 6.1850004}
   m_LocalScale: {x: 2.5461893, y: 1.0663553, z: 1.0199}
   m_Children: []
   m_Father: {fileID: 1260696215}
@@ -5079,7 +5129,6 @@ GameObject:
   - component: {fileID: 1388533976}
   - component: {fileID: 1388533979}
   - component: {fileID: 1388533978}
-  - component: {fileID: 1388533977}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -5101,19 +5150,6 @@ Transform:
   m_Father: {fileID: 1541265909}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1388533977
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388533975}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1388533978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5188,7 +5224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463274908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.358, y: 3.122, z: 10.605}
+  m_LocalPosition: {x: 1.358, y: 3.631, z: 10.925}
   m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
   m_Children:
   - {fileID: 2061218793}
@@ -5224,6 +5260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statuette: {fileID: 421903944}
+  monologueOpenDoor: {fileID: 1336449642}
   door: {fileID: 2126651447}
 --- !u!65 &1463274912
 BoxCollider:
@@ -5903,7 +5940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541265908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 3.121, z: 10.595}
+  m_LocalPosition: {x: 2.52, y: 3.623, z: 10.934}
   m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
   m_Children:
   - {fileID: 1388533976}
@@ -5939,6 +5976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statuette: {fileID: 59025489}
+  monologueOpenDoor: {fileID: 1336449642}
   door: {fileID: 2126651447}
 --- !u!65 &1541265912
 BoxCollider:
@@ -8069,7 +8107,6 @@ GameObject:
   - component: {fileID: 2061218793}
   - component: {fileID: 2061218796}
   - component: {fileID: 2061218795}
-  - component: {fileID: 2061218794}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -8091,19 +8128,6 @@ Transform:
   m_Father: {fileID: 1463274909}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2061218794
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061218792}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2061218795
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using Valve.VR.InteractionSystem;
 public class Piedestale : MonoBehaviour
 {
     public GameObject statuette;
+    public StoryElementMonologue monologueOpenDoor;
     public Door door;
 
     private void OnTriggerEnter(Collider other)
@@ -26,6 +27,11 @@ public class Piedestale : MonoBehaviour
         {
             Debug.Log("porte ouverte");
             door.Open();
+            if(monologueOpenDoor.gameObject != null)
+            {
+                monologueOpenDoor.TriggerMonologue();
+                Destroy(monologueOpenDoor.gameObject);
+            }
             EnigmesManager.s_Singleton.statueIsStatic = 2;
         }
 
