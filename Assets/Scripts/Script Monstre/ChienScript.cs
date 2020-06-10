@@ -91,6 +91,7 @@ public class ChienScript : MonoBehaviour
 
         if (!joueurSurZone)
         {
+            FindObjectOfType<AudioManager>().Play("Doggo_Grogne");
             Invoke("DogAttack", chienTimerAttaque);
             animator.SetBool("isAttack", true);
         }
