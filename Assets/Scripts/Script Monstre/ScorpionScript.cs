@@ -149,11 +149,21 @@ public class ScorpionScript : MonoBehaviour
         if(other == LampeTorche.s_Singleton.lightTrigger)
         {
             scorpionHitFlash = true;
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
 
         if (other == Téléphone.s_Singleton.lightTrigger)
         {
             scorpionHitFlash = true;
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
 
         if (other.CompareTag("Joueur"))

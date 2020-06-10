@@ -378,7 +378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59025489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4373138, y: 3.366, z: 4.736}
+  m_LocalPosition: {x: 2.501, y: 3.366, z: 4.548}
   m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1049432363}
@@ -1416,7 +1416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421903944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1810001, y: 3.339, z: 5.288}
+  m_LocalPosition: {x: 1.034, y: 3.339, z: 5.422}
   m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1049432363}
@@ -2327,7 +2327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologue:
-    name: Statues
+    name: Statuettes
     sentences:
     - Elles n'ont pas l'air de vouloir bouger.
   activateWithTrigger: 1
@@ -2358,7 +2358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725003388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36021304, y: 0.7561756, z: 0.1691277}
+  m_LocalPosition: {x: -0.50721335, y: 0.7561756, z: 0.30312753}
   m_LocalScale: {x: 0.32674235, y: 0.54657334, z: 0.3580011}
   m_Children: []
   m_Father: {fileID: 1260696215}
@@ -2846,6 +2846,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &775636362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775636359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+    name: Monstre
+    sentences:
+    - Mais c'est quoi encore que cette chose !
+    - Pourquoi suis-je venu ici moi !?
+  activateWithTrigger: 0
 --- !u!1 &781734677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,7 +4138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076443719}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8473139, y: 0.7561756, z: -0.39099994}
+  m_LocalPosition: {x: 0.9709999, y: 0.7561756, z: -0.55800015}
   m_LocalScale: {x: 0.35581467, y: 0.5952054, z: 0.38985473}
   m_Children: []
   m_Father: {fileID: 1260696215}
@@ -6013,6 +6031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   encens: {fileID: 170385222}
+  monologueToDestroy: {fileID: 715382807}
   statuettes:
   - {fileID: 421903944}
   - {fileID: 59025489}
@@ -6029,7 +6048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologue:
-    name: Statues
+    name: Statuettes
     sentences:
     - Quel est ce bruit ?
     - "Au vue des deux m\xE9canismes que j'ai touch\xE9s, \xE7a a s\xFBrement d\xE9bloqu\xE9es
