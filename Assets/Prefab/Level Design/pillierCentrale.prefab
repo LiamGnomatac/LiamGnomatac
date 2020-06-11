@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7208567857932070590}
   - component: {fileID: 7208567857932070588}
   - component: {fileID: 7208567857932070591}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 7208567859143786463}
   - component: {fileID: 7208567859143786461}
   - component: {fileID: 1315023364449079655}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pillierCentrale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

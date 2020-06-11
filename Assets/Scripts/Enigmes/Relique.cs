@@ -29,6 +29,7 @@ public class Relique : MonoBehaviour
         }
         if(collision.gameObject.name == "Floor")
         {
+            RepeatingInvoke();
             Debug.Log("c'est cassé");
             Invoke("changeScene", timeBeforeSceneChange);
         }
@@ -42,6 +43,7 @@ public class Relique : MonoBehaviour
     public void DeFreeze()
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        gameObject.AddComponent<Interactable>();
         gameObject.AddComponent<Throwable>();
     }
 

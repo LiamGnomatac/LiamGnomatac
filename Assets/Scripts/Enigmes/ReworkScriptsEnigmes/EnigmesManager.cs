@@ -17,9 +17,6 @@ public class EnigmesManager : MonoBehaviour
     public int statueIsStatic;
 
     //[HideInInspector]
-    public int pillarBroke;
-
-    //[HideInInspector]
     public bool isPressMain, isPress;
 
     #endregion

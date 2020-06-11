@@ -9,8 +9,10 @@ public class PillierManager : MonoBehaviour
     public GameObject gravas;
     public GameObject[] FlameWall;
     public Relique relique;
+    public StoryElementMonologue monologue;
     public float invTime;
     public float invRepeatRate;
+    private int pillarsBroke;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,8 @@ public class PillierManager : MonoBehaviour
     {
         if(collision == taurus && taurus.GetComponent<TaureauScript>().isRunning)
         {
-            EnigmesManager.s_Singleton.pillarBroke++;
+            ActiveMonologue();
+            pillarsBroke++;
             StuntTaurus();
             BlindTp();
             CanCatchRelique();
@@ -43,7 +46,7 @@ public class PillierManager : MonoBehaviour
     private void BlindTp()
     {
         Debug.Log("blind");
-        if (EnigmesManager.s_Singleton.pillarBroke < 4)
+        if (pillarsBroke < 4)
         {
             for (int i = 0; i < FlameWall.Length; i++)
             {
@@ -58,10 +61,18 @@ public class PillierManager : MonoBehaviour
             }
         }
     }
+    private void ActiveMonologue()
+    {
+        if (monologue != null)
+        {
+            monologue.TriggerMonologue();
+            Destroy(monologue.gameObject);
+        }
+    }
     private void CanCatchRelique()
     {
         Debug.Log("toucher");
-        if (EnigmesManager.s_Singleton.pillarBroke >= 4)
+        if (pillarsBroke >= 4)
         {
             zoneCentrale.SetActive(true);
             relique.DeFreeze();
