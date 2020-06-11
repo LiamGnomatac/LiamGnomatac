@@ -26,6 +26,12 @@ public class Relique : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Destroy(GetComponentInChildren<ParticleSystem>().gameObject);
+
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
         if(collision.gameObject.name == "Floor")
         {

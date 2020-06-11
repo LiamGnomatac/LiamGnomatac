@@ -12,6 +12,7 @@ public class TaureauScript : MonoBehaviour
     public bool isStun = false;
     public float stunDuration = 30;
     private float timerStun;
+    private Animator anim;
     
 
     #region Singleton
@@ -35,6 +36,7 @@ public class TaureauScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         timerStun = stunDuration;
         agent = GetComponent<NavMeshAgent>();
         agent.speed = minSpeed;
@@ -62,13 +64,16 @@ public class TaureauScript : MonoBehaviour
 
     public void UpdateDestination()
     {
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         if (EncensManager.s_Singleton.direction() != Vector3.zero)
         {
             agent.destination = EncensManager.s_Singleton.direction();
+            anim.SetBool("isWalking", true);
         }
         else
         {
             agent.isStopped = true;
+            anim.SetBool("isWalking", false);
         }
     }
 
@@ -78,21 +83,22 @@ public class TaureauScript : MonoBehaviour
         agent.ResetPath();
         agent.destination = bruit;
         isRunning = true;
+        anim.SetBool("isRunning", true);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(isRunning == true && other.gameObject.layer == 9)
+        if (isRunning == true && collision.gameObject.layer == 9)
         {
             TaureauStun();
         }
-
-
+    }
+    private void OnTriggerEnter(Collider other)
+    {
         if (other.CompareTag("Player"))
         {
             KillingTaureau();
         }
-
     }
 
     public void TaureauStun()
@@ -103,9 +109,11 @@ public class TaureauScript : MonoBehaviour
         isStun = true;
         isRunning = false;
         agent.speed = minSpeed;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationY;
         Invoke("UpdateDestination", timerStun);
+        anim.SetBool("isWalking", false);
+        anim.SetBool("isRunning", false);
     }
-
 
     public void KillingTaureau()
     {

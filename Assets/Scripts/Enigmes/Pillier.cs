@@ -17,6 +17,7 @@ public class Pillier : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject.name);
         GetComponentInParent<PillierManager>().DestroyPillar(collision.gameObject, gameObject);
     }
 }

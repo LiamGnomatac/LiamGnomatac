@@ -15,13 +15,12 @@ public class Warp : MonoBehaviour
     void Start()
     {
         
-       
     }
 
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("pied");
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")&& ChienScript.s_Singleton)
         {
             ChienScript.s_Singleton.joueurSurZone = true;
             Debug.Log("c'est rouge");
@@ -35,7 +34,7 @@ public class Warp : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && ChienScript.s_Singleton)
         {
             ChienScript.s_Singleton.joueurSurZone = false;
             Debug.Log("C'est pu rouge");
@@ -75,7 +74,7 @@ public class Warp : MonoBehaviour
 
     private void CanAttack()
     {
-        if (limiteZone == true && isItDark == true)
+        if (limiteZone == true && isItDark == true && ChienScript.s_Singleton)
         {
 
             ChienScript.s_Singleton.ChienAttackOnLight();
