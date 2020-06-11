@@ -25,6 +25,11 @@ public class MakeNoise : MonoBehaviour
         {
             justOneHit = true;
             Debug.Log(justOneHit);
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
         if(collision.gameObject.layer == LayerMask.NameToLayer("Salle") && justOneHit)
         {

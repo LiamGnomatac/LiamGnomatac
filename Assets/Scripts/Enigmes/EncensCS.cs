@@ -7,6 +7,7 @@ public class EncensCS : MonoBehaviour
     public bool isTurnOn;
     public bool isFilled;
     public float stayOnTimer = 0;
+    public float startTurnOnTime = 5;
     public GameObject oil;
     public GameObject vfxFlame;
     public GameObject pointLight;
@@ -20,8 +21,8 @@ public class EncensCS : MonoBehaviour
         StayOn();
         pointLight.SetActive(false);
         lightIntensity = pointLight.GetComponent<Light>().intensity;
-        StartTurnOn();
-        StartFilled();
+        Invoke("StartTurnOn", startTurnOnTime);
+        Invoke("StartFilled", startTurnOnTime);
     }
 
     // Update is called once per frame
@@ -88,6 +89,12 @@ public class EncensCS : MonoBehaviour
         {
             Destroy(pointLight.GetComponentInChildren<ParticleSystem>().gameObject);
         }
+
+        if (GetComponent<StoryElementMonologue>())
+        {
+            GetComponent<StoryElementMonologue>().TriggerMonologue();
+            Destroy(GetComponent<StoryElementMonologue>());
+        }
     }
 
     private void RandTurnOn()
@@ -114,11 +121,6 @@ public class EncensCS : MonoBehaviour
         if(pointLight.GetComponent<Light>().intensity <= 0)
         {
             TurnOff();
-        }
-        if (GetComponent<StoryElementMonologue>())
-        {
-            GetComponent<StoryElementMonologue>().TriggerMonologue();
-            Destroy(GetComponent<StoryElementMonologue>());
         }
     }
 
