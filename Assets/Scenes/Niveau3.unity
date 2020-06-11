@@ -950,8 +950,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323668893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.815307, y: 1.7, z: 0.863}
-  m_LocalScale: {x: 0.49051, y: 3.3174691, z: 1.1282455}
+  m_LocalPosition: {x: -2.815307, y: 1.7, z: 1.2}
+  m_LocalScale: {x: 0.49051, y: 3.3174691, z: 0.4567193}
   m_Children: []
   m_Father: {fileID: 1474828287}
   m_RootOrder: 7
@@ -3102,7 +3102,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a996d4433c548574abb641b1b6c2985e, type: 2}
+  - {fileID: 2100000, guid: b7d604c284a178d47ae25647ce76644d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6247,7 +6247,6 @@ MonoBehaviour:
   rockIsPull: 0
   rockGetOut: 0
   statueIsStatic: 0
-  pillarBroke: 0
   isPressMain: 0
   isPress: 0
 --- !u!4 &1684296672 stripped
@@ -8839,7 +8838,7 @@ PrefabInstance:
     - target: {fileID: 936025087304891110, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 936025087304891110, guid: 657faf918c739084a8fa5407f380eac7,
         type: 3}
