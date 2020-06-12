@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Niveau4.unity
     guid: 22bfeb7e2fbc88b4a9089658e8f2ac64
   - enabled: 1
-    path: Assets/Scenes/Remonter.unity
-    guid: 5cb221b8d43eea54b926d0dc28d44926
+    path: Assets/Scenes/Credit.unity
+    guid: 00f484434e2dcdf4dba69b396ee60de2
   - enabled: 1
     path: Assets/Scenes/Death Scene.unity
     guid: 2bbb5a24048fb5d4ab64104db816c4fa

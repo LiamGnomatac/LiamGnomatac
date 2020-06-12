@@ -60,6 +60,6 @@ public class Relique : MonoBehaviour
 
     private void changeScene()
     {
-        SceneManagement.s_Singleton.ChooseLoadScene(6);
+        SceneManagement.s_Singleton.ChooseLoadScene(5);
     }
 }
