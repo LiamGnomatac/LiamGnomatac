@@ -144,9 +144,21 @@ public class ScorpionScript : MonoBehaviour
 
    
 
-    private void OnTriggerEnter(Collider other)
+   /* private void OnTriggerEnter(Collider other)
     {
-        if(other == LampeTorche.s_Singleton.lightTrigger)
+        Debug.Log(other);
+        if(other.gameObject.layer == 10 )
+        {
+            Debug.Log("Hello");
+            scorpionHitFlash = true;
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
+        }
+
+        if (other.gameObject == Téléphone.s_Singleton.lightTrigger)
         {
             scorpionHitFlash = true;
             if (GetComponent<StoryElementMonologue>())
@@ -156,26 +168,34 @@ public class ScorpionScript : MonoBehaviour
             }
         }
 
-        if (other == Téléphone.s_Singleton.lightTrigger)
-        {
-            scorpionHitFlash = true;
-            if (GetComponent<StoryElementMonologue>())
-            {
-                GetComponent<StoryElementMonologue>().TriggerMonologue();
-                Destroy(GetComponent<StoryElementMonologue>());
-            }
-        }
-
-        if (other.CompareTag("Joueur"))
-        {
-
-            ScreamerManager.s_Singleton.KillingScorpion();
-
-        }
+       
         
+    }*/
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision);
+        if (collision.gameObject.layer == 10)
+        {
+            Debug.Log("Hello");
+            scorpionHitFlash = true;
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
+        }
+
+        if (collision.gameObject == Téléphone.s_Singleton.lightTrigger)
+        {
+            scorpionHitFlash = true;
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
+        }
     }
 
-
-    
 
 }
