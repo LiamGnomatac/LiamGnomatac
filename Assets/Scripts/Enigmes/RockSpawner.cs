@@ -23,10 +23,11 @@ using Valve.VR.InteractionSystem;
     private void OnTriggerEnter(Collider other)
     {
         HandCollider hand = other.GetComponentInParent<HandCollider>();
-        
-        if (hand /*&& justOneTime || justOneTime &&*/ || GetComponent<Interactable>().attachedToHand != null)
+        Debug.Log("collide" + other);
+
+        if (hand && justOneTime || justOneTime && GetComponent<Interactable>().attachedToHand != null)
         {
-            Debug.Log("collide" + other);
+            justOneTime = false;
             InvokeRock(hand);
             Invoke("OneTime", timeBeforeResetInvoke);
             if (GetComponent<StoryElementMonologue>())
@@ -35,7 +36,6 @@ using Valve.VR.InteractionSystem;
                 Destroy(GetComponent<StoryElementMonologue>());
             }
         }
-        justOneTime = false;
     }
 
     private void OneTime()
