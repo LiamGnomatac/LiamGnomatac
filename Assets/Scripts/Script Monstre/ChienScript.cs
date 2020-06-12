@@ -81,6 +81,7 @@ public class ChienScript : MonoBehaviour
             animator.SetBool("isAttack", true);
         }
     }
+
     private void DogAttack()
     {
         ScreamerManager.s_Singleton.KillingDog();
@@ -88,14 +89,12 @@ public class ChienScript : MonoBehaviour
 
     public void PlayerOutZone()
     {
-
         if (!joueurSurZone)
         {
             FindObjectOfType<AudioManager>().Play("Doggo_Grogne");
             Invoke("DogAttack", chienTimerAttaque);
             animator.SetBool("isAttack", true);
         }
-
     }
 
     public void CancelDogAttack()
@@ -106,10 +105,6 @@ public class ChienScript : MonoBehaviour
             animator.SetBool("isAttack", false);
         }
     }
-
-    
-    
-   
 
     public void ChienTP()
     {
@@ -124,15 +119,12 @@ public class ChienScript : MonoBehaviour
                 gameObject.transform.position = zone1.transform.position;
                 chienCanTP = false;
                 mesh.SetActive(true);
-
-
                 break;
             case 1:
                 Debug.Log(zoneChoisie);
                 gameObject.transform.position = zone2.transform.position;
                 chienCanTP = false;
                 mesh.SetActive(true);
-
                 break;
 
             case 2:
@@ -140,10 +132,7 @@ public class ChienScript : MonoBehaviour
                 gameObject.transform.position = zone3.transform.position;
                 chienCanTP = false;
                 mesh.SetActive(true);
-
                 break;
         }
     }
-
-
 }
