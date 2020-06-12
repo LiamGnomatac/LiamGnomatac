@@ -24,7 +24,7 @@ using Valve.VR.InteractionSystem;
     {
         HandCollider hand = other.GetComponentInParent<HandCollider>();
         
-        if (hand && justOneTime || GetComponent<Interactable>().attachedToHand != null && justOneTime)
+        if (hand /*&& justOneTime || justOneTime &&*/ || GetComponent<Interactable>().attachedToHand != null)
         {
             Debug.Log("collide" + other);
             InvokeRock(hand);
