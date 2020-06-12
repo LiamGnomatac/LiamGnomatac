@@ -84,7 +84,11 @@ public class EncensCS : MonoBehaviour
         Debug.Log("Plus de Flamme");
         isTurnOn = false;
         pointLight.SetActive(false);
-        TaureauScript.s_Singleton.UpdateDestination();
+        if (TaureauScript.s_Singleton)
+        {
+            TaureauScript.s_Singleton.UpdateDestination();
+        }
+
         if (pointLight.GetComponentInChildren<ParticleSystem>())
         {
             Destroy(pointLight.GetComponentInChildren<ParticleSystem>().gameObject);
