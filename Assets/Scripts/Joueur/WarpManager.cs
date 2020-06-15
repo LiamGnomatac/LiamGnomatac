@@ -9,11 +9,7 @@ public class WarpManager : MonoBehaviour
 {
 
     public GameObject zoneStart;
-    
     public GameObject zoneEnd;
-
-
-
     // Start is called before the first frame update
     void Start()
     {

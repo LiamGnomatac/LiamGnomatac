@@ -17,7 +17,7 @@ public class Sac : MonoBehaviour
     public Interactable interactablePoignee;
     public Interactable interactablePorteRotation;
     public Rigidbody rigidbodyPorte ;
-    public bool CanOpenDoor ; 
+    private bool CanOpenDoor ; 
     float numberOfEssentialsObjects;
     int trigger = 0 ;
     private Transform pos;
@@ -127,6 +127,11 @@ public class Sac : MonoBehaviour
         if(CanOpenDoor == true)
         {
             zoneEnd.SetActive(true);
+            if(GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
 
         }
     }
