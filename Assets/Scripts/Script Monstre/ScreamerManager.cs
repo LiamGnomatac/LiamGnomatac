@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScreamerManager : MonoBehaviour
 {
-
+    public float timeBeforeGoToDeathSceen = 2.5f;
     public GameObject chien;
     public GameObject scorpion;
     public GameObject taureau;
@@ -22,7 +22,6 @@ public class ScreamerManager : MonoBehaviour
         }
     }
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,30 +30,29 @@ public class ScreamerManager : MonoBehaviour
 
     public void KillingDog()
     {
-
-        SceneManagement.s_Singleton.Invoke("GetKilled", 2);
+        Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
         Debug.Log("Joueur tué par le chien");
         chien.SetActive(true);
-
-        
     }
 
     public void KillingScorpion()
     {
-
-        SceneManagement.s_Singleton.Invoke("GetKilled", 2.5f);
+        Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
         Debug.Log("Joueur tué par le scorpion");
         scorpion.SetActive(true);
-
     }
 
     public void KillingTaureau()
     {
-        SceneManagement.s_Singleton.Invoke("GetKilled", 2);
+        Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
         Debug.Log("Joueur tué par le taureau");
         taureau.SetActive(true);
     }
 
+    private void InvokeGetKilled()
+    {
+        SceneManagement.s_Singleton.GetKilled();
+    }
 }
 
 

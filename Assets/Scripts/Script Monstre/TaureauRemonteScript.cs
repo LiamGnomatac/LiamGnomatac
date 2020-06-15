@@ -25,18 +25,13 @@ public class TaureauRemonteScript : MonoBehaviour
     {
         if (other.CompareTag("Joueur"))
         {
-
-            KillingTaureau();
-
+            ScreamerManager.s_Singleton.KillingTaureau();
         }
     }
-
-
 
     public void KillingTaureau()
     {
         Debug.Log("Joueur tué par le taureau");
-
         SceneManagement.s_Singleton.GetKilled();
     }
 
