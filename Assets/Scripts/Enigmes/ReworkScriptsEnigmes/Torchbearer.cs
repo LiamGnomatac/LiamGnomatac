@@ -36,6 +36,12 @@ public class Torchbearer : MonoBehaviour
             torch.transform.rotation = rot;
             torch.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             VFX.SetActive(true);
+
+            if(GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
         }
     }
 
