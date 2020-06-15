@@ -29,6 +29,10 @@ public class GetOutRock : MonoBehaviour
         posEnd.position = posStart.position;
         distStartEnd = Vector3.Distance(posStart.position, posEnd.position);
         SetIdle();
+        if(isReturn)
+        {
+            door.Open();
+        }
     }
 
     // Update is called once per frame

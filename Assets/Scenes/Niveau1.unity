@@ -1612,7 +1612,7 @@ PrefabInstance:
     - target: {fileID: 4973494863245479894, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.138
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 4973494863245479894, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
@@ -1692,7 +1692,7 @@ PrefabInstance:
     - target: {fileID: 5330022124604658362, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.19331573
+      value: -0.405
       objectReference: {fileID: 0}
     - target: {fileID: 5330022124604658362, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
@@ -3184,6 +3184,7 @@ MonoBehaviour:
     - "Il y a 2 emplacements de torche mais une seule pos\xE9e"
     - "Pour le bien de ma carr\xE8re, \xE0 bas le protocole."
   activateWithTrigger: 1
+  activeGrab: 0
 --- !u!65 &616408886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3814,6 +3815,7 @@ MonoBehaviour:
     - "On entre vraiment comme \xE7a ?"
     - "Pas tr\xE8s complexe l'entr\xE9 d'un temple reserv\xE9 seulement aux initi\xE9s"
   activateWithTrigger: 0
+  activeGrab: 0
 --- !u!1001 &819926468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3997,7 +3999,7 @@ PrefabInstance:
     - target: {fileID: 1348327805504235977, guid: 6036864a10b87894f9dee02888d6bb95,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.007
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348327805504235977, guid: 6036864a10b87894f9dee02888d6bb95,
         type: 3}
@@ -4007,7 +4009,7 @@ PrefabInstance:
     - target: {fileID: 1348327805504235977, guid: 6036864a10b87894f9dee02888d6bb95,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.115
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1348327805504235977, guid: 6036864a10b87894f9dee02888d6bb95,
         type: 3}
@@ -4862,7 +4864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018001830}
   m_LocalRotation: {x: 0, y: 0.2164396, z: 0, w: 0.97629607}
-  m_LocalPosition: {x: 1.5105262, y: -0.19475365, z: -0.28324437}
+  m_LocalPosition: {x: 1.5918, y: -0.19475365, z: -0.327}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 839833208}
@@ -9529,6 +9531,7 @@ MonoBehaviour:
     - "Entrer ici a \xE9t\xE9 dr\xF4lement simple !?"
     - Allons dans la zone de fouille
   activateWithTrigger: 1
+  activeGrab: 0
 --- !u!65 &2015819474
 BoxCollider:
   m_ObjectHideFlags: 0

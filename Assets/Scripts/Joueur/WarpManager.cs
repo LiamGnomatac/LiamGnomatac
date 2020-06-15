@@ -20,10 +20,13 @@ public class WarpManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(zoneEnd.transform.position == TPPerso.s_Singleton.transform.position)
+        if(TPPerso.s_Singleton)
         {
-            TPPerso.s_Singleton.Invoke("FadeToBlack", 3);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (zoneEnd.transform.position == TPPerso.s_Singleton.transform.position)
+            {
+                TPPerso.s_Singleton.Invoke("FadeToBlack", 3);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
 }
