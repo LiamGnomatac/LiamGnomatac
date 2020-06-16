@@ -51,8 +51,11 @@ public class Torchbearer : MonoBehaviour
         {
             door.Close();
             torch.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            EnigmesManager.s_Singleton.firstEIsComplete = false;
             VFX.SetActive(false);
+            if (EnigmesManager.s_Singleton)
+            { 
+                EnigmesManager.s_Singleton.firstEIsComplete = false; 
+            }
 
         }
     }

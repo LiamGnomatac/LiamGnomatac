@@ -13,8 +13,11 @@ public class WarpManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TPPerso.s_Singleton.Invoke("FadeFromBlack", 3);
-        TPPerso.s_Singleton.transform.position = zoneStart.transform.position;
+        if(TPPerso.s_Singleton)
+        {
+            TPPerso.s_Singleton.Invoke("FadeFromBlack", 3);
+            TPPerso.s_Singleton.transform.position = zoneStart.transform.position;
+        }
     }
 
     // Update is called once per frame

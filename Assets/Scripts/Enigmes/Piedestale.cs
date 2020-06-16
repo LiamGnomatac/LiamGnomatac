@@ -27,7 +27,7 @@ public class Piedestale : MonoBehaviour
         {
             Debug.Log("porte ouverte");
             door.Open();
-            if(monologueOpenDoor.gameObject != null)
+            if(monologueOpenDoor)
             {
                 monologueOpenDoor.TriggerMonologue();
                 Destroy(monologueOpenDoor.gameObject);

@@ -16,7 +16,10 @@ public class PillierManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        zoneCentrale.SetActive(false);
+        if (zoneCentrale)
+        {
+            zoneCentrale.SetActive(false);
+        }
     }
 
     public void DestroyPillar(GameObject collision, GameObject gm)
