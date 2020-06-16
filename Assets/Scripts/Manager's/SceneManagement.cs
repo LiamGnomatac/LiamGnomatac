@@ -66,8 +66,10 @@ public class SceneManagement : MonoBehaviour
                 SceneManager.LoadScene("Niveau4");
                 niveau4 = true;
                 break;
-            
             case 5:
+                SceneManager.LoadScene("Remonter");
+                break;
+            case 6:
                 SceneManager.LoadScene("Credit");
                 break;
         }
@@ -95,8 +97,10 @@ public class SceneManagement : MonoBehaviour
             case 4:
                 SceneManager.LoadScene("Niveau4");
                 break;
-            
             case 5:
+                SceneManager.LoadScene("Remonter");
+                break;
+            case 6:
                 SceneManager.LoadScene("Credit");
                 break;
         }

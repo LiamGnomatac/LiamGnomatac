@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Niveau4.unity
     guid: 22bfeb7e2fbc88b4a9089658e8f2ac64
   - enabled: 1
+    path: Assets/Scenes/Remonter.unity
+    guid: ca9bd2a64677f664399af281bab8be0a
+  - enabled: 1
     path: Assets/Scenes/Credit.unity
     guid: 00f484434e2dcdf4dba69b396ee60de2
   - enabled: 1
