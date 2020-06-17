@@ -32,7 +32,7 @@ public class InstanceFlames : MonoBehaviour
                 numberOfFlames++;
                 if(numberOfFlames > 5)
                 {
-                    FindObjectOfType<RemonterM>().GoToCredits();
+                    RemonterM.s_Singleton.GoToCredits();
                     monologue.TriggerMonologue();
                     GetComponentInChildren<Light>().gameObject.SetActive(false);
                     Destroy(monologue);
@@ -42,7 +42,7 @@ public class InstanceFlames : MonoBehaviour
         }
         if(canMakeFlame && collision.gameObject.layer == 9)
         {
-            FindObjectOfType<RemonterM>().spawnFlames();
+            RemonterM.s_Singleton.spawnFlames();
         }
     }
 }
