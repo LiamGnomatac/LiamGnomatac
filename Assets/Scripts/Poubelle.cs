@@ -8,18 +8,16 @@ public class Poubelle : MonoBehaviour
     public bool PapierIsTriggerOrNot;
     public bool ExitGame;
     int triggerPapier = 0;
-    float chrono;
+    public float chrono = 5;
     // Start is called before the first frame update
     void Start()
     {
-        chrono = 10;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-
         if (chrono <=0)
         {
             chrono = 0;
