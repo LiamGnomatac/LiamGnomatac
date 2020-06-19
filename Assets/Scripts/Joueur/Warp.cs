@@ -44,7 +44,7 @@ public class Warp : MonoBehaviour
     }
     private void IsItDark()
     {
-        if (encens.isTurnOn)
+        if(encens.isTurnOn)
         {
             warp.GetComponent<Warp>().isItDark = false;
         }

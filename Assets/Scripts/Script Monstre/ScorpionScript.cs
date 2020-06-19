@@ -17,12 +17,6 @@ public class ScorpionScript : MonoBehaviour
     public bool scorpionMove = false;
     public bool scorpionMur = false;
     public bool scorpionHitFlash = false;
-    
-    
-    public Collider joueur;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -36,12 +30,8 @@ public class ScorpionScript : MonoBehaviour
 
         if (scorpionMove == true)
         {
-
             timerNextTP -= Time.deltaTime;
-           
         }
-
-       
 
        if(scorpionMur == true)
         {
@@ -147,10 +137,10 @@ public class ScorpionScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other);
-        if(other.gameObject.layer == 10 )
+        Debug.Log("scorpion collide with"+other);
+        if(other.gameObject.layer == 10)
         {
-            Debug.Log("Hello");
+            Debug.Log("Hello light");
             scorpionHitFlash = true;
             if (GetComponent<StoryElementMonologue>())
             {
