@@ -17,6 +17,7 @@ public class WarpManager : MonoBehaviour
         {
             TPPerso.s_Singleton.Invoke("FadeFromBlack", 3);
             TPPerso.s_Singleton.transform.position = zoneStart.transform.position;
+            TPPerso.s_Singleton.transform.rotation = zoneStart.transform.rotation;
         }
     }
 

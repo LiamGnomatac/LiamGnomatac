@@ -9,8 +9,6 @@ public class Warp : MonoBehaviour
     public EncensCS encens;
 
     public bool isItDark = true;
-    
-    
 
     void Start()
     {
@@ -27,11 +25,8 @@ public class Warp : MonoBehaviour
             limiteZone.SetActive(true);
             IsItDark();
             ChienScript.s_Singleton.CancelDogAttack();
-
-            
         }
     }
-
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player") && ChienScript.s_Singleton)
@@ -40,23 +35,13 @@ public class Warp : MonoBehaviour
             Debug.Log("C'est pu rouge");
             limiteZone.SetActive(false);
             ChienScript.s_Singleton.PlayerOutZone();
-
-
         }
     }
-
 
     void Update()
     {
 
-        
-
-
-        
-
     }
-
-
     private void IsItDark()
     {
         if (encens.isTurnOn)
