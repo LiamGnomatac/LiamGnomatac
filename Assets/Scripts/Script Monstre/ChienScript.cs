@@ -85,6 +85,7 @@ public class ChienScript : MonoBehaviour
     private void DogAttack()
     {
         ScreamerManager.s_Singleton.KillingDog();
+        SceneManagement.s_Singleton.GetCurrentScene();
     }
 
     public void PlayerOutZone()

@@ -73,4 +73,9 @@ public class SentenceManager : MonoBehaviour
         monologueText.text = "";
         animator.SetBool("isOpen", false);
     }
+
+    public void ClearQueue()
+    {
+        sentences.Clear();
+    }
 }

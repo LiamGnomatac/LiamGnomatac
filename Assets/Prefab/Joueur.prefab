@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f617373f884a44f949d400d66a697c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeGoToDeathSceen: 2.5
   chien: {fileID: 562812634}
   scorpion: {fileID: 348863551}
   taureau: {fileID: 697810985}
@@ -5138,6 +5139,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7793876043835543052, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657653234038925478, guid: 9749a21b27b5fa24d94b00e6c624ac3a,
         type: 3}
       propertyPath: m_Name
@@ -5148,7 +5154,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 187586092490315048, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
+    - {fileID: 187586092490315050, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
+    - {fileID: 187586092490315055, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9749a21b27b5fa24d94b00e6c624ac3a, type: 3}
 --- !u!1 &8657653235151025570 stripped
 GameObject:
@@ -5660,6 +5669,10 @@ PrefabInstance:
     - target: {fileID: 1495700584, guid: c8896178ef431be44bc26b458848d705, type: 3}
       propertyPath: m_Size.y
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495700584, guid: c8896178ef431be44bc26b458848d705, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 103391843221617440, guid: c8896178ef431be44bc26b458848d705,
         type: 3}
