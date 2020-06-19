@@ -51,7 +51,10 @@ public class ChienScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
+        if (TPPerso.s_Singleton)
+        { 
+            transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position); 
+        }
     }
 
     private void FixedUpdate()

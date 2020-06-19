@@ -26,7 +26,10 @@ public class ScorpionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
+        if (TPPerso.s_Singleton)
+        {
+            transform.LookAt(TPPerso.s_Singleton.cameraVR.transform.position);
+        }
 
         if (scorpionMove == true)
         {
@@ -65,23 +68,25 @@ public class ScorpionScript : MonoBehaviour
 
         if(compteurMur <= 0)
         {
-            ScreamerManager.s_Singleton.KillingScorpion();
-            SceneManagement.s_Singleton.GetKilled();
-            ScorpionMove();
+            if(SceneManagement.s_Singleton)
+            {
+                ScreamerManager.s_Singleton.KillingScorpion();
+                SceneManagement.s_Singleton.GetKilled();
+                ScorpionMove();
+            }
         }
-
     }
 
     public void ScorpionTP()
     {
-
+        Debug.Log("je tp");
 
         int zoneChoisie = Random.Range(0, 3);
 
         switch (zoneChoisie)
         {
             case 0:
-
+                Debug.Log("je zone1");
                 gameObject.transform.position = zone1.transform.position;
                 ScorpionMur();
                 
@@ -89,7 +94,7 @@ public class ScorpionScript : MonoBehaviour
 
                 break;
             case 1:
-
+                Debug.Log("je zone2");
                 gameObject.transform.position = zone2.transform.position;
                 ScorpionMur();
 
@@ -98,7 +103,7 @@ public class ScorpionScript : MonoBehaviour
 
        
             case 2:
-
+                Debug.Log("je pas fini");
                 if (SceneManagement.s_Singleton.niveau4)
                 {
                     gameObject.transform.position = zone3.transform.position;
@@ -114,6 +119,7 @@ public class ScorpionScript : MonoBehaviour
 
     public void ScorpionMove()
     {
+        Debug.Log("je bouge");
         mesh.SetActive(false);
         int tempsSup = Random.Range(0, 21);
         timerNextTP = 20 + tempsSup;

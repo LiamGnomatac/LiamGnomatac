@@ -32,7 +32,7 @@ public class LeadStatue : MonoBehaviour
                     statuettes[i].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     encens.FilledWithOil();
                     encens.TurnOn();
-                    statuettes[i].GetComponent<Renderer>().material.color = Color.green;
+                    //statuettes[i].GetComponent<Renderer>().material.color = Color.green;
                 }
             }
             if (GetComponent<StoryElementMonologue>())
