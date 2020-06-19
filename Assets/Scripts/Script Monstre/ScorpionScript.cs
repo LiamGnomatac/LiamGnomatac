@@ -144,7 +144,23 @@ public class ScorpionScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("scorpion collide with"+other);
-        if(other.gameObject.layer == 10)
+        Debug.Log("trigger ok");
+        if (other.gameObject.layer == 10)
+        {
+            Debug.Log("Hello light");
+            scorpionHitFlash = true;
+            if (GetComponent<StoryElementMonologue>())
+            {
+                GetComponent<StoryElementMonologue>().TriggerMonologue();
+                Destroy(GetComponent<StoryElementMonologue>());
+            }
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("scorpion collide with" + collision);
+        Debug.Log("collision ok");
+        if (collision.gameObject.layer == 10)
         {
             Debug.Log("Hello light");
             scorpionHitFlash = true;
