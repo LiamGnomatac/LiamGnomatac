@@ -119,7 +119,5 @@ public class TaureauScript : MonoBehaviour
     {
         Debug.Log("Joueur tué par le taureau");      
         SceneManagement.s_Singleton.GetKilled();
-        SceneManagement.s_Singleton.GetCurrentScene();
     }
-
 }

@@ -66,7 +66,7 @@ public class ScorpionScript : MonoBehaviour
         if(compteurMur <= 0)
         {
             ScreamerManager.s_Singleton.KillingScorpion();
-            SceneManagement.s_Singleton.GetCurrentScene();
+            SceneManagement.s_Singleton.GetKilled();
             ScorpionMove();
         }
 
