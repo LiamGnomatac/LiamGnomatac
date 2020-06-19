@@ -6,11 +6,12 @@ using Valve.VR.InteractionSystem;
 public class MakeNoise : MonoBehaviour
 {
     public bool justOneHit = false;
+    private Hand hand;
 
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collision with" + collision);
-        if (GetComponent<Interactable>().attachedToHand != null || collision.gameObject.GetComponentInParent<HandCollider>())
+        if (hand || GetComponent<Interactable>().attachedToHand != null || collision.gameObject.GetComponentInParent<HandCollider>())
         {
             justOneHit = true;
             Debug.Log(justOneHit);
@@ -27,6 +28,15 @@ public class MakeNoise : MonoBehaviour
             TaureauScript.s_Singleton.SetDestination(pos);
             justOneHit = false;
         }
+    }
+    private void OnHandHoverBegin(Hand hand)
+    {
+        this.hand = hand;
+    }
+
+    private void OnHandHoverEnd(Hand hand)
+    {
+        this.hand = null;
     }
 
 
