@@ -69,11 +69,13 @@ public class TaureauScript : MonoBehaviour
         {
             agent.destination = EncensManager.s_Singleton.direction();
             anim.SetBool("isWalking", true);
+            anim.SetBool("isDeath", false);
         }
         else
         {
             agent.isStopped = true;
             anim.SetBool("isWalking", false);
+            anim.SetBool("isDeath", false);
         }
     }
 
@@ -84,6 +86,7 @@ public class TaureauScript : MonoBehaviour
         agent.destination = bruit;
         isRunning = true;
         anim.SetBool("isRunning", true);
+        anim.SetBool("isDeath", false);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -113,6 +116,7 @@ public class TaureauScript : MonoBehaviour
         Invoke("UpdateDestination", timerStun);
         anim.SetBool("isWalking", false);
         anim.SetBool("isRunning", false);
+        anim.SetBool("isDeath", false);
     }
 
     public void KillingTaureau()
