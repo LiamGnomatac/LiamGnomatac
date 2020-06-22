@@ -29,21 +29,9 @@ public class EncensManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-
-        
-
-
-    }
-
-
-    
-
     public Vector3 direction()
     {
-        Debug.Log("je vais par ici");
+        //Debug.Log("je vais par ici");
         for (int i = 0; i < encensList.Count; i++)
         {
             if (encensList[i].isTurnOn)

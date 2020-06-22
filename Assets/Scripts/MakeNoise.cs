@@ -5,31 +5,42 @@ using Valve.VR.InteractionSystem;
 
 public class MakeNoise : MonoBehaviour
 {
-    public bool justOneHit = false;
-    private Hand hand;
-
-    private void OnCollisionEnter(Collision collision)
+    private Interactable myInteractable;
+    private bool hasBeenInHand = false;
+    private bool touchedGround = false;
+    //private Hand hand;
+    private void Start()
     {
-        Debug.Log("collision with" + collision);
-        if (hand || GetComponent<Interactable>().attachedToHand != null || collision.gameObject.GetComponentInParent<HandCollider>())
+        myInteractable = GetComponent<Interactable>();
+    }
+    private void Update()
+    {
+        if (!hasBeenInHand)
         {
-            justOneHit = true;
-            Debug.Log(justOneHit);
-            if (GetComponent<StoryElementMonologue>())
+            hasBeenInHand = (myInteractable.attachedToHand != null);
+            if (hasBeenInHand)
             {
-                GetComponent<StoryElementMonologue>().TriggerMonologue();
-                Destroy(GetComponent<StoryElementMonologue>());
+                touchedGround = false;
+                if (GetComponent<StoryElementMonologue>())
+                {
+                    GetComponent<StoryElementMonologue>().TriggerMonologue();
+                    Destroy(GetComponent<StoryElementMonologue>());
+                }
             }
         }
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Salle") && justOneHit)
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Log("collision with" + collision);
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Salle") && hasBeenInHand && !touchedGround)
         {
-            Debug.Log("bruit");
-            Vector3 pos = transform.position;
-            TaureauScript.s_Singleton.SetDestination(pos);
-            justOneHit = false;
+            //Debug.Log(transform.position);
+            TaureauScript.s_Singleton.GetRockPosition(transform.position);
+            hasBeenInHand = false;
+            touchedGround = true;
         }
     }
-    private void OnHandHoverBegin(Hand hand)
+    /*private void OnHandHoverBegin(Hand hand)
     {
         this.hand = hand;
     }
@@ -37,7 +48,7 @@ public class MakeNoise : MonoBehaviour
     private void OnHandHoverEnd(Hand hand)
     {
         this.hand = null;
-    }
+    }*/
 
 
 }

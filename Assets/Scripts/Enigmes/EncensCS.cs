@@ -34,7 +34,7 @@ public class EncensCS : MonoBehaviour
         }
         else if (isStayOn && GetComponentInChildren<Light>().enabled)
         {
-            Debug.Log("va s'eteindre");
+            //Debug.Log("va s'eteindre");
             Invoke("TurnOffWithTime", stayOnTimer);
         }
     }
@@ -43,7 +43,7 @@ public class EncensCS : MonoBehaviour
     {
         isFilled = true;
         oil.SetActive(true);
-        Debug.Log("GlouGlouGlou");
+        //Debug.Log("GlouGlouGlou");
     }
 
     private void StartFilled()
@@ -67,7 +67,7 @@ public class EncensCS : MonoBehaviour
     {
         if(isFilled)
         {
-            Debug.Log("Flamme");
+            //Debug.Log("Flamme");
             isTurnOn = true;
             pointLight.SetActive(true);
             pointLight.GetComponent<Light>().intensity = lightIntensity;
@@ -81,7 +81,7 @@ public class EncensCS : MonoBehaviour
 
     public void TurnOff()
     {
-        Debug.Log("Plus de Flamme");
+        //Debug.Log("Plus de Flamme");
         isTurnOn = false;
         pointLight.SetActive(false);
         if (TaureauScript.s_Singleton)
@@ -103,7 +103,7 @@ public class EncensCS : MonoBehaviour
 
     private void RandTurnOn()
     {
-        Debug.Log("clong");
+        //Debug.Log("clong");
         if(!isTurnOn)
         {
             int rand = Random.Range(0, 3);
@@ -149,12 +149,13 @@ public class EncensCS : MonoBehaviour
             }
 
         }
-        if (other.CompareTag("Monstre"))
+        if(TaureauScript.s_Singleton)
         {
-
-            TurnOff();
-            EncensManager.s_Singleton.thereIsLight = false;
-
+            if (other.CompareTag("Monstre") && !TaureauScript.s_Singleton.isRunning)
+            {
+                TurnOff();
+                EncensManager.s_Singleton.thereIsLight = false;
+            }
         }
     }
 }

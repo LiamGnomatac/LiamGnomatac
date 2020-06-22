@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 public class ScorpionScript : MonoBehaviour
 {
     public GameObject mesh;
-    public GameObject zone1;
-    public GameObject zone2;
-    public GameObject zone3;
-    public GameObject zone4;
-    public GameObject zone5;
+    public Transform zone1;
+    public Transform zone2;
+    public Transform zone3;
     public float compteurMur = 8f;
     
     public float timerNextTP = 20f;
@@ -87,7 +85,7 @@ public class ScorpionScript : MonoBehaviour
         {
             case 0:
                 Debug.Log("je zone1");
-                gameObject.transform.position = zone1.transform.position;
+                gameObject.transform.position = zone1.position;
                 ScorpionMur();
                 
 
@@ -95,7 +93,7 @@ public class ScorpionScript : MonoBehaviour
                 break;
             case 1:
                 Debug.Log("je zone2");
-                gameObject.transform.position = zone2.transform.position;
+                gameObject.transform.position = zone2.position;
                 ScorpionMur();
 
 
@@ -106,7 +104,7 @@ public class ScorpionScript : MonoBehaviour
                 Debug.Log("je pas fini");
                 if (SceneManagement.s_Singleton.niveau4)
                 {
-                    gameObject.transform.position = zone3.transform.position;
+                    gameObject.transform.position = zone3.position;
                     ScorpionMur();
                 }
                 else

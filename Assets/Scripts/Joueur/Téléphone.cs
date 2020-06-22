@@ -54,7 +54,7 @@ public class Téléphone : MonoBehaviour
     public void VibrationLocation()
     {
         Debug.Log("Vibre");
-        TaureauScript.s_Singleton.SetDestination(transform.position);
+        TaureauScript.s_Singleton.GetRockPosition(transform.position);
     }
 
     private void OnEnable()

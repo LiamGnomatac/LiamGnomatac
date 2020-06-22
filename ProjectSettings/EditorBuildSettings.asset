@@ -29,4 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Death Scene.unity
     guid: 2bbb5a24048fb5d4ab64104db816c4fa
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1e525c6bb8c91a14b8ab10f0c3bed732,
+      type: 2}

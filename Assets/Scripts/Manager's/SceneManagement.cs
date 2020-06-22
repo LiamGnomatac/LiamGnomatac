@@ -22,6 +22,13 @@ public class SceneManagement : MonoBehaviour
         }
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            AudioManager.instance.Play("TheHum");
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

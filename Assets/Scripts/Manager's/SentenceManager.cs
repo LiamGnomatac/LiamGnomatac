@@ -69,7 +69,7 @@ public class SentenceManager : MonoBehaviour
 
     public void EndMonologue()
     {
-        Debug.Log("end of conversation");
+        //Debug.Log("end of conversation");
         monologueText.text = "";
         animator.SetBool("isOpen", false);
     }
