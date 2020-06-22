@@ -17,7 +17,7 @@ public class Sac : MonoBehaviour
     public Interactable interactablePoignee;
     public Interactable interactablePorteRotation;
     public Rigidbody rigidbodyPorte ;
-    private bool CanOpenDoor ; 
+    private bool CanOpenDoor =false; 
     float numberOfEssentialsObjects;
     int trigger = 0 ;
     private Transform pos;
@@ -37,12 +37,6 @@ public class Sac : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (numberOfEssentialsObjects == 0)
-        {
-            CanOpenDoor = false;
-            Debug.Log("il y a 0 objet important dans le sac");
-        }
-
         if (numberOfEssentialsObjects == 1)
         {
             CanOpenDoor = false;
