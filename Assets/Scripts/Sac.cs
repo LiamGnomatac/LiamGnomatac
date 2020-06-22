@@ -79,6 +79,7 @@ public class Sac : MonoBehaviour
         if (other.gameObject.tag == "Essential")
         {
             trigger++;
+            Destroy(other);
             numberOfEssentialsObjects += 1;
             Debug.Log("Un Objet important à été mis dans le sac");
 
@@ -87,7 +88,8 @@ public class Sac : MonoBehaviour
         if (other.gameObject.tag == "Telephone")
         {
             trigger++;
-            telephone.SetActive(false);
+            //telephone.SetActive(false);
+            Destroy(other);
             numberOfEssentialsObjects += 1;
             Debug.Log("Le téléphone a été mis dans le sac et ne peux plus etre récupérer");
         }
@@ -95,7 +97,8 @@ public class Sac : MonoBehaviour
         if (other.gameObject.tag == "LampeTorche")
         {
             trigger++;
-            lampeTorche.SetActive(false);
+            //lampeTorche.SetActive(false);
+            Destroy(other);
             numberOfEssentialsObjects += 1;
             Debug.Log("La Lampe torche a été mis dans le sac et ne peux plus etre récupérer");
         }
