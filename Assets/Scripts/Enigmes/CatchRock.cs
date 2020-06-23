@@ -7,11 +7,12 @@ public class CatchRock : MonoBehaviour
 {
     public LeadStatue statues;
     public bool isMain;
+    public GameObject caillasse; 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        caillasse.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,12 +26,12 @@ public class CatchRock : MonoBehaviour
         Debug.Log(other.name);
         if (other.gameObject.GetComponent<Throwable>())
         {
-            
             Debug.Log("contact");
             if (isMain)
             {
                 EnigmesManager.s_Singleton.isPressMain = true;
-                GetComponent<Renderer>().material.color = Color.green;
+                caillasse.SetActive(true);
+                //GetComponent<Renderer>().material.color = Color.green;
                 if (GetComponent<StoryElementMonologue>())
                 {
                     GetComponent<StoryElementMonologue>().TriggerMonologue();
@@ -40,7 +41,8 @@ public class CatchRock : MonoBehaviour
             else
             {
                 EnigmesManager.s_Singleton.isPress = true;
-                GetComponent<Renderer>().material.color = Color.green;
+                caillasse.SetActive(true);
+                //GetComponent<Renderer>().material.color = Color.green;
             }
             statues.StatueAreCatchable();
         }

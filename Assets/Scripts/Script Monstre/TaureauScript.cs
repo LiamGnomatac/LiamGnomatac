@@ -76,6 +76,7 @@ public class TaureauScript : MonoBehaviour
 
     public void UpdateDestination()
     {
+        isStun = false;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         if (EncensManager.s_Singleton.direction() != Vector3.zero)
         {

@@ -8,9 +8,14 @@ public class Piedestale : MonoBehaviour
     public GameObject statuette;
     public StoryElementMonologue monologueOpenDoor;
     public Door door;
+    public bool isReturn = false;
 
     private void OnTriggerEnter(Collider other)
     {
+        if(!isReturn && other.gameObject == statuette && !statuette.GetComponent<Throwable>())
+        {
+            Destroy(statuette);
+        }
         if(other.gameObject == statuette && !statuette.GetComponent<Throwable>())
         {
             statuette.AddComponent<Throwable>();

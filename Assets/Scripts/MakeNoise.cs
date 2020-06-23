@@ -21,6 +21,7 @@ public class MakeNoise : MonoBehaviour
             if (hasBeenInHand)
             {
                 touchedGround = false;
+                Debug.Log("sol " + touchedGround);
                 if (GetComponent<StoryElementMonologue>())
                 {
                     GetComponent<StoryElementMonologue>().TriggerMonologue();

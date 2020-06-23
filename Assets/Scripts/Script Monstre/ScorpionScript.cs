@@ -121,6 +121,7 @@ public class ScorpionScript : MonoBehaviour
         mesh.SetActive(false);
         int tempsSup = Random.Range(0, 21);
         timerNextTP = 20 + tempsSup;
+        scorpionHitFlash = false;
         scorpionMove = true;
         Debug.Log("Le scorpion se déplace");
 
@@ -143,7 +144,7 @@ public class ScorpionScript : MonoBehaviour
     {
         Debug.Log("scorpion collide with"+other);
         Debug.Log("trigger ok");
-        if (other.gameObject.layer == 10)
+        if (other.gameObject.layer == 10 || other.name == "LightTrigger")
         {
             Debug.Log("Hello light");
             scorpionHitFlash = true;

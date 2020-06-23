@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8151933800501872352}
   - component: {fileID: 3701245439235984791}
   m_Layer: 0
-  m_Name: Smoke_Zone
+  m_Name: Smoke_LookZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,7 +582,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 2000
+    maxNumParticles: 250
     size3D: 0
     rotation3D: 0
     gravityModifier:

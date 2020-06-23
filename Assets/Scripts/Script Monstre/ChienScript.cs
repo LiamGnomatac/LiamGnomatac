@@ -64,15 +64,18 @@ public class ChienScript : MonoBehaviour
             GameManager.s_Singleton.objKeyLaunch = 0;
             ScreamerManager.s_Singleton.KillingDog();
         }
-        if(dogPhoneLight.activeSelf == true || dogTorchLight.activeSelf == true)
+        if(dogPhoneLight || dogTorchLight)
         {
-            thereIsLight = true;
-            ChienAttackOnLight();
-        }
-        else
-        {
-            thereIsLight = false;
-            CancelDogAttack();
+            if (dogPhoneLight.activeSelf == true || dogTorchLight.activeSelf == true)
+            {
+                thereIsLight = true;
+                ChienAttackOnLight();
+            }
+            else
+            {
+                thereIsLight = false;
+                CancelDogAttack();
+            }
         }
     }
 

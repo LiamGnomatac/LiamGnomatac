@@ -19,7 +19,7 @@ using Valve.VR.InteractionSystem;
     {
         if (!justOneTime)
         {
-            justOneTime = (myInteractable.attachedToHand != null);
+            justOneTime = (myInteractable.attachedToHand == null);
             if (justOneTime)
             {
                 if (GetComponent<StoryElementMonologue>())
@@ -41,7 +41,7 @@ using Valve.VR.InteractionSystem;
     {
         HandCollider hand = other.GetComponentInParent<HandCollider>();
 
-        if (justOneTime && myInteractable.attachedToHand != null)
+        if (justOneTime && myInteractable.attachedToHand == null)
         {
             justOneTime = false;
             InvokeRock(hand);

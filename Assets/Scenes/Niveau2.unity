@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getOut: {fileID: 1335857316}
-  encens: {fileID: 0}
+  encens: {fileID: 338936073}
   monologueInformationsToDestroy: {fileID: 41329751}
   buttonList:
   - {fileID: 1571022918}
@@ -4804,7 +4804,7 @@ PrefabInstance:
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.4332166
+      value: 4.972
       objectReference: {fileID: 0}
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
@@ -4814,7 +4814,7 @@ PrefabInstance:
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.950972
+      value: 4.412
       objectReference: {fileID: 0}
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
@@ -5850,7 +5850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4080719392071276, guid: 615688eb22692db418c6f8646a5b507c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8800001
+      value: 1.782
       objectReference: {fileID: 0}
     - target: {fileID: 4080719392071276, guid: 615688eb22692db418c6f8646a5b507c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7250,12 +7250,12 @@ PrefabInstance:
     - target: {fileID: 5046086893966233371, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5046086893966233371, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.71
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7283622879307924268, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
@@ -7265,7 +7265,7 @@ PrefabInstance:
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.6022162
+      value: 5.22
       objectReference: {fileID: 0}
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
@@ -7275,7 +7275,7 @@ PrefabInstance:
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.3099723
+      value: 4.732
       objectReference: {fileID: 0}
     - target: {fileID: 7283622879307924271, guid: 2300adc4ca9d82d48a334eb92026f717,
         type: 3}
@@ -8695,6 +8695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 9150879854262844677, guid: c309d919aaff60740914ffa27e0de0c6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9150879854262844679, guid: c309d919aaff60740914ffa27e0de0c6,
         type: 3}
