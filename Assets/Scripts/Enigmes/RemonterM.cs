@@ -44,6 +44,7 @@ public class RemonterM : MonoBehaviour
     {
         Debug.Log("crédit");
         zoneFin.SetActive(true);
+        spawnFlames();
     }
 
     public void spawnFlames()

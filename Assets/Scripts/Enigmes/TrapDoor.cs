@@ -23,7 +23,7 @@ public class TrapDoor : MonoBehaviour
 
     public void OnPress()
     {
-        transform.position = Vector3.MoveTowards(transform.position, onPress, Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, onPress, Time.deltaTime*.5f);
     }
 
     public void OnRelease()

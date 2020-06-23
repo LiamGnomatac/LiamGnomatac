@@ -69,7 +69,7 @@ public class ScorpionScript : MonoBehaviour
             if(SceneManagement.s_Singleton)
             {
                 ScreamerManager.s_Singleton.KillingScorpion();
-                SceneManagement.s_Singleton.GetKilled();
+                Invoke("InvokeGetKilled", 2);
                 ScorpionMove();
             }
         }
@@ -169,5 +169,9 @@ public class ScorpionScript : MonoBehaviour
                 Destroy(GetComponent<StoryElementMonologue>());
             }
         }
+    }
+    private void InvokeGetKilled()
+    {
+        SceneManagement.s_Singleton.GetKilled();
     }
 }

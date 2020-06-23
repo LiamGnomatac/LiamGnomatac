@@ -30,21 +30,21 @@ public class ScreamerManager : MonoBehaviour
 
     public void KillingDog()
     {
-        //Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
+        Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
         Debug.Log("Joueur tué par le chien");
         chien.SetActive(true);
     }
 
     public void KillingScorpion()
     {
-        //Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
+        Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
         Debug.Log("Joueur tué par le scorpion");
         scorpion.SetActive(true);
     }
 
     public void KillingTaureau()
     {
-        //Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
+        Invoke("InvokeGetKilled", timeBeforeGoToDeathSceen);
         Debug.Log("Joueur tué par le taureau");
         taureau.SetActive(true);
     }

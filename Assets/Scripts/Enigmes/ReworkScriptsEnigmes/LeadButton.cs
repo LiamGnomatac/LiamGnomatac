@@ -60,6 +60,7 @@ public class LeadButton : MonoBehaviour
                         {
                             getOut.ReplaceEndPos();
                             encens.FilledWithOil();
+                            encens.TurnOn();
                             Debug.Log("première parti ok");
                             Destroy(monologueInformationsToDestroy.gameObject);
                             if (GetComponent<StoryElementMonologue>())

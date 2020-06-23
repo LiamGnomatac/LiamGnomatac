@@ -91,7 +91,7 @@ public class ChienScript : MonoBehaviour
     private void DogAttack()
     {
         ScreamerManager.s_Singleton.KillingDog();
-        SceneManagement.s_Singleton.GetKilled();
+        Invoke("InvokeGetKilled", 2);
     }
 
     public void PlayerOutZone()
@@ -141,5 +141,9 @@ public class ChienScript : MonoBehaviour
                 mesh.SetActive(true);
                 break;
         }
+    }
+    private void InvokeGetKilled()
+    {
+        SceneManagement.s_Singleton.GetKilled();
     }
 }

@@ -115,7 +115,7 @@ public class TaureauScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collide with " + collision);
-        if (isRunning == true && collision.gameObject.layer == 9)
+        if (isRunning == true && collision.gameObject.layer == 9 && collision.gameObject != GetComponent<Pillier>())
         {
             Debug.Log("stun");
             TaureauStun();

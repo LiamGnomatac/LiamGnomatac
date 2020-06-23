@@ -11,7 +11,10 @@ public class StoryElementMonologue : MonoBehaviour
 
     public void TriggerMonologue()
     {
-        SentenceManager.s_Singleton.StartMonologue(monologue);
+        if(SentenceManager.s_Singleton)
+        {
+            SentenceManager.s_Singleton.StartMonologue(monologue);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
