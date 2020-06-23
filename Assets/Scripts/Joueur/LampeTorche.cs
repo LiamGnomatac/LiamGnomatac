@@ -25,7 +25,6 @@ public class LampeTorche : MonoBehaviour
     public void ToggleLightAppear()
     {
         spotLight.SetActive(!spotLight.activeSelf);
-        lightTrigger.SetActive(!lightTrigger.activeSelf);
     }
 
     public void ToggleTorchLightAppear()

@@ -2707,6 +2707,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3147900645919214857, guid: 81ee019fe3ca2f04290de1285db25d69,
+        type: 3}
+      propertyPath: stunDuration
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3147900645919214858, guid: 81ee019fe3ca2f04290de1285db25d69,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9488,6 +9493,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820281201140515204, guid: b98d278777f77a44993803cf07d333a2,
+        type: 3}
+      propertyPath: timerNextTP
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b98d278777f77a44993803cf07d333a2, type: 3}

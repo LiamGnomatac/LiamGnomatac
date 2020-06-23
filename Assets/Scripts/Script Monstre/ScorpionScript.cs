@@ -80,7 +80,7 @@ public class ScorpionScript : MonoBehaviour
         Debug.Log("je tp");
 
         int zoneChoisie = Random.Range(0, 3);
-
+        
         switch (zoneChoisie)
         {
             case 0:
