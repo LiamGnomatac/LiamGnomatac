@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pillier : MonoBehaviour
 {
+    public GameObject taurus;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +18,10 @@ public class Pillier : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject == GetComponentInParent<PillierManager>().taurus)
+        if(collision.gameObject == taurus)
         {
             Debug.Log(collision.gameObject.name);
         }
-        GetComponentInParent<PillierManager>().DestroyPillar(collision.gameObject, this.gameObject);
+        GetComponentInParent<PillierManager>().DestroyPillar(taurus, gameObject);
     }
 }

@@ -601,7 +601,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 112959274}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274064915}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 132f8029c470664409e356de97f301b7, type: 3}
@@ -1081,6 +1081,10 @@ PrefabInstance:
       propertyPath: InitialModule.maxNumParticles
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1846086335, guid: e1ac4eda72c80e04b8dd2e640edad0d1, type: 3}
+      propertyPath: activeGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2030799166, guid: e1ac4eda72c80e04b8dd2e640edad0d1, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1352,30 +1356,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 230054606}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &274064915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8592906766065262086, guid: 726d5ff7009f11e40ba67ac8346ba71f,
-    type: 3}
-  m_PrefabInstance: {fileID: 112959274}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &274064917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274064915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c89e9702818315249828d2c622497357, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monologue:
-    name: Le comportement du taureau
-    sentences:
-    - "On dirait bien que le taureau \xE9teint toutes les lampes allum\xE9es"
-  activateWithTrigger: 0
-  activeGrab: 0
 --- !u!1 &278897928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4207,6 +4187,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7025220684872900902, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
+        type: 3}
+      propertyPath: taurus
+      value: 
+      objectReference: {fileID: 644016248}
     - target: {fileID: 7025220684872900903, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5628,6 +5613,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillier
       objectReference: {fileID: 0}
+    - target: {fileID: 7025220684872900902, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
+        type: 3}
+      propertyPath: taurus
+      value: 
+      objectReference: {fileID: 644016248}
     - target: {fileID: 7025220684872900903, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6110,7 +6100,7 @@ MonoBehaviour:
     name: "Aper\xE7u De La B\xEAte"
     sentences:
     - Quels sont les secrets que cette salle renferme ?
-    - "Attend j'apper\xE7oit une forme bouger dans l'ombre."
+    - "Attend j'apper\xE7ois une forme bouger dans l'ombre."
   activateWithTrigger: 1
   activeGrab: 0
 --- !u!65 &1349910779
@@ -7426,7 +7416,7 @@ MonoBehaviour:
     name: "L'objet prot\xE9g\xE9"
     sentences:
     - "Une chose brille au centre de la pi\xE8ce"
-    - "Mais les piliers ainsi que les flammes m'emp\xEAche de bien le distinguer"
+    - "Mais les piliers ainsi que les flammes m'emp\xEAchent de bien le distinguer"
   activateWithTrigger: 1
   activeGrab: 0
 --- !u!65 &1686634740
@@ -7989,6 +7979,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7025220684872900902, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
+        type: 3}
+      propertyPath: taurus
+      value: 
+      objectReference: {fileID: 644016248}
     - target: {fileID: 7025220684872900903, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8700,6 +8695,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7025220684872900902, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
+        type: 3}
+      propertyPath: taurus
+      value: 
+      objectReference: {fileID: 644016248}
     - target: {fileID: 7025220684872900903, guid: 2ff7ef18d6d832d4996f9c3fa8f945db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9398,6 +9398,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 775636362, guid: b98d278777f77a44993803cf07d333a2, type: 3}
+      propertyPath: monologue.sentences.Array.data[0]
+      value: Mais c'est quoi encore cette chose !
+      objectReference: {fileID: 0}
+    - target: {fileID: 775636362, guid: b98d278777f77a44993803cf07d333a2, type: 3}
+      propertyPath: monologue.sentences.Array.data[2]
+      value: "On dirait qu'elle s'est enfuie \xE0 cause de l'\xE9clairage."
+      objectReference: {fileID: 0}
     - target: {fileID: 2541767555825480000, guid: b98d278777f77a44993803cf07d333a2,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -9506,7 +9514,12 @@ PrefabInstance:
     - target: {fileID: 5820281201140515204, guid: b98d278777f77a44993803cf07d333a2,
         type: 3}
       propertyPath: timerNextTP
-      value: 17
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820281201140515204, guid: b98d278777f77a44993803cf07d333a2,
+        type: 3}
+      propertyPath: compteurMur
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b98d278777f77a44993803cf07d333a2, type: 3}

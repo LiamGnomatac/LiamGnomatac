@@ -3179,8 +3179,8 @@ MonoBehaviour:
     name: Zone de fouille
     sentences:
     - "Qu'avons nous l\xE0 ?"
-    - "Apr\xE8s tous les pr\xE9l\xE8vement que l'\xE9quipe a r\xE9alis\xE9, ils n'ont
-      rien remarqu\xE9 ?"
+    - "Apr\xE8s tous les pr\xE9l\xE8vements que l'\xE9quipe a r\xE9alis\xE9, ils
+      n'ont rien remarqu\xE9 ?"
     - "Il y a 2 emplacements de torche mais une seule pos\xE9e"
     - "Pour le bien de ma carr\xE8re, \xE0 bas le protocole."
   activateWithTrigger: 1
@@ -3810,10 +3810,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologue:
-    name: "L'entr\xE9"
+    name: "L'entr\xE9e"
     sentences:
     - "On entre vraiment comme \xE7a ?"
-    - "Pas tr\xE8s complexe l'entr\xE9 d'un temple reserv\xE9 seulement aux initi\xE9s"
+    - "Pas tr\xE8s complexe l'entr\xE9e d'un temple reserv\xE9 seulement aux initi\xE9s"
   activateWithTrigger: 0
   activeGrab: 0
 --- !u!1001 &819926468
@@ -9527,7 +9527,7 @@ MonoBehaviour:
   monologue:
     name: L'Exploration
     sentences:
-    - "Enfin arriver aux salini\xE8res."
+    - "Enfin arriv\xE9 aux salini\xE8res."
     - "Entrer ici a \xE9t\xE9 dr\xF4lement simple !?"
     - Allons dans la zone de fouille
   activateWithTrigger: 1

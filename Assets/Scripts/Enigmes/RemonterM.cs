@@ -8,7 +8,6 @@ public class RemonterM : MonoBehaviour
     public float countdownBeforeDeath = 30;
     public GameObject zoneFin;
     public GameObject VFXFlame;
-    public List<Transform> spawnPointFlame;
     public StoryElementMonologue monologue;
 
     public static RemonterM s_Singleton;
@@ -25,6 +24,7 @@ public class RemonterM : MonoBehaviour
     }
     private void Start()
     {
+        VFXFlame.SetActive(false);
         zoneFin.SetActive(false);
         Debug.Log("false");
         Invoke("FirstTimerBegin", timeBeforeTimerDeathBegin);
@@ -44,21 +44,17 @@ public class RemonterM : MonoBehaviour
     {
         Debug.Log("crédit");
         zoneFin.SetActive(true);
-        spawnFlames();
     }
 
     public void spawnFlames()
     {
         Debug.Log("bcp flames");
-        for (int i = 0; i < spawnPointFlame.Count; i++)
-        {
-            Instantiate(VFXFlame, spawnPointFlame[i]);
-        }
-        if(monologue)
+        VFXFlame.SetActive(true);
+        GoToCredits();
+        if (monologue)
         {
             monologue.TriggerMonologue();
             Destroy(monologue);
         }
-        GoToCredits();
     }
 }

@@ -9,18 +9,16 @@ public class ChienScript : MonoBehaviour
     public Animator animator;
     public GameObject mesh;
     public float chienTimerAttaque = 5.0f;
-   
-    
+
+    public StoryElementMonologue monologue;
     public bool joueurSurZone = false;
     public bool chienCanTP = true;
     public GameObject zone1;
     public GameObject zone2;
     public GameObject zone3;
-    public GameObject dogTorchLight;
-    public GameObject dogPhoneLight;
-    public bool thereIsLight;
-    public bool dogCanAttackOnLight;
-    public bool chienAttack;
+    private bool thereIsLight;
+    public bool dogCanAttackOnLight = false;
+    private bool chienAttack;
     
     #endregion
 
@@ -64,11 +62,12 @@ public class ChienScript : MonoBehaviour
             GameManager.s_Singleton.objKeyLaunch = 0;
             ScreamerManager.s_Singleton.KillingDog();
         }
-        if(dogPhoneLight || dogTorchLight)
+        if(TPPerso.s_Singleton.torchLight|| TPPerso.s_Singleton.cellphone)
         {
-            if (dogPhoneLight.activeSelf == true || dogTorchLight.activeSelf == true)
+            if ((dogCanAttackOnLight && TPPerso.s_Singleton.torchLight.activeSelf == true) || (dogCanAttackOnLight && TPPerso.s_Singleton.cellphone.activeSelf == true))
             {
                 thereIsLight = true;
+                chienAttack = true;
                 ChienAttackOnLight();
             }
             else
@@ -81,8 +80,9 @@ public class ChienScript : MonoBehaviour
 
     public void ChienAttackOnLight()
     {
-        if (thereIsLight)
+        if (thereIsLight && chienAttack)
         {
+            chienAttack = false;
             Invoke("DogAttack", chienTimerAttaque);
             animator.SetBool("isAttack", true);
         }
@@ -91,7 +91,6 @@ public class ChienScript : MonoBehaviour
     private void DogAttack()
     {
         ScreamerManager.s_Singleton.KillingDog();
-        Invoke("InvokeGetKilled", 2);
     }
 
     public void PlayerOutZone()
@@ -108,6 +107,7 @@ public class ChienScript : MonoBehaviour
     {
         if (joueurSurZone && !thereIsLight)
         {
+            Debug.Log("cancel");
             CancelInvoke("DogAttack");
             animator.SetBool("isAttack", false);
         }
@@ -142,8 +142,15 @@ public class ChienScript : MonoBehaviour
                 break;
         }
     }
-    private void InvokeGetKilled()
+    private void OnTriggerEnter(Collider other)
     {
-        SceneManagement.s_Singleton.GetKilled();
+        if(other.gameObject.layer == 10 || other.name == "LightTrigger")
+        {
+            if (monologue)
+            {
+                monologue.TriggerMonologue();
+                Destroy(monologue.gameObject);
+            }
+        }
     }
 }

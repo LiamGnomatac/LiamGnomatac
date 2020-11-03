@@ -10,6 +10,7 @@ public class AssignFuctionToButton : MonoBehaviour
     {
         HoverButton b = gameObject.GetComponent<HoverButton>();
         b.onButtonDown.AddListener(delegate { SceneManagement.s_Singleton.LoadPreviewScene(); });
+        Debug.Log("appuyé");
     }
 
 }

@@ -165,7 +165,6 @@ public class TPPerso : MonoBehaviour
 
         if (flash.stateDown)
         {
-
             AppearLight();
         }
     }

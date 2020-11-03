@@ -5,42 +5,42 @@ using Valve.VR.InteractionSystem;
 
 public class InstanceFlames : MonoBehaviour
 {
+    private Interactable myInteractable;
+    private bool hasBeenInHand = false;
     public GameObject flameVFX;
-    private bool canMakeFlame;
     private int numberOfFlames;
     public StoryElementMonologue monologue;
     // Start is called before the first frame update
     void Start()
     {
-        
+        myInteractable = GetComponent<Interactable>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!hasBeenInHand)
+        {
+            hasBeenInHand = (myInteractable.attachedToHand != null);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (GetComponent<Interactable>().attachedToHand != null)
-        {
-            canMakeFlame = true;
-            if(collision.gameObject.layer == 9)
+            if(collision.gameObject.layer == 9 && hasBeenInHand)
             {
                 Instantiate(flameVFX, transform.position, Quaternion.identity);
                 numberOfFlames++;
                 if(numberOfFlames > 5)
                 {
-                    RemonterM.s_Singleton.GoToCredits();
+                    RemonterM.s_Singleton.spawnFlames();
                     monologue.TriggerMonologue();
                     GetComponentInChildren<Light>().gameObject.SetActive(false);
                     Destroy(monologue);
-                    Destroy(this);
                 }
             }
-        }
-        if(canMakeFlame && collision.gameObject.layer == 9)
+    
+        if(hasBeenInHand && collision.gameObject.layer == 9)
         {
             RemonterM.s_Singleton.spawnFlames();
         }

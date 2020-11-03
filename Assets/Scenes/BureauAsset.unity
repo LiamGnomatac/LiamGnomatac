@@ -5959,7 +5959,7 @@ PrefabInstance:
     - target: {fileID: 4973494862875369035, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.65
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 4973494862875369035, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
@@ -5969,7 +5969,7 @@ PrefabInstance:
     - target: {fileID: 4973494862875369035, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.27
+      value: -0.239
       objectReference: {fileID: 0}
     - target: {fileID: 4973494862905272471, guid: f7ed6c93d84cfbb4697b8954e7c97664,
         type: 3}
@@ -6919,6 +6919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBeforeDisplayText
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009649822775678465, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6297810232526872458, guid: dc7b1d1f6cac03a4ca294a1c8b074abb,
         type: 3}
@@ -9582,7 +9587,7 @@ MonoBehaviour:
   monologue:
     name: 
     sentences:
-    - "Maintenant \xE7a m'est indispensable"
+    - A ne surtout pas oublier !
     - Hop dans le sac
   activateWithTrigger: 0
   activeGrab: 1
@@ -12669,9 +12674,8 @@ MonoBehaviour:
     name: Licenciement
     sentences:
     - "Voil\xE0 ce qui en co\xFBte de s'opposer \xE0 la hi\xE9rarchie."
-    - "Au diable ces incapables, je dois savoir pourquoi ont elles \xE9t\xE9 stop\xE9es
-      ?!"
-    - "Jetter \xE7a \xE0 la poubelle voudrais dire que j'abandonne "
+    - "Au diable ces incapables ! Pourquoi ont elles \xE9t\xE9 stopp\xE9es ?"
+    - "Jetter \xE7a \xE0 la poubelle voudrait dire que j'abandonne. "
   activateWithTrigger: 0
   activeGrab: 1
 --- !u!114 &1593197657

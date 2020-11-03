@@ -69,7 +69,6 @@ public class ScorpionScript : MonoBehaviour
             if(SceneManagement.s_Singleton)
             {
                 ScreamerManager.s_Singleton.KillingScorpion();
-                Invoke("InvokeGetKilled", 2);
                 ScorpionMove();
             }
         }
@@ -120,7 +119,7 @@ public class ScorpionScript : MonoBehaviour
         Debug.Log("je bouge");
         mesh.SetActive(false);
         int tempsSup = Random.Range(0, 21);
-        timerNextTP = 20 + tempsSup;
+        timerNextTP = 30 + tempsSup;
         scorpionHitFlash = false;
         scorpionMove = true;
         Debug.Log("Le scorpion se déplace");
@@ -169,9 +168,5 @@ public class ScorpionScript : MonoBehaviour
                 Destroy(GetComponent<StoryElementMonologue>());
             }
         }
-    }
-    private void InvokeGetKilled()
-    {
-        SceneManagement.s_Singleton.GetKilled();
     }
 }

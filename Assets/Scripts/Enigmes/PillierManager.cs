@@ -24,15 +24,15 @@ public class PillierManager : MonoBehaviour
 
     public void DestroyPillar(GameObject collision, GameObject gm)
     {
-        if(collision == taurus && taurus.GetComponent<TaureauScript>().isRunning)
+        if(taurus.GetComponent<TaureauScript>().isRunning)
         {
-            ActiveMonologue();
             pillarsBroke++;
             StuntTaurus();
             BlindTp();
             CanCatchRelique();
             InstantiateGravel(collision.transform.position);
             Destroy(gm);
+            ActiveMonologue();
         }
     }
 
